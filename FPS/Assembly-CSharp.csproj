@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2022_3_1;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_1;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;VISTA;POMINI;JUPITER;POSEIDON;POSEIDON_URP;GRIFFIN_EDITOR_COROUTINES;GRIFFIN;GRIFFIN_2021;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -58,43 +58,398 @@
     <Analyzer Include="C:\Program Files\Unity 2022.3.1f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Utilities\PUtilities.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Utilities\JInternalShaderSettings.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\FirstPersonAudio.cs" />
     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PWaterMeshType.cs" />
     <Compile Include="Assets\Scripts\Managers\CameraMovement.cs" />
+    <Compile Include="Assets\Dynamic Grass FX\Demo\Scripts\Rotate.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Utilities\PVersionInfo.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\IPMeshCreator.cs" />
+    <Compile Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Samples\Pinwheel Studio\Scripts\GTakeScreenshot.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Sample\Scripts\JTakeScreenshot.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Effects\PWaterFX.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Core\JCommon.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Utilities\JCubemapRendererArgs.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PCommon.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Utilities\JCubemapRenderer.cs" />
+    <Compile Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Samples\Pinwheel Studio\Scripts\GRuntimeTexturePainter.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Polaris Extension\PWaterSplineSync.cs" />
+    <Compile Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Samples\Pinwheel Studio\Scripts\GFpsCounter.cs" />
+    <Compile Include="Assets\URPTimeOfDay\Scripts\FootstepManager.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Core\JSky.cs" />
+    <Compile Include="Assets\Mini First Person Controller\Scripts\Components\GroundCheck.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Sample\Scripts\SnapToSceneViewCamera.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PTimeMode.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Core\JFogSyncOption.cs" />
+    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PPoseidonSettings.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Utilities\PDisplayNameAttribute.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Core\JMat.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Utilities\PInternalShaderSettings.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PSplineUtilities.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Utilities\PInternalMaterials.cs" />
+    <Compile Include="Assets\URPTimeOfDay\Demo\Player\PlayerController.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PWaterMode.cs" />
+    <Compile Include="Assets\URPTimeOfDay\Scripts\TimeManager.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PDiamondMeshCreator.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Utilities\JInternalMaterials.cs" />
+    <Compile Include="Assets\Scripts\UI\FacingCamera.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Core\JJupiterSettings.cs" />
+    <Compile Include="Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Core\JSkyProfile.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Sample\Scripts\SimpleBuoyController.cs" />
+    <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PSplineSegment.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Effects\UniversalRP\PWetLensOverride.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Core\JDetailOverlayLayer.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\DayNightCycle\JAnimatableAttribute.cs" />
+    <Compile Include="Assets\Mini First Person Controller\Scripts\FirstPersonMovement.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Utilities\JRenderPipelineType.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PWater.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Effects\UniversalRP\PUnderwaterOverride.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Effects\BuiltinRP\PUnderwaterRenderer.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PWaterExtension.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Utilities\PGeometryUtilities.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Utilities\JProgressCancelledException.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Utilities\PProgressCancelledException.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Effects\BuiltinRP\PWetLens.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Sample\Scripts\LightController.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PLightingModel.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\DayNightCycle\JCurveOrGradient.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\Jump.cs" />
     <Compile Include="Assets\Dynamic Grass FX\Demo\Scripts\Move.cs" />
-    <Compile Include="Assets\Dynamic Grass FX\Demo\Scripts\Rotate.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Utilities\JVersionInfo.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PWaterShaderProvider.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PSplineAnchor.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Effects\BuiltinRP\PUnderwater.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Effects\UniversalRP\PWaterEffectRendererFeature.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Utilities\PRenderPipelineType.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\DayNightCycle\JDayNightCycle.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\DayNightCycle\JAnimatedProperty.cs" />
+    <Compile Include="Assets\Scenes_THERE\sp\SunManager.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\Crouch.cs" />
-    <Compile Include="Assets\Mini First Person Controller\Scripts\Components\GroundCheck.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PQuadMeshCreator.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PHexMeshCreator.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PSpline.cs" />
+    <Compile Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Samples\Pinwheel Studio\Scripts\GCameraBuoyancyController.cs" />
+    <Compile Include="Assets\URPTimeOfDay\Scripts\TimeDisplay.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PSplineCreator.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Utilities\JUtilities.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\DayNightCycle\JDayNightCycleProfile.cs" />
     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
-    <Compile Include="Assets\Scripts\UI\FacingCamera.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PSplineMeshCreator.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PWaterProfile.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Scripts\Utilities\JDisplayNameAttribute.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PWaterProfileDefault.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PCustomMeshBaker.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\Zoom.cs" />
-    <Compile Include="Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
-    <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
-    <Compile Include="Assets\Mini First Person Controller\Scripts\FirstPersonMovement.cs" />
+    <Compile Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Includes\ShaderIncludes.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Effects\BuiltinRP\PWetLensRenderer.cs" />
+    <Compile Include="Assets\PinwheelStudio\Vista\Samples\Scenes\Demo\DemoController.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Effects\PWaterFXProfile.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\FirstPersonLook.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PAreaMeshCreator.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Utilities\PIndex2D.cs" />
     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PMat.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Scripts\Core\PPlaneMeshPattern.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\PostProcessing\WetLens.shader" />
     <None Include="Assets\Dynamic Grass FX\Shaders\Helpers.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_BlinnPhong_4Splats.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PUniforms.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Includes\ShaderIncludes.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\BufferTrimmer.compute" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\ErosionTool\ErosionTexturer.shader" />
+    <None Include="Assets\StylizedWater2\Shaders\Libraries\Lighting.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\ThinOut.compute" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\NoisePainter.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_Lambert_4Splats.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\MaskPainter.shader" />
+    <None Include="Assets\StylizedWater2\Shaders\Libraries\Features.hlsl" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Shaders\CGIncludes\JCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\DirectionMask.shader" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Shaders\JupiterSky.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Splines\Runtime\Resources\Vista\Shaders\Graph\Path.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\CGIncludes\GriffinCG.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Blit01.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\Blur.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\LivePreview\GeometryLivePreview.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PCore.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\StampTool\StampToolCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\changelog.txt" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\RgbaMerge.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\SplatPainter.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Noise.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\PolygonMask.compute" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Combine.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Includes\Math.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Smooth.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\Splatter.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\SplineTool\PathPainterSplat.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PFresnel.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Convex.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_BlinnPhong_GradientLookup.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\BiomeDataBlit.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_Lambert_8Splats.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\BuiltinRP\WaterBasicBRP.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\BuiltinRP\BuiltinRP_ForwardBase.cginc" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\UniversalRP\RiverURP.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\PaintToolCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Utilities\CopyTexture.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\GeometryMask.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\UniversalRP\UniversalRP_SurfaceFunction.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\ElevationPainter.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PPostProcessingCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\BiomeTextureBlend.compute" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_PBR_VertexColor.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\BlitRange.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Voronoi.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\BuiltinRP\RiverBRP.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_BlinnPhong_ColorMap.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Remap.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\GradientMap.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Samples\Pinwheel Studio\Shaders\ThunderParticles.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\ThermalErosion.compute" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Utilities\UtilitiesCommon.cginc" />
+    <None Include="Assets\StylizedWater2\Shaders\Libraries\ForwardPass.hlsl" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Bending.hlsl" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Bending\GrassBendMesh.shader" />
+    <None Include="Assets\StylizedWater2\Shaders\Libraries\Tesselation.hlsl" />
+    <None Include="Assets\StylizedWater2\Shaders\Libraries\Common.hlsl" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Topographic\Topographic.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\ErosionHelper.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\AngularGradient.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\WeightBlend.shader" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Shaders\Internal\CopyTexture.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PDepth.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Terrace.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Utilities\InteractiveGrassVectorField.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\SplineTool\PathPainterMetallicSmoothness.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_Lambert_ColorMap.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Utilities\ChannelToGrayscale.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\LivePreview\LivePreviewCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\BuiltinRP\BuiltinRP_ForwardAdd.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\ColorBlend.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\AngularWarp.shader" />
+    <None Include="Assets\StylizedWater2\Shaders\Libraries\Fog.hlsl" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PWetLensCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\Slide.compute" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\changelog.txt" />
     <None Include="Assets\Dynamic Grass FX\Shaders\Grass.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Demo\Water.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Utilities\SolidColor.shader" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Shaders\CGIncludes\JSunMoon.cginc" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\PostProcessing\WetLensURP.shader" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Color.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\HoleOutput.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\WarpFilter.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Curve.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\WaterFlow.compute" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\LandslideHelper.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Transform2D.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\SubDivPainter.shader" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Shaders\CGIncludes\JOverheadCloud.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Foliage\GriffinBillboardCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Threshold.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\RangeSelect.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\PostProcessing\Underwater.shader" />
+    <None Include="Assets\StylizedWater2\Shaders\WaterTransparencyMask.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PFoam.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\LivePreview\GrassPreview.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_PBR_4Splats.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\InvertFilter.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\LivePreview\ErosionLivePreview.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\PolygonMaskFalloff.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\PainterCursorProjector.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\ErosionTool\ThermalErosion.compute" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PCaustic.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\ErosionTool\InitErosion.compute" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\SplineTool\SplineMask.shader" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Shaders\JupiterSkyShadow.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\SnowFall.compute" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\HydraulicErosion.compute" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\SmoothnessPainter.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Includes\CommonDataTypes.hlsl" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\HeightSamplingPainter.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\BuiltinRP\BuiltinRP_SurfaceFunction.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\TerrainPerPixelNormalMapRenderer.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\CGIncludes\GriffinGrassCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Includes\ComputeCommon.hlsl" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PReflection.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_Lambert_VertexColor.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\DirectionalWarp.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris Mini - Terrain To Mesh\Runtime\Shaders\SubDivisionMap.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PCommon.cginc" />
     <None Include="Assets\Stylized Grass Shader\Shaders\ShadowPass.hlsl" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\BuiltinRP\WaterAdvancedBRP.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\TextureToolCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Shape.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\AlbedoPainter.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\Landslide.compute" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Shaders\CGIncludes\JStars.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\PolarisHeightMapOutput.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Includes\Sampling.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\LayeredNoise.compute" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\Internal\SolidColor.shader" />
     <None Include="Assets\Stylized Grass Shader\Shaders\StylizedGrassShader.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\SplineTool\SplineGizmos.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\InstanceOutput.compute" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\WaterFlowHelper.shader" />
+    <None Include="Assets\StylizedWater2\Shaders\Libraries\Caustics.hlsl" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\NoiseMapGenerator.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\StampTool\TextureStamperMask.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\SteepnessMapGenerator.shader" />
+    <None Include="Assets\StylizedWater2\Shaders\Libraries\Input.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Includes\PatternGenerator.hlsl" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\UniversalRP\WaterAdvancedURP.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris Mini - Terrain To Mesh\Runtime\Shaders\BuiltinRP_PBR_4Splats.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Includes\Random.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\HeightOutput.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\RemapPainter.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\_CGIncludeTemplate.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Samples\Third Parties Notice.txt" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\BiomeMaskCombine.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\CurveFilter.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PRipple.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Foliage\BuiltinRP_Grass.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\DistributionMapGenerator.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Dots.compute" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Foliage\BuiltinRP_GrassInteractive.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\CrackHelper.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Splines\Runtime\Resources\Vista\Shaders\Graph\Ramp.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\PointGrid.compute" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Clamp.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Utilities\UnlitChannelMask.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\CGIncludes\GriffinSplatCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_PBR_GradientLookup.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\UniversalRP\WaterBackFaceURP.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\UniversalRP\UniversalRP_Forward.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Utilities\HeightMapDecodeGrayscale.shader" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Common.hlsl" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\HeightMapFromMesh.shader" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Wind.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Offset.compute" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\ValueCheck.shader" />
     <None Include="Assets\Stylized Grass Shader\Prefabs\Readme.txt" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\AlbedoOutput.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Shrink.compute" />
+    <None Include="Assets\StylizedWater2\Shaders\Libraries\Vertex.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\CrackTrail.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\MetallicSmoothnessOutput.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Utilities\SubDivisionVisualizer.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\LivePreview\VisibilityLivePreview2.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\QuadsFromPoints.compute" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\ErosionTool\HydraullicErosion.compute" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Line.shader" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Shaders\CGIncludes\JSkyGradient.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Samples\Pinwheel Studio\Shaders\Thunder.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Blur.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\BillboardTool\BillboardCreatorNormal.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\UniversalRP\WaterBasicURP.shader" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Input.hlsl" />
     <None Include="Assets\Stylized Grass Shader\Shaders\LightingPass.hlsl" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PWave.cginc" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\changelog.txt" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_BlinnPhong_4Splats4Normals.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\LivePreview\Mask4Channels.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Foliage\BuiltinRP_GrassBillboard.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Flatten.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\LivePreview\SubdivLivePreview2.shader" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Shaders\CGIncludes\JDetailOverlay.cginc" />
     <None Include="Assets\Stylized Grass Shader\Shaders\DepthPass.hlsl" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Utilities\DrawTextureArraySlice.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Sharpen.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\TerracePainter.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\ErosionTool\ApplyErosion.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Expand.compute" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Mountain.shader" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Shaders\CGIncludes\JHorizonCloud.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\DetailDensityOutput.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\UniversalRP\UniversalRP_Lighting.cginc" />
     <None Include="Assets\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
+    <None Include="Assets\PinwheelStudio\README - Low Poly World Creation Bundle.txt" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\BlurRadius.shader" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Bending\Common.hlsl" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\SplineTool\SplineToolCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_BlinnPhong_8Splats.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\_Template.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Blit.shader" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Shaders\CGIncludes\CGIncludeTemplate.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\BillboardTool\BillboardCreatorAtlas.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\BiomeBufferCopy.compute" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\TransformPoints.compute" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Utilities\GeometricalHeightmapRenderer.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\LivePreview\Wireframe.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\BlendMapGenerator.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\SnowFallHelper.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\MetallicPainter.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Splines\Runtime\Resources\Vista\Shaders\SplineExtract.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\LoadTexture.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\ContrastBrightness.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\VisibilityPainter.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_BlinnPhong_VertexColor.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\BufferCopy.compute" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Remap.compute" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PMeshNoise.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\ErosionTool\ErosionToolCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_PBR_4Splats4Normals.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\FlattenAt.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\StampTool\Stamper.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\ConstantHeight.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\AxialGradient.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_PBR_ColorMap.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Math.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Concave.shader" />
+    <None Include="Assets\URPTimeOfDay\Skybox\CustomLighting.hlsl" />
     <None Include="Assets\Dynamic Grass FX\Shaders\GrassTessellation.cginc" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\PostProcessing\UnderwaterURP.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\ErosionTool\ErosionDataView.shader" />
     <None Include="Assets\Stylized Grass Shader\Changelog.txt" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_Lambert_GradientLookup.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\SplineTool\PathPainterAlbedo.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\BiomeBufferBlend.compute" />
+    <None Include="Assets\StylizedWater2\Shaders\Libraries\Waves.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\SlopeMask.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_PBR_8Splats.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\RadialGradient.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris Mini - Terrain To Mesh\Runtime\Shaders\UtilitiesCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\PainterCursor.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\MaskSampler.compute" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\LivePreview\MaskVisualizer.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Rotation.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PRefraction.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\SplineTool\RampMaker.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\PaintTool\ConditionalPainting.cginc" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\TerrainNormalMapRenderer.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Foliage\TreeBillboard_NoASESupport.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\UnityHeightMapOutput.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\SplatsToAlbedo.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Includes\Geometry.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\AlphaMapsCombine.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Utilities\SubDivisionMap.shader" />
+    <None Include="Assets\URPTimeOfDay\Weather\Code\ToonShading.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\FalloffDetail.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\BuiltinRP\Terrain\BuiltinRP_Lambert_4Splats4Normals.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Append.compute" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\TextureTool\StepFilter.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PUnderwaterCommon.cginc" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\BuiltinRP\WaterBackfaceBRP.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\Internal\CopyTexture.shader" />
+    <None Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Runtime\Shaders\Internal\SolidColor.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\Utilities\HeightmapConverterEncodeRG.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\Internal\DepthOnly.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\HeightMask.shader" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Lighting.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista - Big World\Runtime\Resources\Vista\Shaders\Graph\Crack.compute" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Runtime\Shaders\CGIncludes\PLightAbsorption.cginc" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Spread.compute" />
+    <None Include="Assets\StylizedWater2\Shaders\Libraries\URP.hlsl" />
+    <None Include="Assets\PinwheelStudio\Vista\Runtime\Resources\Vista\Shaders\Graph\Levels.shader" />
+    <None Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Runtime\Shaders\Internal\ErosionTool\FetchWorldData.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -718,20 +1073,11 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity 2022.3.1f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="PsdPlugin">
-      <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
@@ -739,14 +1085,59 @@
     <Reference Include="Unity.Burst.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    <Reference Include="Unity.2D.Common.Path.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="PPv2URPConverters">
+      <HintPath>Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="PsdPlugin">
+      <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Common.Path.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
+    <Reference Include="Unity.Burst">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -772,29 +1163,14 @@
     <Reference Include="Unity.VisualScripting.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
@@ -808,17 +1184,11 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Collections">
-      <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
@@ -826,17 +1196,14 @@
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="PPv2URPConverters">
-      <HintPath>Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -844,20 +1211,11 @@
     <Reference Include="Unity.Searcher.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
@@ -868,13 +1226,69 @@
       <Project>{A45E4682-E069-BF6D-AB9C-4DC1D9ED7B22}</Project>
       <Name>sc.stylizedgrass.runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="sc.stylizedwater2.runtime.csproj">
+      <Project>{289A57BC-50A3-5F0B-0021-27EF28F32131}</Project>
+      <Name>sc.stylizedwater2.runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Polaris.Editor.csproj">
+      <Project>{0DC0B91B-3B46-9C36-29C2-5A9BCD070B19}</Project>
+      <Name>Pinwheel.Polaris.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.BigWorld.Runtime.csproj">
+      <Project>{37EF4361-7398-6030-6B1F-A6BEBF75FE50}</Project>
+      <Name>Pinwheel.Vista.BigWorld.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.PolarisMini.Runtime.csproj">
+      <Project>{E59AA212-069A-CB35-B328-EDE3CFBD724F}</Project>
+      <Name>Pinwheel.PolarisMini.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.Splines.Runtime.csproj">
+      <Project>{5CAA29FF-DC6B-CFFA-A7A8-D4002FB2AC6F}</Project>
+      <Name>Pinwheel.Vista.Splines.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.Runtime.csproj">
+      <Project>{4BAFE132-AD3F-674B-071B-F083C0AA9E3F}</Project>
+      <Name>Pinwheel.Vista.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.PolarisMini.Editor.csproj">
+      <Project>{8A96A5F9-6FCD-7F27-3638-EC669DE2F07D}</Project>
+      <Name>Pinwheel.PolarisMini.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="sc.stylizedgrass.editor.csproj">
       <Project>{FE825C5C-59CA-1C08-B398-0269BF6BBD49}</Project>
       <Name>sc.stylizedgrass.editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.Splines.Editor.csproj">
+      <Project>{D8836D83-C183-0597-B746-6C4A884039A4}</Project>
+      <Name>Pinwheel.Vista.Splines.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="sc.stylizedgrass.demo.runtime.csproj">
       <Project>{02B66BB9-6A46-7E80-1C1A-DA8E16E61A0D}</Project>
       <Name>sc.stylizedgrass.demo.runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.BigWorld.Editor.csproj">
+      <Project>{24F38DF0-40AA-688B-5C12-9B380FD610E6}</Project>
+      <Name>Pinwheel.Vista.BigWorld.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.stylizedwater2.editor.csproj">
+      <Project>{0AB4B584-EE99-894F-D123-C26F883473A3}</Project>
+      <Name>sc.stylizedwater2.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.Editor.csproj">
+      <Project>{8D9156CE-E4F8-DD93-2BCB-A0F45C469C3A}</Project>
+      <Name>Pinwheel.Vista.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Polaris.Runtime.csproj">
+      <Project>{E6225174-0315-6102-D6D8-199F207F2192}</Project>
+      <Name>Pinwheel.Polaris.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.HandPainting.Runtime.csproj">
+      <Project>{73767BC1-9B6E-16F0-B084-677213FD95FF}</Project>
+      <Name>Pinwheel.Vista.HandPainting.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.HandPainting.Editor.csproj">
+      <Project>{69A4B002-7436-3C22-9B2E-34A26DA0D423}</Project>
+      <Name>Pinwheel.Vista.HandPainting.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

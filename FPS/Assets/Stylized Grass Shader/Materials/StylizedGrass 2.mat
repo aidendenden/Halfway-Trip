@@ -13,10 +13,11 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ADVANCED_LIGHTING
+  - _ENVIRONMENTREFLECTIONS_OFF
   - _RECEIVE_SHADOWS_OFF
   - _SCALEMAP
+  - _SPECULARHIGHLIGHTS_OFF
   m_InvalidKeywords:
-  - _ENVIRONMENTREFLECTIONS_ON
   - _RECEIVESHADOWS_OFF
   - _SCALEMAP_ON
   m_LightmapFlags: 5
@@ -106,7 +107,7 @@ Material:
     - _Cutoff: 0.8
     - _Darkening: 0.487
     - _DstBlend: 0
-    - _EnvironmentReflections: 1
+    - _EnvironmentReflections: 0
     - _FadeAngleThreshold: 15
     - _FadingOn: 0
     - _GlossMapScale: 0
@@ -129,7 +130,7 @@ Material:
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularAmount: 0
-    - _SpecularHighlights: 1
+    - _SpecularHighlights: 0
     - _SpherifyNormals: 1
     - _SrcBlend: 1
     - _SubsurfaceIndirect: 0.25
@@ -137,7 +138,7 @@ Material:
     - _Surface: 0
     - _Translucency: 1
     - _TranslucencyDirect: 1
-    - _TranslucencyFalloff: 8
+    - _TranslucencyFalloff: 4
     - _TranslucencyIndirect: 0
     - _TranslucencyOffset: 0
     - _TwoSided: 0

@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2022_3_1;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_EDITOR_ONLY_COMPILATION</DefineConstants>
+    <DefineConstants>UNITY_2022_3_1;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;VISTA;POMINI;JUPITER;POSEIDON;POSEIDON_URP;GRIFFIN_EDITOR_COROUTINES;GRIFFIN;GRIFFIN_2021;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_EDITOR_ONLY_COMPILATION</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -58,7 +58,71 @@
     <Analyzer Include="C:\Program Files\Unity 2022.3.1f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Core\PEditorCommon.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Polaris Extensions\PWaterQuickSetupConfig.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Editor\Scripts\DayNightCycle\JDayNightCycleInspector.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Effects\PWaterFXProfileInspectorDrawer.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Editor\Scripts\Core\JPackageInitializer.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Core\PWaterProfileInspector.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Editor\Scripts\Core\JEditorCommon.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Editor\Scripts\Utilities\JTwoPaneWindow.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Core\PSelectionGridArgs.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Core\PPackageInitializer.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Editor\Scripts\Core\JSkyInspector.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Core\PTilesEditingGUIDrawer.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Core\PEditorMenus.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Core\PCompileLogger.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Effects\PWaterFXProfileInspector.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Editor\Scripts\Core\JCompileLogger.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Core\PWaterInspector.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Effects\PWaterFXInspector.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Polaris Extensions\PGriffinExtensionCommon.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Polaris Extensions\PWaterQuickSetupGriffinExtension.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Editor\Scripts\Core\JEditorMenus.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Core\PSplineToolConfig.cs" />
+    <Compile Include="Assets\PinwheelStudio\Polaris - Low Poly Terrain Engine\Editor\Shaders\GGetWorldToNormalizedMatrixNode.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Core\PSplineEditingGUIDrawer.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Editor\Scripts\DayNightCycle\JDayNightCycleProfileInspector.cs" />
+    <Compile Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Scripts\Core\PAreaEditingGUIDrawer.cs" />
+    <Compile Include="Assets\URPTimeOfDay\Scripts\Editor\TimeManagerEditor.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Editor\Scripts\Utilities\JCubemapCreatorWindow.cs" />
+    <Compile Include="Assets\PinwheelStudio\Jupiter - Procedural Sky\Editor\Scripts\Core\JSkyProfileInspector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\Shaders\PositionVisualize.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\Shaders\View2D.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Splines\Editor\Resources\Vista\Shaders\SplineMesh.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\GraphEditor.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\SubView.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\ViewportContainer.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\GraphView.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\StickyImage.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\Debug3D.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\Viewport.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\SearcherWindow.uss" />
+    <None Include="Assets\PinwheelStudio\Vista - Hand Painting\Editor\Resources\Vista\Shaders\BiomeMaskPainting.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\Shaders\Water.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\GroupView.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\Shaders\AxisGizmos3d.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\NodeView.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\Shaders\GetPixel.compute" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\Shaders\Visualize2D.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\StatusBar.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\Shaders\View3dAxis.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\PropertiesView.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\Shaders\Display3d.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Hand Painting\Editor\Resources\Vista\Shaders\PaintColorNode.shader" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Resizer.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\Shaders\View3dGridline.shader" />
+    <None Include="Assets\PinwheelStudio\Poseidon - Low Poly Water System\Editor\Shaders\WaveMaskVisualizer.shader" />
+    <None Include="Assets\PinwheelStudio\Vista - Hand Painting\Editor\Resources\Vista\Shaders\PaintMaskNode.shader" />
+    <None Include="Assets\URPTimeOfDay\Scripts\Editor\MyEditorStyle.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\Badge.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\RatingBox.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\Toolbar.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\RightPanel.uss" />
+    <None Include="Assets\PinwheelStudio\Vista\Editor\Resources\Vista\USS\Graph\UtilityButton.uss" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -730,20 +794,11 @@
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="PsdPlugin">
-      <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
@@ -751,14 +806,59 @@
     <Reference Include="Unity.Burst.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    <Reference Include="Unity.2D.Common.Path.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="PPv2URPConverters">
+      <HintPath>Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="PsdPlugin">
+      <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Common.Path.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
+    <Reference Include="Unity.Burst">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
@@ -784,29 +884,14 @@
     <Reference Include="Unity.VisualScripting.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
@@ -820,17 +905,11 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Collections">
-      <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
@@ -838,17 +917,14 @@
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="PPv2URPConverters">
-      <HintPath>Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -856,20 +932,11 @@
     <Reference Include="Unity.Searcher.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
@@ -879,6 +946,74 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{6CC92EE2-C97E-2137-C111-F092707B90B5}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.stylizedgrass.runtime.csproj">
+      <Project>{A45E4682-E069-BF6D-AB9C-4DC1D9ED7B22}</Project>
+      <Name>sc.stylizedgrass.runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.stylizedwater2.runtime.csproj">
+      <Project>{289A57BC-50A3-5F0B-0021-27EF28F32131}</Project>
+      <Name>sc.stylizedwater2.runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Polaris.Editor.csproj">
+      <Project>{0DC0B91B-3B46-9C36-29C2-5A9BCD070B19}</Project>
+      <Name>Pinwheel.Polaris.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.BigWorld.Runtime.csproj">
+      <Project>{37EF4361-7398-6030-6B1F-A6BEBF75FE50}</Project>
+      <Name>Pinwheel.Vista.BigWorld.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.PolarisMini.Runtime.csproj">
+      <Project>{E59AA212-069A-CB35-B328-EDE3CFBD724F}</Project>
+      <Name>Pinwheel.PolarisMini.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.Splines.Runtime.csproj">
+      <Project>{5CAA29FF-DC6B-CFFA-A7A8-D4002FB2AC6F}</Project>
+      <Name>Pinwheel.Vista.Splines.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.Runtime.csproj">
+      <Project>{4BAFE132-AD3F-674B-071B-F083C0AA9E3F}</Project>
+      <Name>Pinwheel.Vista.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.PolarisMini.Editor.csproj">
+      <Project>{8A96A5F9-6FCD-7F27-3638-EC669DE2F07D}</Project>
+      <Name>Pinwheel.PolarisMini.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.stylizedgrass.editor.csproj">
+      <Project>{FE825C5C-59CA-1C08-B398-0269BF6BBD49}</Project>
+      <Name>sc.stylizedgrass.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.Splines.Editor.csproj">
+      <Project>{D8836D83-C183-0597-B746-6C4A884039A4}</Project>
+      <Name>Pinwheel.Vista.Splines.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.stylizedgrass.demo.runtime.csproj">
+      <Project>{02B66BB9-6A46-7E80-1C1A-DA8E16E61A0D}</Project>
+      <Name>sc.stylizedgrass.demo.runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.BigWorld.Editor.csproj">
+      <Project>{24F38DF0-40AA-688B-5C12-9B380FD610E6}</Project>
+      <Name>Pinwheel.Vista.BigWorld.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.stylizedwater2.editor.csproj">
+      <Project>{0AB4B584-EE99-894F-D123-C26F883473A3}</Project>
+      <Name>sc.stylizedwater2.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.Editor.csproj">
+      <Project>{8D9156CE-E4F8-DD93-2BCB-A0F45C469C3A}</Project>
+      <Name>Pinwheel.Vista.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Polaris.Runtime.csproj">
+      <Project>{E6225174-0315-6102-D6D8-199F207F2192}</Project>
+      <Name>Pinwheel.Polaris.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.HandPainting.Runtime.csproj">
+      <Project>{73767BC1-9B6E-16F0-B084-677213FD95FF}</Project>
+      <Name>Pinwheel.Vista.HandPainting.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pinwheel.Vista.HandPainting.Editor.csproj">
+      <Project>{69A4B002-7436-3C22-9B2E-34A26DA0D423}</Project>
+      <Name>Pinwheel.Vista.HandPainting.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

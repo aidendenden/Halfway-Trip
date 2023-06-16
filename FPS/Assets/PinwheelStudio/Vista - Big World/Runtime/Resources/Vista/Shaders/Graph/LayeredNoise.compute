@@ -1,0 +1,52 @@
+#pragma kernel Main
+
+#include "../Includes/ShaderIncludes.hlsl"
+#include PATTERN_GENERATOR_HLSL
+
+RWTexture2D<float> _TargetRT;
+float2 _TextureSize;
+
+float4 _WorldBounds;
+float _Scale;
+float _Amplitude;
+int _NoiseType;
+int _Seed;
+
+#define PERLIN_RAW 0
+#define PERLIN_01 1
+#define BILLOW 2
+#define RIDGED 3
+
+
+float2 localToWorldPos(float2 localPos)
+{
+	float2 origin = _WorldBounds.xy;
+	float2 size = _WorldBounds.zw;
+	return lerp(origin, origin + size, localPos.xy);
+}
+
+float generateNoise(float2 localPos, float baseAmplitude)
+{
+	float2 pos;
+	float scale = _Scale;
+	float amplitude = baseAmplitude;
+	float noise = 0;
+	
+	pos = localToWorldPos(localPos);
+	pos = pos / scale;
+	noise = perlinNoise(pos, _Seed);
+	noise = (_NoiseType == PERLIN_RAW) * noise + (_NoiseType == PERLIN_01) * (1 - (noise * 0.5 + 0.5)) + (_NoiseType == BILLOW) * abs(noise) + (_NoiseType == RIDGED) * (1 - abs(noise));
+	noise *= amplitude;
+
+	return noise;
+}
+
+[numthreads(8, 1, 8)]
+void Main(uint3 id: SV_DispatchThreadID)
+{
+	float2 uv = id.xz / (_TextureSize.xy - 1);
+	float noise = generateNoise(uv, _Amplitude);
+
+	float oldValue = _TargetRT[id.xz];
+	_TargetRT[id.xz] = oldValue + noise;
+}
