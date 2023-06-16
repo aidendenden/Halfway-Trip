@@ -62,6 +62,8 @@
     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
     <Compile Include="Assets\Scripts\Managers\CameraMovement.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\Jump.cs" />
+    <Compile Include="Assets\Dynamic Grass FX\Demo\Scripts\Move.cs" />
+    <Compile Include="Assets\Dynamic Grass FX\Demo\Scripts\Rotate.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\Crouch.cs" />
     <Compile Include="Assets\Mini First Person Controller\Scripts\Components\GroundCheck.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
@@ -75,7 +77,24 @@
     <Compile Include="Assets\FarlandSkies\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Dynamic Grass FX\Shaders\Helpers.cginc" />
+    <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Bending.hlsl" />
+    <None Include="Assets\Stylized Grass Shader\Shaders\Bending\GrassBendMesh.shader" />
+    <None Include="Assets\Dynamic Grass FX\Shaders\Grass.shader" />
+    <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Color.hlsl" />
+    <None Include="Assets\Stylized Grass Shader\Shaders\ShadowPass.hlsl" />
+    <None Include="Assets\Stylized Grass Shader\Shaders\StylizedGrassShader.shader" />
+    <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Common.hlsl" />
+    <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Wind.hlsl" />
+    <None Include="Assets\Stylized Grass Shader\Prefabs\Readme.txt" />
+    <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Input.hlsl" />
+    <None Include="Assets\Stylized Grass Shader\Shaders\LightingPass.hlsl" />
+    <None Include="Assets\Stylized Grass Shader\Shaders\DepthPass.hlsl" />
     <None Include="Assets\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
+    <None Include="Assets\Stylized Grass Shader\Shaders\Bending\Common.hlsl" />
+    <None Include="Assets\Dynamic Grass FX\Shaders\GrassTessellation.cginc" />
+    <None Include="Assets\Stylized Grass Shader\Changelog.txt" />
+    <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Lighting.hlsl" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -845,6 +864,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="sc.stylizedgrass.runtime.csproj">
+      <Project>{A45E4682-E069-BF6D-AB9C-4DC1D9ED7B22}</Project>
+      <Name>sc.stylizedgrass.runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.stylizedgrass.editor.csproj">
+      <Project>{FE825C5C-59CA-1C08-B398-0269BF6BBD49}</Project>
+      <Name>sc.stylizedgrass.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="sc.stylizedgrass.demo.runtime.csproj">
+      <Project>{02B66BB9-6A46-7E80-1C1A-DA8E16E61A0D}</Project>
+      <Name>sc.stylizedgrass.demo.runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
