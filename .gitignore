@@ -1,3 +1,6 @@
 ﻿FPS/Library
 FPS/Logs
 FPS/UserSettings
+FPS/Assembly-CSharp.csproj
+FPS/Assembly-CSharp-Editor.csproj
+FPS/FPS.sln
