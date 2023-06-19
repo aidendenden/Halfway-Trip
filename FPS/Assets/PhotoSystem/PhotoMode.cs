@@ -16,6 +16,7 @@ public class PhotoMode : MonoBehaviour {
 	public Image galleryBigImage;
 	public GameObject galleryContent;
 	public GameObject thumbnailPrefab;
+	public Camera camera;
 	private string currentShot;
 
 	void Start(){
@@ -43,12 +44,12 @@ public class PhotoMode : MonoBehaviour {
 		int resWidth = Mathf.RoundToInt (Screen.width * shotScale);
 		int resHeight = Mathf.RoundToInt (Screen.height * shotScale);
 		RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
-		GetComponent<Camera>().targetTexture = rt;
+		camera.GetComponent<Camera>().targetTexture = rt;
 		Texture2D screenShot = new Texture2D(resWidth, resHeight, TextureFormat.ARGB32, false);
-		GetComponent<Camera>().Render();
+		camera.GetComponent<Camera>().Render();
 		RenderTexture.active = rt;
 		screenShot.ReadPixels(new Rect(0, 0, resWidth, resHeight), 0, 0);
-		GetComponent<Camera>().targetTexture = null;
+		camera.GetComponent<Camera>().targetTexture = null;
 		RenderTexture.active = null; 
 		Destroy(rt);
 		//如果想保存jpg，就这样写
