@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -75,11 +75,11 @@ public class PhotoMode : MonoBehaviour {
 			if (basePanel.activeSelf) {
 				basePanel.SetActive (false);
 				photoModePanel.SetActive (true);
-				GetComponent<FlyCamera> ().enabled = true;
+				//GetComponent<FlyCamera> ().enabled = true;
 			} else {
 				basePanel.SetActive (true);
 				photoModePanel.SetActive (false);
-				GetComponent<FlyCamera> ().enabled = false;
+				//GetComponent<FlyCamera> ().enabled = false;
 			}
 		}
 
@@ -100,7 +100,7 @@ public class PhotoMode : MonoBehaviour {
 		if (Input.GetKeyDown("t")&&photoModePanel.activeSelf) 
 		{
 			Shot ();
-			GetComponent<FlyCamera> ().enabled = false;
+			//GetComponent<FlyCamera> ().enabled = false;
 		}
 
 		//如果玩家处于保存模式或画廊模式，便只能返回
@@ -126,7 +126,7 @@ public class PhotoMode : MonoBehaviour {
 		Debug.Log(string.Format("Screenshot saved as {0}", Application.dataPath + "/" + screenshotFolderName + "/" + System.IO.Path.GetFileName (currentShot)));
 		photoModePanel.SetActive (true);
 		photoSavePanel.SetActive (false);
-		GetComponent<FlyCamera> ().enabled = true;
+		//GetComponent<FlyCamera> ().enabled = true;
 		Screen.lockCursor = true;
 	}
 
