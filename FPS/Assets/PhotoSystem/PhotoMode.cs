@@ -96,8 +96,8 @@ public class PhotoMode : MonoBehaviour {
 			}
 		}
 
-		//如果玩家处于照片模式，可以按t截屏
-		if (Input.GetKeyDown("t")&&photoModePanel.activeSelf) 
+		//如果玩家处于照片模式，可以点鼠标左键截屏
+		if (Input.GetMouseButtonDown(0)&&photoModePanel.activeSelf) 
 		{
 			Shot ();
 			//GetComponent<FlyCamera> ().enabled = false;
