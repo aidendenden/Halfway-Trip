@@ -2,8 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+ using UnityEngine.Serialization;
 
-public class PhotoMode : MonoBehaviour {
+ public class PhotoMode : MonoBehaviour {
 
 	public AudioClip shotClip;
 	public string screenshotFolderName = "Screenshots";
@@ -16,7 +17,8 @@ public class PhotoMode : MonoBehaviour {
 	public Image galleryBigImage;
 	public GameObject galleryContent;
 	public GameObject thumbnailPrefab;
-	public Camera camera;
+	public Camera photoCamera;
+	public Camera playerCamera;
 	private string currentShot;
 
 	void Start(){
@@ -44,12 +46,12 @@ public class PhotoMode : MonoBehaviour {
 		int resWidth = Mathf.RoundToInt (Screen.width * shotScale);
 		int resHeight = Mathf.RoundToInt (Screen.height * shotScale);
 		RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
-		camera.GetComponent<Camera>().targetTexture = rt;
+		photoCamera.GetComponent<Camera>().targetTexture = rt;
 		Texture2D screenShot = new Texture2D(resWidth, resHeight, TextureFormat.ARGB32, false);
-		camera.GetComponent<Camera>().Render();
+		photoCamera.GetComponent<Camera>().Render();
 		RenderTexture.active = rt;
 		screenShot.ReadPixels(new Rect(0, 0, resWidth, resHeight), 0, 0);
-		camera.GetComponent<Camera>().targetTexture = null;
+		photoCamera.GetComponent<Camera>().targetTexture = null;
 		RenderTexture.active = null; 
 		Destroy(rt);
 		//如果想保存jpg，就这样写
@@ -75,10 +77,14 @@ public class PhotoMode : MonoBehaviour {
 			if (basePanel.activeSelf) {
 				basePanel.SetActive (false);
 				photoModePanel.SetActive (true);
+				playerCamera.gameObject.SetActive(false);
+				photoCamera.gameObject.SetActive(true);
 				//GetComponent<FlyCamera> ().enabled = true;
 			} else {
 				basePanel.SetActive (true);
 				photoModePanel.SetActive (false);
+				playerCamera.gameObject.SetActive(true);
+				photoCamera.gameObject.SetActive(false);
 				//GetComponent<FlyCamera> ().enabled = false;
 			}
 		}
