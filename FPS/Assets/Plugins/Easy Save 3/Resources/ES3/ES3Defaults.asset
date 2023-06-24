@@ -38,6 +38,7 @@ MonoBehaviour:
     - Pinwheel.Vista.HandPainting.Runtime
     - Pinwheel.Vista.Runtime
     - Pinwheel.Vista.Splines.Runtime
+    - Purchasing.Common
     - sc.stylizedgrass.demo.runtime
     - sc.stylizedgrass.runtime
     - sc.stylizedwater2.runtime
