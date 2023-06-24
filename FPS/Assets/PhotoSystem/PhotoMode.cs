@@ -19,6 +19,7 @@ using UnityEngine.EventSystems;
 	public GameObject thumbnailPrefab;
 	public Camera photoCamera;
 	public Camera playerCamera;
+	public ChangeItem _changeItem;
 	private string currentShot;
 
 	void Start(){
@@ -73,7 +74,7 @@ using UnityEngine.EventSystems;
 
 	void LateUpdate() {
 		//在播放和照片模式之间切换
-		if (Input.GetKeyDown ("p")&&!galleryPanel.activeSelf&&!photoSavePanel.activeSelf) {
+		if (Input.GetMouseButtonDown(1) && !galleryPanel.activeSelf&&!photoSavePanel.activeSelf && _changeItem.SelectedItem == 2) {
 			if (basePanel.activeSelf) {
 				basePanel.SetActive (false);
 				photoModePanel.SetActive (true);
@@ -89,7 +90,7 @@ using UnityEngine.EventSystems;
 			}
 		}
 
-		if (Input.GetKeyDown ("g")&&!photoModePanel.activeSelf&&!photoSavePanel.activeSelf) {
+		if (Input.GetMouseButtonDown(1) && !photoModePanel.activeSelf&&!photoSavePanel.activeSelf&&_changeItem.SelectedItem==3) {
 			if (!galleryPanel.activeSelf) {
 				LoadGallery (galleryContent);
 				basePanel.SetActive (false);
@@ -108,6 +109,29 @@ using UnityEngine.EventSystems;
 			Shot ();
 			//GetComponent<FlyCamera> ().enabled = false;
 		}
+
+		if (Input.GetAxis("Mouse ScrollWheel")!=0&& photoModePanel.activeSelf)
+		{
+			var f = Input.GetAxis("Mouse ScrollWheel");
+			if (f > 0)
+			{
+				if (photoCamera.fieldOfView - f * 10 >= 30 ) {
+					photoCamera.fieldOfView -= f * 10;
+					Debug.Log(f * 10 + "BIG");
+				}
+			}
+
+			else
+			{
+				if (photoCamera.fieldOfView - f * 10 <= 75 )
+				{
+					photoCamera.fieldOfView -= f * 10;
+					Debug.Log(f * 10 + "Samll");
+				}
+			}
+			//GetComponent<FlyCamera> ().enabled = false;
+		}
+		
 
 		//如果玩家处于保存模式或画廊模式，便只能返回
 		if (Input.GetKeyDown(KeyCode.Escape)&&(photoSavePanel.activeSelf || galleryPanel.activeSelf)) {
