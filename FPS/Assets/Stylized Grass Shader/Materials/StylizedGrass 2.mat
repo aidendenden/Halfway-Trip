@@ -17,9 +17,7 @@ Material:
   - _RECEIVE_SHADOWS_OFF
   - _SCALEMAP
   - _SPECULARHIGHLIGHTS_OFF
-  m_InvalidKeywords:
-  - _RECEIVESHADOWS_OFF
-  - _SCALEMAP_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -31,7 +29,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: fb70c56f94a79f84a9ee5804371a1574, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6caaa2a6a3f76e34d913a92b24bf6a29, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:

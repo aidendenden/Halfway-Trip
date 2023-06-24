@@ -38,11 +38,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Cloud_Normal:
-        m_Texture: {fileID: 2800000, guid: 2cc632972e2f3cf428cd35279cb0bd9a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 097530836d93b4745b20af9870e2784f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cloud_Texture:
-        m_Texture: {fileID: 2800000, guid: 5e6f3c6007c6baa4caa70ec7273d7e31, type: 3}
+        m_Texture: {fileID: 2800000, guid: 47898b428fa91c543b1448022ff5334f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Moon_Texture:
@@ -95,7 +95,7 @@ Material:
     - _QueueOffset: 0
     - _SkyIntensity: 0.8
     - _Stars_Fadeout: 3
-    - _Stars_Intensity: 0
+    - _Stars_Intensity: 0.8
     - _Sun_Exponent: 3
     - _Sun_Radius_01: 0.03
     - _Sun_Radius_02: 0.05
@@ -108,7 +108,7 @@ Material:
     - _Color_Low: {r: 0, g: 0, b: 0, a: 0}
     - _Color_Middle: {r: 0.46391067, g: 0.47365612, b: 0.7075472, a: 0}
     - _Color_Top: {r: 0.021493427, g: 0.16083731, b: 0.6509434, a: 0}
-    - _Day_Color_Low: {r: 0.2979708, g: 0.31703442, b: 0.6792453, a: 1}
+    - _Day_Color_Low: {r: 0.8301887, g: 0.4816661, b: 0.7790721, a: 1}
     - _Day_Color_Middle: {r: 0, g: 0.09019608, b: 0.3764706, a: 1}
     - _Day_Color_Top: {r: 0.007843138, g: 0.039215688, b: 0.14117648, a: 1}
     - _Moon_Color: {r: 0.6509434, g: 0.6274735, b: 0.5250534, a: 1}
@@ -119,7 +119,7 @@ Material:
     - _Night_Color_Middle: {r: 0.007843138, g: 0.011764706, b: 0.019607844, a: 1}
     - _Night_Color_Top: {r: 0, g: 0, b: 0, a: 1}
     - _Stars_Speed: {r: -0.005, g: 0.005, b: 0, a: 0}
-    - _Sun_Direction: {r: -0.38958603, g: 0.62677693, b: 0.6748136, a: 0}
+    - _Sun_Direction: {r: 0.06143576, g: -0.9924226, b: -0.106409885, a: 0}
     - _Vector2: {r: 0, g: 0.01, b: 0, a: 0}
     - _Vector3: {r: 0, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
