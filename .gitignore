@@ -31,3 +31,17 @@ FPS/ProjectSettings/ProjectVersion.txt
 FPS/Assembly-CSharp-Editor-firstpass.csproj
 FPS/Assembly-CSharp-firstpass.csproj
 FPS/obj
+FPS/.vs
+FPS/.vs
+FPS/asset-store-tools-editor.csproj
+FPS/Atlas.WebClient.Editor.csproj
+FPS/glTFast.csproj
+FPS/glTFast.dots.csproj
+FPS/glTFast.Editor.csproj
+FPS/glTFast.Editor.Tests.csproj
+FPS/glTFast.Export.csproj
+FPS/Polyhive.Editor.csproj
+FPS/XDPaint.csproj
+FPS/XDPaint.Editor.csproj
+FPS/ProjectSettings
+FPS/.vs

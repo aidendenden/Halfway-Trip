@@ -32,16 +32,11 @@ MonoBehaviour:
     assemblyNames:
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
-    - Pinwheel.Polaris.Runtime
-    - Pinwheel.PolarisMini.Runtime
-    - Pinwheel.Vista.BigWorld.Runtime
-    - Pinwheel.Vista.HandPainting.Runtime
-    - Pinwheel.Vista.Runtime
-    - Pinwheel.Vista.Splines.Runtime
     - Purchasing.Common
     - sc.stylizedgrass.demo.runtime
     - sc.stylizedgrass.runtime
     - sc.stylizedwater2.runtime
+    - XDPaint
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
