@@ -398,7 +398,7 @@ MonoBehaviour:
   inputManager: {fileID: 476127170}
   rb: {fileID: 476127171}
   speed: 10
-  runSpeed: 15
+  runSpeed: 5
   jumpForce: 200
 --- !u!114 &476127170
 MonoBehaviour:
@@ -420,7 +420,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476127167}
   serializedVersion: 4
-  m_Mass: 0.0000001
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -436,9 +436,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!136 &476127172
 CapsuleCollider:
   m_ObjectHideFlags: 0
