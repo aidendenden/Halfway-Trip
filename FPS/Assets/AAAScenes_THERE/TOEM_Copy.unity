@@ -3414,7 +3414,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8516867145470758965, guid: 6823701c0a1b57d4b9b08f3afa059c09,
         type: 3}
+      propertyPath: m_HDR
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516867145470758965, guid: 6823701c0a1b57d4b9b08f3afa059c09,
+        type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516867145470758965, guid: 6823701c0a1b57d4b9b08f3afa059c09,
+        type: 3}
+      propertyPath: m_AllowMSAA
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8516867145470758965, guid: 6823701c0a1b57d4b9b08f3afa059c09,
@@ -3435,7 +3445,7 @@ PrefabInstance:
     - target: {fileID: 8516867145470758965, guid: 6823701c0a1b57d4b9b08f3afa059c09,
         type: 3}
       propertyPath: m_TargetDisplay
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8516867145470758965, guid: 6823701c0a1b57d4b9b08f3afa059c09,
         type: 3}
@@ -3465,7 +3475,7 @@ PrefabInstance:
     - target: {fileID: 8516867145470758971, guid: 6823701c0a1b57d4b9b08f3afa059c09,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3570,7 +3580,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 1
+  m_VolumeFrameworkUpdateModeOption: 0
   m_RenderPostProcessing: 1
   m_Antialiasing: 2
   m_AntialiasingQuality: 2

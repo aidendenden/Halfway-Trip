@@ -95,7 +95,7 @@ Material:
     - _QueueOffset: 0
     - _SkyIntensity: 0.8
     - _Stars_Fadeout: 3
-    - _Stars_Intensity: 0
+    - _Stars_Intensity: 0.70539826
     - _Sun_Exponent: 3
     - _Sun_Radius_01: 0.03
     - _Sun_Radius_02: 0.05
@@ -108,7 +108,7 @@ Material:
     - _Color_Low: {r: 0, g: 0, b: 0, a: 0}
     - _Color_Middle: {r: 0.46391067, g: 0.47365612, b: 0.7075472, a: 0}
     - _Color_Top: {r: 0.021493427, g: 0.16083731, b: 0.6509434, a: 0}
-    - _Day_Color_Low: {r: 0.2979708, g: 0.31703442, b: 0.6792453, a: 1}
+    - _Day_Color_Low: {r: 0.7672528, g: 0.46219805, b: 0.76726735, a: 1}
     - _Day_Color_Middle: {r: 0, g: 0.09019608, b: 0.3764706, a: 1}
     - _Day_Color_Top: {r: 0.007843138, g: 0.039215688, b: 0.14117648, a: 1}
     - _Moon_Color: {r: 0.6509434, g: 0.6274735, b: 0.5250534, a: 1}
@@ -119,7 +119,7 @@ Material:
     - _Night_Color_Middle: {r: 0.007843138, g: 0.011764706, b: 0.019607844, a: 1}
     - _Night_Color_Top: {r: 0, g: 0, b: 0, a: 1}
     - _Stars_Speed: {r: -0.005, g: 0.005, b: 0, a: 0}
-    - _Sun_Direction: {r: -0.3153478, g: 0.7760542, b: 0.54616475, a: 0}
+    - _Sun_Direction: {r: 0.49246803, g: -0.17321433, b: -0.8529197, a: 0}
     - _Vector2: {r: 0, g: 0.01, b: 0, a: 0}
     - _Vector3: {r: 0, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
