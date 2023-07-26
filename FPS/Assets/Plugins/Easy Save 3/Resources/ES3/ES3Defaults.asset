@@ -32,6 +32,7 @@ MonoBehaviour:
     assemblyNames:
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
+    - Cinemachine
     - Purchasing.Common
     - sc.stylizedgrass.demo.runtime
     - sc.stylizedgrass.runtime

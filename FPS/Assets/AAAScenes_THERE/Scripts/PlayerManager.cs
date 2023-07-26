@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    //½»Á÷ÖÐÐÄ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public ChangeItem _changeItem;
     public PhotoMode _photoMode;
-    public FirstPersonController _firstPersonController;
+    
 
     private void Update()
     {
