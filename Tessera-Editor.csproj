@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{942a0324-e2ae-f1f0-69e7-0830ca638ce7}</ProjectGuid>
+    <ProjectGuid>{395d7f79-aca3-8e4d-a812-79d78d552b93}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -345,13 +345,13 @@
      <HintPath>D:\UnityEditor\2022.3.5f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
      </Reference>
      <Reference Include="TesseraDummy">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Tessera\Runtime\TesseraDummy.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Assets\Tessera\Runtime\TesseraDummy.dll</HintPath>
      </Reference>
      <Reference Include="Sylves">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Tessera\Lib\Sylves.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Assets\Tessera\Lib\Sylves.dll</HintPath>
      </Reference>
      <Reference Include="mscorlib">
      <HintPath>D:\UnityEditor\2022.3.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
@@ -729,21 +729,21 @@
      <HintPath>D:\UnityEditor\2022.3.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.TestRunner">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.TestRunner">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Tessera.csproj">
-      <Project>{5d5f9632-6fa0-2b1c-06db-01aa828ade58}</Project>
+      <Project>{0e8b4445-faec-19fd-b7d4-a7ce31c052d5}</Project>
       <Name>Tessera</Name>
     </ProjectReference>
   </ItemGroup>

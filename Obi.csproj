@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{eedb38b9-9d51-cd9d-5496-f467023c2a46}</ProjectGuid>
+    <ProjectGuid>{a2a861cb-664f-8052-523e-d7a9b3750d8e}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -49,8 +49,8 @@
      <Compile Include="Assets\Obi\Scripts\Cloth\Actors\ObiTearableCloth.cs" />
      <Compile Include="Assets\Obi\Scripts\Fluid\DataStructures\ObiEmitterShape.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\DataStructures\NativeList\ObiNativeByteList.cs" />
-     <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\Constraints\ColliderCollision\BurstColliderFrictionConstraintsBatch.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\DataStructures\BurstAabb.cs" />
+     <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\Constraints\ColliderCollision\BurstColliderFrictionConstraintsBatch.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Oni\Constraints\BendTwist\OniBendTwistConstraintsBatchImpl.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Collisions\ObiRigidbody2D.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Collisions\ObiCollider2D.cs" />
@@ -75,9 +75,9 @@
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\Solver\UpdatePrincipalAxisJob.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Collisions\ObiColliderBase.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\Collisions\BurstBox.cs" />
+     <Compile Include="Assets\Obi\Scripts\Common\Utils\Forces\ObiExternalForce.cs" />
      <Compile Include="Assets\Obi\Scripts\Fluid\Blueprints\ObiFluidEmitterBlueprint.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Collisions\ColliderTrackers\Trackers3D\ObiBoxShapeTracker.cs" />
-     <Compile Include="Assets\Obi\Scripts\Common\Utils\Forces\ObiExternalForce.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Blueprints\Constraints\Groups\ObiBendConstraintsData.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Interface\Constraints\IVolumeConstraintsBatchImpl.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\DataStructures\NativeMultilevelGrid.cs" />
@@ -154,8 +154,8 @@
      <Compile Include="Assets\Obi\Scripts\Common\Blueprints\Constraints\Batches\ObiSkinConstraintsBatch.cs" />
      <Compile Include="Assets\Obi\Scripts\Softbody\Actors\ObiSoftbody.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Collisions\ObiRigidbodyBase.cs" />
-     <Compile Include="Assets\Obi\Scripts\Common\Collisions\ColliderTrackers\Trackers3D\ObiSphereShapeTracker.cs" />
      <Compile Include="Assets\Obi\Scripts\Cloth\Rendering\ObiClothRendererBase.cs" />
+     <Compile Include="Assets\Obi\Scripts\Common\Collisions\ColliderTrackers\Trackers3D\ObiSphereShapeTracker.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Utils\ObiParticleAttachment.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Collisions\ObiEdgeMeshContainer.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\DataStructures\Queries\QueryShape.cs" />
@@ -175,8 +175,8 @@
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\Constraints\Stitch\BurstStitchConstraints.cs" />
      <Compile Include="Assets\Obi\Scripts\RopeAndRod\DataStructures\Path\DataChannels\ObiNormalDataChannel.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\DataStructures\NativeList\ObiNativeQuaternionList.cs" />
-     <Compile Include="Assets\Obi\Scripts\Common\DataStructures\ColliderRigidbody.cs" />
      <Compile Include="Assets\Obi\Scripts\Cloth\Blueprints\ObiClothBlueprintBase.cs" />
+     <Compile Include="Assets\Obi\Scripts\Common\DataStructures\ColliderRigidbody.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\DataStructures\ConstraintBatcher\FluidInteractionProvider.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Null\NullBackend.cs" />
      <Compile Include="Assets\Obi\Scripts\RopeAndRod\Rendering\ObiRopeLineRenderer.cs" />
@@ -244,9 +244,9 @@
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\Collisions\BurstColliderWorld.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Blueprints\Constraints\Groups\ObiDistanceConstraintsData.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\DataStructures\ObiList.cs" />
+     <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\DataStructures\BurstCellSpan.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Collisions\ObiDistanceFieldContainer.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Interface\Constraints\IDensityConstraintsBatchImpl.cs" />
-     <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\DataStructures\BurstCellSpan.cs" />
      <Compile Include="Assets\Obi\Scripts\RopeAndRod\DataStructures\Path\ObiPathSmoother.cs" />
      <Compile Include="Assets\Obi\Scripts\RopeAndRod\DataStructures\Path\Interpolators\ObiColorInterpolator3D.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\Solver\BoundsReductionJob.cs" />
@@ -284,8 +284,8 @@
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\Solver\InterpolationJob.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\DataStructures\BurstAffineTransform.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\DataStructures\NativeList\ObiNativeCollisionMaterialList.cs" />
-     <Compile Include="Assets\Obi\Scripts\Common\Rendering\ObiInstancedParticleRenderer.cs" />
      <Compile Include="Assets\Obi\Scripts\Softbody\Blueprints\ObiSoftbodyBlueprintBase.cs" />
+     <Compile Include="Assets\Obi\Scripts\Common\Rendering\ObiInstancedParticleRenderer.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\DataStructures\NativeList\ObiNativeInt4List.cs" />
      <Compile Include="Assets\Obi\Scripts\Fluid\DataStructures\ObiEmitterShapeDisk.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\DataStructures\NativeList\ObiNativeList.cs" />
@@ -323,12 +323,12 @@
      <Compile Include="Assets\Obi\Scripts\Common\DataStructures\NativeList\ObiNativeBoneWeightList.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\DataStructures\VInt4.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Interface\Constraints\IParticleCollisionConstraintsBatchImpl.cs" />
-     <Compile Include="Assets\Obi\Scripts\Common\Backends\Oni\Constraints\OniConstraintsImpl.cs" />
      <Compile Include="Assets\Obi\Scripts\RopeAndRod\Utils\ObiRopeAttach.cs" />
+     <Compile Include="Assets\Obi\Scripts\Common\Backends\Oni\Constraints\OniConstraintsImpl.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\DataStructures\NativeList\ObiNativeFloatList.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Utils\ObiStitcher.cs" />
-     <Compile Include="Assets\Obi\Scripts\Common\DataStructures\NativeList\ObiNativeContactShapeList.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\DataStructures\ConstraintBatcher\BatchLUT.cs" />
+     <Compile Include="Assets\Obi\Scripts\Common\DataStructures\NativeList\ObiNativeContactShapeList.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Interface\Constraints\IChainConstraintsBatchImpl.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Burst\Collisions\IBurstCollider.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Collisions\ObiCollider.cs" />
@@ -391,8 +391,8 @@
      <Compile Include="Assets\Obi\Scripts\Fluid\DataStructures\ObiEmitterShapeEdge.cs" />
      <Compile Include="Assets\Obi\Scripts\Fluid\DataStructures\ObiEmitterShapeImage.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Updaters\ObiLateUpdater.cs" />
-     <Compile Include="Assets\Obi\Scripts\Common\DataStructures\NativeList\ObiNativeDistanceFieldHeaderList.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Utils\ObiFluidSplatter.cs" />
+     <Compile Include="Assets\Obi\Scripts\Common\DataStructures\NativeList\ObiNativeDistanceFieldHeaderList.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Oni\Constraints\Bend\OniBendConstraintsImpl.cs" />
      <Compile Include="Assets\Obi\Scripts\RopeAndRod\DataStructures\Path\Interpolators\ObiCatmullRomInterpolator.cs" />
      <Compile Include="Assets\Obi\Scripts\Common\Backends\Interface\Constraints\IColliderFrictionConstraintsBatchImpl.cs" />
@@ -764,50 +764,50 @@
      <Reference Include="UnityEditor.WindowsStandalone.Extensions">
      <HintPath>D:\UnityEditor\2022.3.5f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
+     <Reference Include="DemiEditor">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.YamlDotNet">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Collections.LowLevel.ILSupport">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.IonicZip">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.TextureAssets">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-     </Reference>
-     <Reference Include="DemiEditor">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTween">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTweenPro">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
-     </Reference>
-     <Reference Include="DemiLib">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTweenProEditor">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTweenEditor">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
-     </Reference>
-     <Reference Include="Sylves">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Tessera\Lib\Sylves.dll</HintPath>
-     </Reference>
-     <Reference Include="TesseraDummy">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Tessera\Runtime\TesseraDummy.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="DeBroglie">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Tessera\Lib\DeBroglie.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Assets\Tessera\Lib\DeBroglie.dll</HintPath>
+     </Reference>
+     <Reference Include="DemiLib">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTweenEditor">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTweenProEditor">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.IonicZip">
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTween">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTweenPro">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.TextureAssets">
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+     </Reference>
+     <Reference Include="Sylves">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Tessera\Lib\Sylves.dll</HintPath>
+     </Reference>
+     <Reference Include="TesseraDummy">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Tessera\Runtime\TesseraDummy.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>D:\UnityEditor\2022.3.5f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -1176,31 +1176,31 @@
      <HintPath>D:\UnityEditor\2022.3.5f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Collections">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{a5126698-cb8f-fa8c-e6ab-9d3a1711de25}</ProjectGuid>
+    <ProjectGuid>{4fdd8b52-fd2b-f867-a23c-5ad887681c8f}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -368,50 +368,50 @@
      <Reference Include="UnityEditor.WindowsStandalone.Extensions">
      <HintPath>D:\UnityEditor\2022.3.5f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
+     <Reference Include="DemiEditor">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.YamlDotNet">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Collections.LowLevel.ILSupport">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.IonicZip">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.TextureAssets">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-     </Reference>
-     <Reference Include="DemiEditor">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTween">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTweenPro">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
-     </Reference>
-     <Reference Include="DemiLib">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTweenProEditor">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTweenEditor">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
-     </Reference>
-     <Reference Include="Sylves">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Tessera\Lib\Sylves.dll</HintPath>
-     </Reference>
-     <Reference Include="TesseraDummy">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Tessera\Runtime\TesseraDummy.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="DeBroglie">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Tessera\Lib\DeBroglie.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Assets\Tessera\Lib\DeBroglie.dll</HintPath>
+     </Reference>
+     <Reference Include="DemiLib">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTweenEditor">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTweenProEditor">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.IonicZip">
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTween">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTweenPro">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.TextureAssets">
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+     </Reference>
+     <Reference Include="Sylves">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Tessera\Lib\Sylves.dll</HintPath>
+     </Reference>
+     <Reference Include="TesseraDummy">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Tessera\Runtime\TesseraDummy.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>D:\UnityEditor\2022.3.5f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -780,15 +780,15 @@
      <HintPath>D:\UnityEditor\2022.3.5f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Lofelt.NiceVibrations.csproj">
-      <Project>{1dbbde93-0688-a0df-3cf6-4cd253564c7d}</Project>
+      <Project>{51a17999-db27-0037-6057-b9a76757a69c}</Project>
       <Name>Lofelt.NiceVibrations</Name>
     </ProjectReference>
   </ItemGroup>

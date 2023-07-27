@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6ee56fe9-14a6-4d61-07a9-41ed70c6bc77}</ProjectGuid>
+    <ProjectGuid>{2b601a24-f3c3-52e4-7118-73a9f40903ed}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -336,31 +336,31 @@
      <HintPath>D:\UnityEditor\2022.3.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Collections.LowLevel.ILSupport">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTween">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTweenPro">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
-     </Reference>
-     <Reference Include="DemiLib">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
-     </Reference>
-     <Reference Include="Sylves">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Tessera\Lib\Sylves.dll</HintPath>
-     </Reference>
-     <Reference Include="TesseraDummy">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Tessera\Runtime\TesseraDummy.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="DeBroglie">
-     <HintPath>D:\fork\NEW GAME NIX\Assets\Tessera\Lib\DeBroglie.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Assets\Tessera\Lib\DeBroglie.dll</HintPath>
+     </Reference>
+     <Reference Include="DemiLib">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTween">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+     <HintPath>D:\fork\Halfway-Trip\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTweenPro">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
+     </Reference>
+     <Reference Include="Sylves">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Tessera\Lib\Sylves.dll</HintPath>
+     </Reference>
+     <Reference Include="TesseraDummy">
+     <HintPath>D:\fork\Halfway-Trip\Assets\Tessera\Runtime\TesseraDummy.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>D:\UnityEditor\2022.3.5f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -729,346 +729,346 @@
      <HintPath>D:\UnityEditor\2022.3.5f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.IK.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualEffectGraph.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="com.unity.cinemachine.editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Postprocessing.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.AI.Navigation">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Path.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.AI.Navigation">
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.PixelPerfect.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Aseprite.Common">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Formats.Fbx.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Formats.Fbx.Runtime.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Formats.Fbx.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualEffectGraph.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Collections">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Formats.Fbx.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Formats.Fbx.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Formats.Fbx.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.SpriteShape.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.PixelPerfect">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="PPv2URPConverters">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.PixelPerfect">
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Aseprite.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
      <Reference Include="PsdPlugin">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.ShaderGraph.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Animation.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Tilemap.Extras">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InternalAPIEditorBridge.005">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.005.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.005.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InternalAPIEngineBridge.001">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Runtime">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InputSystem">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InputSystem.ForUI">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InternalAPIEditorBridge.001">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Psdimporter.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.AI.Navigation.Updater">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
      </Reference>
      <Reference Include="Autodesk.Fbx">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Autodesk.Fbx.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Autodesk.Fbx.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Postprocessing.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Autodesk.Fbx.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Autodesk.Fbx.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Autodesk.Fbx.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Searcher.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.AI.Navigation.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
      <Reference Include="Cinemachine">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.SpriteShape.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Tilemap.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Animation.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.IK.Editor">
-     <HintPath>D:\fork\NEW GAME NIX\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
+     <HintPath>D:\fork\Halfway-Trip\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="MoreMountains.Feedbacks.NiceVibrations.csproj">
-      <Project>{c22a7899-4e3e-0d52-a36f-c8d9658a4397}</Project>
-      <Name>MoreMountains.Feedbacks.NiceVibrations</Name>
-    </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.Editor.csproj">
-      <Project>{2b61d703-28b0-a8d1-2a3b-3ff9abcd9530}</Project>
+      <Project>{86c14589-0225-e0bb-7f83-f4ebb5e24cb8}</Project>
       <Name>MoreMountains.Feedbacks.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="MoreMountains.Feedbacks.MMTools.csproj">
-      <Project>{93d563d1-d2b3-9105-d459-a9a9fbe93900}</Project>
-      <Name>MoreMountains.Feedbacks.MMTools</Name>
+    <ProjectReference Include="sc.stylizedgrass.runtime.csproj">
+      <Project>{81827af8-62a8-768f-714c-568aa0535203}</Project>
+      <Name>sc.stylizedgrass.runtime</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Tools.Editor.csproj">
-      <Project>{a7755810-4e39-a508-2548-8c08f7c1b8c0}</Project>
+      <Project>{8cd191b3-5e8e-4797-11e7-9704f10b9e33}</Project>
       <Name>MoreMountains.Tools.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.PostProcessing.csproj">
-      <Project>{8e215d62-a5fb-71ff-6b11-bb40ad086bf6}</Project>
+      <Project>{5012d2df-556c-18ef-2d40-71000e92a18b}</Project>
       <Name>MoreMountains.Feedbacks.PostProcessing</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.csproj">
-      <Project>{3a68a241-7e91-95e6-6c7c-04f617f499b2}</Project>
+      <Project>{1bc41918-509f-7c4d-a403-26e0232ac72b}</Project>
       <Name>MoreMountains.Feedbacks</Name>
     </ProjectReference>
-    <ProjectReference Include="sc.stylizedgrass.runtime.csproj">
-      <Project>{b0d20b21-cbab-f3d9-37b8-504719a0fc1c}</Project>
-      <Name>sc.stylizedgrass.runtime</Name>
-    </ProjectReference>
     <ProjectReference Include="sc.stylizedwater2.runtime.csproj">
-      <Project>{74b3f87c-1409-dfa5-a7bc-8cdeae4b452a}</Project>
+      <Project>{0c17951b-4350-8ecc-09d1-69175c2598e1}</Project>
       <Name>sc.stylizedwater2.runtime</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.URP.csproj">
-      <Project>{f78fff11-4624-dcc7-ae25-db242d347b10}</Project>
+      <Project>{d425435e-2cdf-e07d-4fe2-9d80ea937775}</Project>
       <Name>MoreMountains.Feedbacks.URP</Name>
     </ProjectReference>
     <ProjectReference Include="Lofelt.NiceVibrations.csproj">
-      <Project>{1dbbde93-0688-a0df-3cf6-4cd253564c7d}</Project>
+      <Project>{51a17999-db27-0037-6057-b9a76757a69c}</Project>
       <Name>Lofelt.NiceVibrations</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.TextMeshPro.csproj">
-      <Project>{cf6063f0-f363-be1a-349e-ed18ddc8f383}</Project>
+      <Project>{ab713eae-6887-7dc0-a77e-c5d8f84ca738}</Project>
       <Name>MoreMountains.Feedbacks.TextMeshPro</Name>
     </ProjectReference>
-    <ProjectReference Include="XDPaint.Editor.csproj">
-      <Project>{d2fa1396-9706-98ab-bb49-a2650845b043}</Project>
-      <Name>XDPaint.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Tessera-Editor.csproj">
-      <Project>{942a0324-e2ae-f1f0-69e7-0830ca638ce7}</Project>
+      <Project>{395d7f79-aca3-8e4d-a812-79d78d552b93}</Project>
       <Name>Tessera-Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="XDPaint.Editor.csproj">
+      <Project>{008bbfc1-dbe1-6df5-b800-bf7a617526ab}</Project>
+      <Name>XDPaint.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.Authorizations.csproj">
-      <Project>{73bbdd4a-3be6-1c03-b65a-0005c27d2c88}</Project>
+      <Project>{50878387-2b7d-b345-ef6c-3105e90fcae9}</Project>
       <Name>MoreMountains.Feedbacks.Authorizations</Name>
     </ProjectReference>
     <ProjectReference Include="XDPaint.csproj">
-      <Project>{3894d6ad-ad07-1e33-5f3f-fd7c9cf13359}</Project>
+      <Project>{ad5dde1b-e5ac-1626-dc04-9279dbc754ec}</Project>
       <Name>XDPaint</Name>
     </ProjectReference>
     <ProjectReference Include="MoreMountains.Tools.csproj">
-      <Project>{0f2e31a1-0f74-c033-2bfa-04a2aa59efe8}</Project>
+      <Project>{9d5281fe-c174-2083-abd5-29ad5751e642}</Project>
       <Name>MoreMountains.Tools</Name>
     </ProjectReference>
     <ProjectReference Include="Tessera.csproj">
-      <Project>{5d5f9632-6fa0-2b1c-06db-01aa828ade58}</Project>
+      <Project>{0e8b4445-faec-19fd-b7d4-a7ce31c052d5}</Project>
       <Name>Tessera</Name>
     </ProjectReference>
-    <ProjectReference Include="fluxy.csproj">
-      <Project>{74ec4015-111e-6087-43d3-77e028fc05ce}</Project>
-      <Name>fluxy</Name>
-    </ProjectReference>
-    <ProjectReference Include="MoreMountains.Feedbacks.Cinemachine.csproj">
-      <Project>{9318d8e6-72e2-bc9e-a442-c15ea55da3e1}</Project>
-      <Name>MoreMountains.Feedbacks.Cinemachine</Name>
-    </ProjectReference>
     <ProjectReference Include="Lofelt.NiceVibrations.Demo.csproj">
-      <Project>{a5126698-cb8f-fa8c-e6ab-9d3a1711de25}</Project>
+      <Project>{4fdd8b52-fd2b-f867-a23c-5ad887681c8f}</Project>
       <Name>Lofelt.NiceVibrations.Demo</Name>
     </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.Cinemachine.csproj">
+      <Project>{0f1062f9-a6f9-1a2d-c720-a5d71161f484}</Project>
+      <Name>MoreMountains.Feedbacks.Cinemachine</Name>
+    </ProjectReference>
+    <ProjectReference Include="fluxy.csproj">
+      <Project>{e635f52f-b185-c78d-d72d-320164086d9a}</Project>
+      <Name>fluxy</Name>
+    </ProjectReference>
     <ProjectReference Include="MoreMountains.Feedbacks.HDRP.csproj">
-      <Project>{c4860371-c906-4cd8-7b1c-c0bd9ece435a}</Project>
+      <Project>{1c5dd94e-573f-adee-39f7-d872960a4864}</Project>
       <Name>MoreMountains.Feedbacks.HDRP</Name>
     </ProjectReference>
-    <ProjectReference Include="Obi.Editor.csproj">
-      <Project>{52d54d52-346e-bc5f-2cda-15859a747468}</Project>
-      <Name>Obi.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="sc.stylizedgrass.editor.csproj">
-      <Project>{27efc0c6-a834-b782-b389-a9cf6cb26255}</Project>
+      <Project>{557e1ee5-d6ee-090b-99f2-3829a63cce5a}</Project>
       <Name>sc.stylizedgrass.editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Obi.Editor.csproj">
+      <Project>{29b303b7-06ff-c697-e5c4-30807447abac}</Project>
+      <Name>Obi.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="sc.stylizedgrass.demo.runtime.csproj">
-      <Project>{c125cf7d-e4fa-8a40-9cfa-616d2d939b24}</Project>
+      <Project>{f49125f9-3f79-5412-1c69-ce55b24344b1}</Project>
       <Name>sc.stylizedgrass.demo.runtime</Name>
     </ProjectReference>
     <ProjectReference Include="sc.stylizedwater2.editor.csproj">
-      <Project>{09673f7e-9f07-357c-10e5-7d95fa233b81}</Project>
+      <Project>{b4edd249-e863-5170-26b1-46fe86b91092}</Project>
       <Name>sc.stylizedwater2.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Obi.csproj">
-      <Project>{eedb38b9-9d51-cd9d-5496-f467023c2a46}</Project>
+      <Project>{a2a861cb-664f-8052-523e-d7a9b3750d8e}</Project>
       <Name>Obi</Name>
     </ProjectReference>
     <ProjectReference Include="Lofelt.NiceVibrations.Editor.csproj">
-      <Project>{16ca3ffe-c53f-a5c3-d3f0-f46e184fef0f}</Project>
+      <Project>{e00523f3-4d66-e667-1369-af52a20dd6a6}</Project>
       <Name>Lofelt.NiceVibrations.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.NiceVibrations.csproj">
+      <Project>{9d609849-0b17-32a6-349b-39e2163d7835}</Project>
+      <Name>MoreMountains.Feedbacks.NiceVibrations</Name>
+    </ProjectReference>
     <ProjectReference Include="FluXYEditor.csproj">
-      <Project>{4da942ad-f67f-c625-7085-ef7deb00b8e6}</Project>
+      <Project>{b7f810b5-01a3-e08e-fb9f-74d7a5c8ee1a}</Project>
       <Name>FluXYEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="MoreMountains.Feedbacks.MMTools.csproj">
+      <Project>{75724e0d-9076-7ca3-615a-b62dd1200eca}</Project>
+      <Name>MoreMountains.Feedbacks.MMTools</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
