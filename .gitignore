@@ -1,9 +1,7 @@
-﻿FPS/Library
-FPS/Logs
-FPS/UserSettings
-FPS/FPS.sln
-FPS/.idea
-FPS/Temp
-FPS/obj
-FPS/.vs
-
+﻿obj
+Library
+Logs
+.idea
+Temp
+.vs
+UserSettings
