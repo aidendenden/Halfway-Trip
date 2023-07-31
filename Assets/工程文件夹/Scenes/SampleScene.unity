@@ -6153,6 +6153,16 @@ PrefabInstance:
       propertyPath: PlayerCamera
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 912580866650635825, guid: b7fd9471529c9f9489290e996a2701cb,
+        type: 3}
+      propertyPath: Resolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 912580866650635825, guid: b7fd9471529c9f9489290e996a2701cb,
+        type: 3}
+      propertyPath: Resolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 912580866650635830, guid: b7fd9471529c9f9489290e996a2701cb,
         type: 3}
       propertyPath: m_RootOrder
@@ -6211,12 +6221,12 @@ PrefabInstance:
     - target: {fileID: 912580867949807598, guid: b7fd9471529c9f9489290e996a2701cb,
         type: 3}
       propertyPath: field of view
-      value: 65
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 912580867949807598, guid: b7fd9471529c9f9489290e996a2701cb,
         type: 3}
       propertyPath: near clip plane
-      value: 0.012
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

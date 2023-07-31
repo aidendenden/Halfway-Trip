@@ -64,6 +64,16 @@ public class PhotoModeController : MonoBehaviour
 
     public static string GaleryPath;
     public static bool isOpenedGallery = false;
+    
+    [Tooltip("拍摄目标")]
+    public GameObject cameraTarget;
+
+    // If the target is captured on screen, but outside this range, it does not count as a target capture.
+    [Tooltip("Total distance (percent of screen size) allowed from center of camera viewfinder that still counts as target capture. E.g. 0.5 means target must be in center 50% of screen width and height.")]
+    public float cameraTargetDistanceTolerance = 0.5f;
+    private bool cameraTargetCapturedInLastSnapshot=false;
+    private Vector3 cameraTargetScreenPosition=Vector3.zero;
+
     void Start()
     {
         TakePhotoAnimObj.SetActive(false);
@@ -162,7 +172,7 @@ public class PhotoModeController : MonoBehaviour
         {
             if (hit.distance < zoomLevel + 3)
             {
-                zoomLevel = hit.distance - 3;
+                zoomLevel = Mathf.Clamp( hit.distance - 3, 0, zoomLevel);
             }
         }
     }
@@ -185,6 +195,34 @@ public class PhotoModeController : MonoBehaviour
 
         TakePhotoAnimObj.transform.localScale = Vector3.one * 50;
         TakePhotoAnimObj.SetActive(true);
+        
+        // Target Capture stuff
+        if(cameraTarget){
+            
+            RaycastHit hitTest;
+            Vector3 rayCastDirection = cameraTarget.transform.position - PhotoCamera.transform.position;
+             cameraTargetCapturedInLastSnapshot = false;
+
+            // Do line of sight test first to ensure it's possible to capture target in the snapshot
+            if(Physics.Raycast(PhotoCamera.transform.position, rayCastDirection, out hitTest)){
+
+                // If we can see it, check that it's within the viewfinder according to specified percentage
+                if(hitTest.collider.gameObject == cameraTarget){
+
+                    cameraTargetScreenPosition = PhotoCamera.WorldToScreenPoint(cameraTarget.transform.position);
+                    Vector2 cameraTargetDelta = Vector2.zero;
+                    cameraTargetDelta.x = Mathf.Abs(Screen.width/2 - cameraTargetScreenPosition.x);
+                    cameraTargetDelta.y = Mathf.Abs(Screen.height/2 - cameraTargetScreenPosition.y);
+
+                    if((cameraTargetDelta.x/Screen.width) <= cameraTargetDistanceTolerance && (cameraTargetDelta.y/Screen.height) <= cameraTargetDistanceTolerance){
+                        cameraTargetCapturedInLastSnapshot = true;
+                    }
+
+                }
+
+            }
+
+        }
 
         int i = 0;
         while (i < (int)(startSize / speedAnim))

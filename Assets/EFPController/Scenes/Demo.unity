@@ -15877,6 +15877,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5145954697115961901, guid: 6823701c0a1b57d4b9b08f3afa059c09,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 8395825253574119177, guid: 6823701c0a1b57d4b9b08f3afa059c09,
         type: 3}
       propertyPath: m_RootOrder
