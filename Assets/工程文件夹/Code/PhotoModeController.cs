@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -50,7 +51,8 @@ public class PhotoModeController : MonoBehaviour
     public float zoomLevel;
     public float scrollsensitivity = 1;
     public float speed = 30;
-    public float maxZoom = 30;
+    public float maxZoom = 90f;
+    public float minZoom = 10f;
 
     [Space]
     [Space]
@@ -73,6 +75,20 @@ public class PhotoModeController : MonoBehaviour
     public float cameraTargetDistanceTolerance = 0.5f;
     private bool cameraTargetCapturedInLastSnapshot=false;
     private Vector3 cameraTargetScreenPosition=Vector3.zero;
+    private float currentZoom;
+    private float targetZoom;
+    private float startZoom;
+    private float previousZoom;
+
+
+    private void Awake()
+    {
+        startZoom = PhotoCamera.fieldOfView;
+        currentZoom = startZoom;
+        targetZoom = startZoom;
+        previousZoom = startZoom;
+    }
+
 
     void Start()
     {
@@ -148,6 +164,7 @@ public class PhotoModeController : MonoBehaviour
 
     void disablePhotoMode()
     {
+        targetZoom = previousZoom;
         PhotoCamera.gameObject.SetActive(false);
         PhotoCanvas.gameObject.SetActive(false);
     }
@@ -156,26 +173,60 @@ public class PhotoModeController : MonoBehaviour
 
     void ZoomControl()
     {
-        zoomLevel += Input.mouseScrollDelta.y * scrollsensitivity;
-        zoomLevel = Mathf.Clamp(zoomLevel, 0, maxZoom);
-        ClipCheck();
-        zoomPosition = Mathf.MoveTowards(zoomPosition, zoomLevel, speed * Time.deltaTime);
-        PhotoCamera.transform.position = PhotoCamera.transform.parent.position + (PhotoCamera.transform.forward * zoomPosition);
+        previousZoom = currentZoom;
+        targetZoom = startZoom;
+        
+        
+        // if(Input.GetKey(KeyCode.Equals)){
+        //     targetZoom = Mathf.Max(targetZoom - 60.0f*Time.deltaTime, minZoom);
+        //     currentZoom = Mathf.Lerp(currentZoom, targetZoom,0.5f);
+        //     PhotoCamera.fieldOfView += currentZoom;
+        // }
+        // if(Input.GetKey(KeyCode.Minus)){
+        //     targetZoom = Mathf.Min(targetZoom + 60.0f*Time.deltaTime, maxZoom);
+        //     currentZoom = Mathf.Lerp(currentZoom, targetZoom,0.5f);
+        //     PhotoCamera.fieldOfView += currentZoom;
+        // }
 
-    }
+        // For mouse wheel
 
-
-    void ClipCheck()
-    {
-        Ray ray = new Ray(PhotoCamera.transform.parent.position, PhotoCamera.transform.forward);
-        if (Physics.SphereCast(ray, 3, out RaycastHit hit, maxZoom))
-        {
-            if (hit.distance < zoomLevel + 3)
-            {
-                zoomLevel = Mathf.Clamp( hit.distance - 3, 0, zoomLevel);
-            }
+        if(Input.mouseScrollDelta.y > 0){
+            targetZoom = Mathf.Max(targetZoom - 500.0f*Time.deltaTime, minZoom);
+            currentZoom = Mathf.Lerp(currentZoom, targetZoom,0.5f);
+            PhotoCamera.fieldOfView = currentZoom;
         }
+        if(Input.mouseScrollDelta.y < 0){
+            targetZoom = Mathf.Min(targetZoom + 500.0f*Time.deltaTime, maxZoom);
+            currentZoom = Mathf.Lerp(currentZoom, targetZoom,0.5f);
+            PhotoCamera.fieldOfView = currentZoom;
+        }
+
+     
+        
+        // zoomLevel += Input.mouseScrollDelta.y * scrollsensitivity;
+        // zoomLevel = Mathf.Clamp(zoomLevel, 0, maxZoom);
+        // targetZoom = Mathf.Max(zoomLevel - 500.0f*Time.deltaTime, minZoom);
+        // currentZoom = Mathf.Lerp(currentZoom, targetZoom,0.5f);
+        // PhotoCamera.fieldOfView = currentZoom;
+        
+        // ClipCheck();
+        // zoomPosition = Mathf.MoveTowards(zoomPosition, zoomLevel, speed * Time.deltaTime);
+        // PhotoCamera.transform.position = PhotoCamera.transform.parent.position + (PhotoCamera.transform.forward * zoomPosition);
+
     }
+
+
+    // void ClipCheck()
+    // {
+    //     Ray ray = new Ray(PhotoCamera.transform.parent.position, PhotoCamera.transform.forward);
+    //     if (Physics.SphereCast(ray, 3, out RaycastHit hit, maxZoom))
+    //     {
+    //         if (hit.distance < zoomLevel + 3)
+    //         {
+    //             zoomLevel = Mathf.Clamp( hit.distance - 3, 0, zoomLevel);
+    //         }
+    //     }
+    // }
 
 
 
