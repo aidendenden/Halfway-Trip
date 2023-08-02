@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17649668, g: 0.27243632, b: 0.6296937, a: 1}
+  m_IndirectSpecularColor: {r: 0.17591229, g: 0.27185166, b: 0.6291061, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -644,7 +644,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1650,8 +1650,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 5000
-  field of view: 40
+  far clip plane: 1000
+  field of view: 60
   orthographic: 0
   orthographic size: 10
   m_Depth: 10
@@ -1708,9 +1708,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_WalkSpeedCrouching: 2
-  m_RunSpeedCrouching: 4
+  m_RunSpeedCrouching: 1
   m_WalkSpeedStanding: 4
-  m_RunSpeedStanding: 10
+  m_RunSpeedStanding: 2
   walkStepLengthCrouching: 3.5
   runStepLengthCrouching: 3
   walkStepLengthStanding: 1
