@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System.IO;
+using Whilefun.FPEKit;
 
 
 //
@@ -111,7 +112,7 @@ public class VirtualSnapshotScript : MonoBehaviour {
     private Vector3 cameraTargetScreenPosition = Vector3.zero;
     private bool cameraTargetCapturedInLastSnapshot = false;
 
-    private GameObject thePlayer = null;
+    private GameObject inputManager = null;
 
     void Awake(){
 
@@ -194,9 +195,9 @@ public class VirtualSnapshotScript : MonoBehaviour {
             Debug.LogError("VirtualSnapshotScript:: There was a problem finding the Camera Flash");
         }
 
-        thePlayer = GameObject.FindGameObjectWithTag("Player");
-        if (!thePlayer){
-            Debug.LogError("VirtualSnapshotScript:: No object in scene tagged as 'Player'");
+        inputManager = GameObject.FindGameObjectWithTag("InputManager");
+        if (!inputManager){
+            Debug.LogError("VirtualSnapshotScript:: No object in scene tagged as 'InputManager'");
         }
 
         getStartSensitivity();
@@ -269,7 +270,7 @@ public class VirtualSnapshotScript : MonoBehaviour {
 	void Update(){
 
         // Toggle camera up/down
-        if(Input.GetKey(KeyCode.C)){
+        if(Input.GetKey(KeyCode.F)){
 
             if(cameraUp){
 
@@ -379,7 +380,7 @@ public class VirtualSnapshotScript : MonoBehaviour {
             }
 
             // Toggle Camera Flash On/Off
-            if(Input.GetKeyDown(KeyCode.F) && !takingSnapshot && snapshotCountdown <= 0.0f){
+            if(Input.GetKeyDown(KeyCode.G) && !takingSnapshot && snapshotCountdown <= 0.0f){
 
                 cameraFlashEnabled = !cameraFlashEnabled;
 
@@ -477,18 +478,21 @@ public class VirtualSnapshotScript : MonoBehaviour {
         Vector2 adjustedSensitivity = Vector2.zero;
         adjustedSensitivity.x = 1.0f + ((currentZoom/maxZoom) * 4.0f);
         adjustedSensitivity.y = 1.0f + ((currentZoom/maxZoom) * 4.0f);
-        thePlayer.GetComponent<MouseLookScript>().setMouseSensitivity(adjustedSensitivity.x, adjustedSensitivity.y);
+        //thePlayer.GetComponent<MouseLookScript>().setMouseSensitivity(adjustedSensitivity.x, adjustedSensitivity.y);
+        inputManager.GetComponent<FPEInputManager>().LookSensitivity = adjustedSensitivity;
     }
 
     // Just reset to starting sensitivity, for use when player puts camera down
     private void resetMouseLookSensitivity(){
-        thePlayer.GetComponent<MouseLookScript>().setMouseSensitivity(startSensitivity.x, startSensitivity.y);
+        //thePlayer.GetComponent<MouseLookScript>().setMouseSensitivity(startSensitivity.x, startSensitivity.y);
+        inputManager.GetComponent<FPEInputManager>().LookSensitivity = startSensitivity;
     }
 
     // Get look sensitivity when game starts, to save for restoring it later
     private void getStartSensitivity(){
-        startSensitivity.x = thePlayer.GetComponent<MouseLookScript>().getMouseSensitivity().x;
-        startSensitivity.y = thePlayer.GetComponent<MouseLookScript>().getMouseSensitivity().y;
+        // startSensitivity.x = thePlayer.GetComponent<MouseLookScript>().getMouseSensitivity().x;
+        // startSensitivity.y = thePlayer.GetComponent<MouseLookScript>().getMouseSensitivity().y;
+        startSensitivity= inputManager.GetComponent<FPEInputManager>().LookSensitivity;
     }
 
     // Very simple function to make a unique filename
