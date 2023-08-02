@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17591229, g: 0.27185166, b: 0.6291061, a: 1}
+  m_IndirectSpecularColor: {r: 0.17536339, g: 0.27130252, b: 0.6285598, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -559,6 +559,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1038267476}
+    - targetCorrespondingSourceObject: {fileID: 912580867949807595, guid: b7fd9471529c9f9489290e996a2701cb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1038267477}
   m_SourcePrefab: {fileID: 100100000, guid: b7fd9471529c9f9489290e996a2701cb, type: 3}
 --- !u!1 &1013268292
 GameObject:
@@ -638,14 +642,14 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: -1
+  m_RendererIndex: 0
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
-  m_Antialiasing: 0
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -665,6 +669,15 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!45 &1038267477
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038267473}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 4c9ccb3c7cdb9094fbf1ca13f011d3cb, type: 2}
 --- !u!1001 &1250673507
 PrefabInstance:
   m_ObjectHideFlags: 0
