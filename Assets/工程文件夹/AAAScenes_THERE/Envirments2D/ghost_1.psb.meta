@@ -21,13 +21,11 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
-    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
-    ignoreMipmapLimit: 0
+    ignoreMasterTextureLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -90,6 +88,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
+    parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
@@ -734,6 +733,7 @@ ScriptedImporter:
     - {x: 31, y: 30}
     - {x: 0, y: 31}
     tessellationDetail: 0
+    parentGroupIndex: -1
     uvTransform: {x: 4, y: 605}
     spritePosition: {x: 319, y: 697}
   - name: "\u56FE\u5C42 5 \u62F7\u8D1D"
@@ -1125,6 +1125,7 @@ ScriptedImporter:
     - {x: 30, y: 29}
     - {x: 0, y: 30}
     tessellationDetail: 0
+    parentGroupIndex: -1
     uvTransform: {x: 4, y: 718}
     spritePosition: {x: 93, y: 476}
   - name: "\u56FE\u5C42 5"
@@ -1516,6 +1517,7 @@ ScriptedImporter:
     - {x: 30, y: 29}
     - {x: 0, y: 30}
     tessellationDetail: 0
+    parentGroupIndex: -1
     uvTransform: {x: 105, y: 718}
     spritePosition: {x: 719, y: 476}
   - name: "\u56FE\u5C42 4"
@@ -2060,6 +2062,7 @@ ScriptedImporter:
     - {x: 43, y: 42}
     - {x: 43, y: 0}
     tessellationDetail: 0
+    parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
     spritePosition: {x: 112, y: 49}
   characterData:
@@ -2139,7 +2142,6 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
-    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   sharedRigSpriteImportData: []
   sharedRigCharacterData:
@@ -2147,7 +2149,6 @@ ScriptedImporter:
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
-    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   platformSettings: []
   mosaicLayers: 1
@@ -2160,8 +2161,6 @@ ScriptedImporter:
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   skeletonAssetReferenceID: 
-  padding: 4
-  spriteSizeExpand: 0
   spriteCategoryList:
     categories: []
   spritePackingTag: 
@@ -2210,9 +2209,6 @@ ScriptedImporter:
     isVisible: 1
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
-  importFileNodeState: 1
-  platformSettingsDirtyTick: 0
-  spriteSizeExpandChanged: 0
   generateGOHierarchy: 0
   textureAssetName: ghost_1 Texture
   prefabAssetName: ghost_1 Prefab

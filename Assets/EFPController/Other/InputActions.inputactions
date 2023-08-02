@@ -231,6 +231,28 @@
                 },
                 {
                     "name": "",
+                    "id": "ac6d3fb4-4c69-43f9-a255-299a8bc04cb5",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard And Mouse",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1dc0ac4a-613f-4b47-92bf-a89ec187108a",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "3f81af7e-741b-41c8-9c26-02b02a0e671a",
                     "path": "<Keyboard>/q",
                     "interactions": "",

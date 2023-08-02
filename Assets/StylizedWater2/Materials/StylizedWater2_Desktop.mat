@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 8
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10,33 +10,15 @@ Material:
   m_Name: StylizedWater2_Desktop
   m_Shader: {fileID: -6465566751694194690, guid: d7b0192b9bf19c949900035fa781fdc4,
     type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _ADVANCED_SHADING
-  - _CAUSTICS
-  - _DISTANCE_NORMALS
-  - _FOAM
-  - _NORMALMAP
-  - _REFRACTION
-  - _SHARP_INERSECTION
-  - _TRANSLUCENCY
-  - _WAVES
-  m_InvalidKeywords:
-  - ADVANCED_LIGHTING
-  - _DEPTHEXP_ON
-  - _DEPTH_TEX
-  - _SIMPLE_LIGHTING
-  - _VERTEXCOLORWAVEFLATTENING_ON
-  - _WORLDSPACEUV_ON
-  - _ZCLIP_ON
+  m_ShaderKeywords: ADVANCED_LIGHTING _ADVANCED_SHADING _CAUSTICS _DEPTHEXP_ON _DEPTH_TEX
+    _DISTANCE_NORMALS _FOAM _NORMALMAP _REFRACTION _SHARP_INERSECTION _SIMPLE_LIGHTING
+    _TRANSLUCENCY _VERTEXCOLORWAVEFLATTENING_ON _WAVES _WORLDSPACEUV_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -112,7 +94,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints: []
     m_Floats:
     - Vector1_1942CF3A: 1
     - Vector1_BE75C478: 32
@@ -137,10 +118,10 @@ Material:
     - _Cutoff: 0.5
     - _Depth: 0.94
     - _DepthExp: 1
-    - _DepthHorizontal: 3.48
+    - _DepthHorizontal: 1
     - _DepthMode: 0
     - _DepthTexture: 1
-    - _DepthVertical: 2.8
+    - _DepthVertical: 8
     - _DisableDepthTexture: 0
     - _DistanceNormalsOn: 1
     - _DistanceNormalsTiling: 0.25
@@ -247,24 +228,24 @@ Material:
     - _WaveNormalStr: 0.1
     - _WaveSpeed: 2.3999996
     - _WaveSteepness: 0
-    - _WaveTint: -0.055
+    - _WaveTint: 0
     - _WavesOn: 1
     - _WorkflowMode: 1
     - _WorldSpaceUV: 1
     - _ZClip: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.096698105, g: 0.37621415, b: 0.5, a: 0.5803922}
+    - _BaseColor: {r: 0, g: 0.16451614, b: 0.34, a: 0.9647059}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _DepthMapBounds: {r: -402.3, g: -459.43, b: 0.0012693577, a: 0}
     - _Direction: {r: 1, g: 1, b: 0, a: 0}
     - _DistanceNormalsFadeDist: {r: 0, g: 80, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 0.22745098}
-    - _HorizonColor: {r: 0.17808829, g: 0.5471698, b: 0.53366685, a: 0.15}
+    - _HorizonColor: {r: 0.68, g: 1, b: 0.99, a: 0.15}
     - _IntersectionColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ShallowColor: {r: 0.07208972, g: 0.5660378, b: 0.55635256, a: 0.3764706}
+    - _ShallowColor: {r: 0, g: 1, b: 0.98136926, a: 0.3764706}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _WaterColor: {r: 0.21176466, g: 0.6745098, b: 1, a: 1}
     - _WaterShallowColor: {r: 0, g: 0.9394503, b: 1, a: 1}

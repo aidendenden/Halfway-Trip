@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Climbable
+  - Interactable
   layers:
   - Default
   - TransparentFX
@@ -13,11 +15,11 @@ TagManager:
   - UI
   - 
   - 
-  - FPEPutBackObjects
-  - FPEPickupObjects
-  - FPEPlayer
-  - FPEObjectExamination
-  - FPEIgnore
+  - PlayerCollide
+  - PlayerIgnore
+  - Player
+  - PlayerItems
+  - 
   - 
   - 
   - 
@@ -38,6 +40,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: -1
+    uniqueID: 1079583697
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: +1
+    uniqueID: 525233187
+    locked: 0
+  - name: Markers
+    uniqueID: 2463323049
     locked: 0
