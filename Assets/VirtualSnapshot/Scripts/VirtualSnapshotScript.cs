@@ -270,7 +270,7 @@ public class VirtualSnapshotScript : MonoBehaviour {
 	void Update(){
 
         // Toggle camera up/down
-        if(Input.GetKey(KeyCode.F)){
+        if(Input.GetKeyDown(KeyCode.F)){
 
             if(cameraUp){
 
