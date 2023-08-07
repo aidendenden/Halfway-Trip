@@ -58,7 +58,7 @@ public class GaleryController : MonoBehaviour
         yield return null;
         var dirPath = PhotoModeController.GaleryPath;
         var info = new DirectoryInfo(dirPath);
-        fileInfos = info.GetFiles("*.jpg", SearchOption.AllDirectories);
+        fileInfos = info.GetFiles("*.png", SearchOption.AllDirectories);
         bool isfirst = true;
 
         bigphoto.GetComponent<Image>().sprite =null;

@@ -118,6 +118,7 @@
     <Compile Include="Assets\Obi\Samples\Cloth\SampleResources\Scripts\AutoCannon.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\CollectableTypes\FPENoteEntry.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ColorRandomizer.cs" />
+    <Compile Include="Assets\工程文件夹\Code\OffAndOn.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPEMenuButton.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPENoteEntrySlot.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPEInventoryActionsPanel.cs" />
