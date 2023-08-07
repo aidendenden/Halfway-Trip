@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.20164917, g: 0.27977923, b: 0.6339057, a: 1}
+  m_IndirectSpecularColor: {r: 0.17632881, g: 0.27226865, b: 0.6295261, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -918,6 +918,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2404543294936022967, guid: 96552f490ebb4e44b97e58b7112a6952,
         type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404543294936022967, guid: 96552f490ebb4e44b97e58b7112a6952,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1297,6 +1302,7 @@ GameObject:
   - component: {fileID: 1201644920}
   - component: {fileID: 1201644919}
   - component: {fileID: 1201644918}
+  - component: {fileID: 1201644924}
   m_Layer: 10
   m_Name: "\u76F8\u518C\u76F8\u673A"
   m_TagString: Untagged
@@ -1453,6 +1459,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2112679360}
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+--- !u!114 &1201644924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201644917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 16384
+  m_MaxRayIntersections: 0
 --- !u!1001 &1250673507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3335,10 +3357,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5535a647c66761842b2e699bedfcad44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  mainCamera: {fileID: 2092358595}
 --- !u!65 &2036787279
 BoxCollider:
   m_ObjectHideFlags: 0

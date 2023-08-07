@@ -171,6 +171,7 @@
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\DemoScripts\DemoForcePlayerLookAt.cs" />
     <Compile Include="Assets\Obi\Samples\Fluid\SampleResources\Scripts\WaveGenerator.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\RopeNet.cs" />
+    <Compile Include="Assets\工程文件夹\Code\Snap.cs" />
     <Compile Include="Assets\Obi\Samples\Fluid\SampleResources\Scripts\OverlapTest.cs" />
     <Compile Include="Assets\FiloCables\Scripts\Bodies\CableShape.cs" />
     <Compile Include="Assets\工程文件夹\测试用例\第一人称测试（1）\PlayerMovement.cs" />
