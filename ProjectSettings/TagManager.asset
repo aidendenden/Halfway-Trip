@@ -7,11 +7,12 @@ TagManager:
   - Climbable
   - VirtualSnapshot
   - InputManager
+  - Detectable
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - DetectableLayer
   - Water
   - UI
   - 

@@ -103,13 +103,17 @@ public class VirtualSnapshotScript : MonoBehaviour {
     private string snapshotDirectory = "";
     private string fileExtension = ".png";
 
+    public bool needDetectableFunction=true;
+    public LayerMask DetectableTargetLayer = default;
+    
     // Target detection stuff
-    [Tooltip("Object to track in the scene (optional)")]
-    public GameObject cameraTarget;
-    // If the target is captured on screen, but outside this range, it does not count as a target capture.
-    [Tooltip("Total distance (percent of screen size) allowed from center of camera viewfinder that still counts as target capture. E.g. 0.5 means target must be in center 50% of screen width and height.")]
-    public float cameraTargetDistanceTolerance = 0.5f;
-    private Vector3 cameraTargetScreenPosition = Vector3.zero;
+    // [Tooltip("Object to track in the scene (optional)")]
+    // public GameObject cameraTarget;
+    // // If the target is captured on screen, but outside this range, it does not count as a target capture.
+    // [Tooltip("Total distance (percent of screen size) allowed from center of camera viewfinder that still counts as target capture. E.g. 0.5 means target must be in center 50% of screen width and height.")]
+    // public float cameraTargetDistanceTolerance = 0.5f;
+    // private Vector3 cameraTargetScreenPosition = Vector3.zero;
+    
     private bool cameraTargetCapturedInLastSnapshot = false;
 
     private GameObject inputManager = null;
@@ -294,7 +298,7 @@ public class VirtualSnapshotScript : MonoBehaviour {
             }else{
 
                 if(!movingCameraUp){
-
+                    
                     movingCameraUp = true;
                     cameraTransitionImage.transform.parent.GetComponent<Canvas>().enabled = true;
                     cameraTransitionImage.GetComponent<CanvasRenderer>().SetAlpha(0.0f);
@@ -302,6 +306,7 @@ public class VirtualSnapshotScript : MonoBehaviour {
                         targetZoom = previousZoom;
                     }
 
+                    cameraFlash.GetComponent<Light>().enabled = false;
                     cameraFlash.GetComponent<AudioSource>().clip = cameraOn;
                     cameraFlash.GetComponent<AudioSource>().Play();
 
@@ -348,7 +353,8 @@ public class VirtualSnapshotScript : MonoBehaviour {
             }
 
             // Only allowed to take a snapshot if not already in progress, and enough time has elapsed since last snapshot, and if we have exposures left
-            if((Input.GetKeyDown(KeyCode.T) || Input.GetMouseButtonDown(0)) && !takingSnapshot && (snapshotCountdown <= 0.0f)){
+            if(Input.GetMouseButtonDown(0)&& !takingSnapshot && (snapshotCountdown <= 0.0f))
+            {
 
                 if(exposuresRemaining > 0){
 
@@ -531,34 +537,43 @@ public class VirtualSnapshotScript : MonoBehaviour {
             Debug.Log("VirtualSnapshotScript:: Failed to save snapshot '" + snapshotFilename + "' (" + e.Message + ")");
         }
 
-        // Target Capture stuff
-        if(cameraTarget){
-            
-            RaycastHit hitTest;
-			Vector3 rayCastDirection = cameraTarget.transform.position - snapshotCamera.transform.position;
-            cameraTargetCapturedInLastSnapshot = false;
-			
-            // Do line of sight test first to ensure it's possible to capture target in the snapshot
-            if(Physics.Raycast(snapshotCamera.transform.position, rayCastDirection, out hitTest)){
-
-                // If we can see it, check that it's within the viewfinder according to specified percentage
-                if(hitTest.collider.gameObject == cameraTarget){
-
-                    cameraTargetScreenPosition = snapshotCamera.WorldToScreenPoint(cameraTarget.transform.position);
-                    Vector2 cameraTargetDelta = Vector2.zero;
-                    cameraTargetDelta.x = Mathf.Abs(Screen.width/2 - cameraTargetScreenPosition.x);
-                    cameraTargetDelta.y = Mathf.Abs(Screen.height/2 - cameraTargetScreenPosition.y);
-
-                    if((cameraTargetDelta.x/Screen.width) <= cameraTargetDistanceTolerance && (cameraTargetDelta.y/Screen.height) <= cameraTargetDistanceTolerance){
-                        cameraTargetCapturedInLastSnapshot = true;
-                    }
-
-                }
-
-			}
-
+        if (needDetectableFunction)
+        {
+            Detectable();
         }
+        
+        #region old检测
 
+        // Target Capture stuff
+        //      if(cameraTarget){
+        //          
+        //          RaycastHit hitTest;
+        // Vector3 rayCastDirection = cameraTarget.transform.position - snapshotCamera.transform.position;
+        //          cameraTargetCapturedInLastSnapshot = false;
+        //
+        //          // Do line of sight test first to ensure it's possible to capture target in the snapshot
+        //          if(Physics.Raycast(snapshotCamera.transform.position, rayCastDirection, out hitTest)){
+        //
+        //              // If we can see it, check that it's within the viewfinder according to specified percentage
+        //              if(hitTest.collider.gameObject == cameraTarget){
+        //
+        //                  cameraTargetScreenPosition = snapshotCamera.WorldToScreenPoint(cameraTarget.transform.position);
+        //                  Vector2 cameraTargetDelta = Vector2.zero;
+        //                  cameraTargetDelta.x = Mathf.Abs(Screen.width/2 - cameraTargetScreenPosition.x);
+        //                  cameraTargetDelta.y = Mathf.Abs(Screen.height/2 - cameraTargetScreenPosition.y);
+        //
+        //                  if((cameraTargetDelta.x/Screen.width) <= cameraTargetDistanceTolerance && (cameraTargetDelta.y/Screen.height) <= cameraTargetDistanceTolerance){
+        //                      cameraTargetCapturedInLastSnapshot = true;
+        //                  }
+        //
+        //              }
+        //
+        // }
+        //
+        //      }
+
+        #endregion
+        
         if(limitExposureCount){
             ExposuresRemainingText.GetComponent<Text>().text = ""+exposuresRemaining;
             // If that was the last exposure, make the UI text red for easier readability
@@ -566,6 +581,46 @@ public class VirtualSnapshotScript : MonoBehaviour {
                 ExposuresRemainingText.GetComponent<Text>().color = NoMoreExposuresTextColor;
             }
         }
+
+    }
+
+    private void Detectable()
+    {
+        #region 优雅方法
+        
+        //IsInScreen(targetPos);
+
+        #endregion
+
+        #region 粗暴方法
+
+        // Collider[] colliders = Physics.OverlapSphere(snapshotCamera.transform.position, snapshotCamera.farClipPlane, DetectableTargetLayer);
+        //
+        // for (int i = 0; i < colliders.Length; i++)
+        // {
+        //     Collider collider = colliders[i];
+        //     GameObject visibleObject = collider.gameObject;
+        //     Vector3 viewportPos = snapshotCamera.WorldToViewportPoint(visibleObject.transform.position);
+        //
+        //     bool isVisible = (viewportPos.x > 0 && viewportPos.x < 1 && viewportPos.y > 0 && viewportPos.y < 1 &&
+        //                       viewportPos.z > 0);
+        //     if (isVisible)
+        //     {
+        //         Debug.Log("物体进入屏幕范围：" + visibleObject.name);
+        //         // 在此处执行您想要的操作
+        //     }
+        //
+        // }
+
+        // Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+        // RaycastHit hit;
+        // if ( Physics.Raycast(ray, out hit, DetectableTargetLayer))
+        // {
+        //     GameObject hitObject = hit.collider.gameObject;
+        //     Debug.Log("检测到物体：" + hitObject.name);
+        // }
+
+        #endregion
 
     }
 
@@ -590,6 +645,39 @@ public class VirtualSnapshotScript : MonoBehaviour {
 
     }
 
+    
+    private bool IsInScreen(Vector3 targetPos)
+    {
+        Vector3 viewPos = Camera.main.WorldToViewportPoint(targetPos);
+        Vector3 dir = (Camera.main.transform.position - viewPos).normalized;
+        float dot = Vector3.Dot(Camera.main.transform.forward, dir);
+        return dot > 0 && viewPos.x > 0 && viewPos.x < 1 && viewPos.y > 0 && viewPos.y < 1;
+    }
+    
+    public bool IsVisible(Bounds bounds, Camera camera)
+    {
+        // 得到摄像机的六个面 
+
+        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(camera);
+
+        // 判断边框bound是否在六个面内
+
+        //需要给游戏对象添加Collider
+        return GeometryUtility.TestPlanesAABB(planes, bounds);
+    }
+    
+    //物体出现在屏幕  
+    void OnBecameVisible()
+    {
+        Debug.Log(this.name.ToString() + "这个物体出现在屏幕里面了");
+    }
+
+    //物体离开屏幕  
+    void OnBecameInvisible()
+    {
+        Debug.Log(this.name.ToString() + "这个物体离开屏幕里面了");
+    }
+    
     public int getBatteryLevel(){
         return batteryLevel;
     }

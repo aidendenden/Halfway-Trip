@@ -4,7 +4,7 @@ using System.IO;
 
 public class CameraSwitch : MonoBehaviour
 {
-	public GameObject XiangCe;//Ïà²á¸¸ÎïÌå£»
+	public GameObject XiangCe;//ç›¸å†Œçˆ¶ç‰©ä½“ï¼›
 
 	public GameObject[] cameras;
 	public string[] shotcuts;
