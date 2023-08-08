@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17632881, g: 0.27226865, b: 0.6295261, a: 1}
+  m_IndirectSpecularColor: {r: 0.23384336, g: 0.26867858, b: 0.57936907, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -924,7 +924,7 @@ PrefabInstance:
     - target: {fileID: 2404543294936022967, guid: 96552f490ebb4e44b97e58b7112a6952,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4435368481468306059, guid: 96552f490ebb4e44b97e58b7112a6952,
         type: 3}
@@ -1303,6 +1303,7 @@ GameObject:
   - component: {fileID: 1201644919}
   - component: {fileID: 1201644918}
   - component: {fileID: 1201644924}
+  - component: {fileID: 1201644925}
   m_Layer: 10
   m_Name: "\u76F8\u518C\u76F8\u673A"
   m_TagString: Untagged
@@ -1475,6 +1476,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 16384
   m_MaxRayIntersections: 0
+--- !u!81 &1201644925
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201644917}
+  m_Enabled: 0
 --- !u!1001 &1250673507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3357,6 +3366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5535a647c66761842b2e699bedfcad44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _camera: {fileID: 2092358595}
 --- !u!65 &2036787279
 BoxCollider:
   m_ObjectHideFlags: 0

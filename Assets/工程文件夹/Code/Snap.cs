@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace 工程文件夹.Code
@@ -46,7 +47,12 @@ namespace 工程文件夹.Code
         float curtTime = 0f;
         float lastTime = 0f;
         private Vector3 targetPos;
+        public Camera _camera;
 
+        private void Start()
+        {
+            _camera=Camera.main;
+        }
 
         void OnWillRenderObject()
         {
@@ -55,8 +61,8 @@ namespace 工程文件夹.Code
 
         public bool IsInView(Vector3 worldPos)
         {
-            Transform camTransform = Camera.main.transform;
-            Vector2 viewPos = Camera.main.WorldToViewportPoint(worldPos);
+            Transform camTransform = _camera.transform;
+            Vector2 viewPos = _camera.WorldToViewportPoint(worldPos);
             Vector3 dir = (worldPos - camTransform.position).normalized;
             float dot = Vector3.Dot(camTransform.forward, dir); //判断物体是否在相机前面
 
@@ -70,7 +76,7 @@ namespace 工程文件夹.Code
 
         void Update()
         {
-            Vector2 vec2 = Camera.main.WorldToScreenPoint(this.gameObject.transform.position);
+            Vector2 vec2 = _camera.WorldToScreenPoint(this.gameObject.transform.position);
 
             if (IsInView(transform.position))
             {
