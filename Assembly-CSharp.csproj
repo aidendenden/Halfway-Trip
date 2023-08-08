@@ -83,10 +83,8 @@
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\DoorsAndDrawers\FPEAlwaysSwingOutDoor.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\DebugParticleFrames.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Testing\Scripts\FPEBuildIndexTester.cs" />
-    <Compile Include="Assets\EFPController\Scripts\SurfaceManager.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\DemoScripts\DemoGenericButton.cs" />
     <Compile Include="Assets\XDPaint\Demo\Scripts\CameraMover.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Utils\DestroyAfter.cs" />
     <Compile Include="Assets\AraTrail\AraTrail.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\DoorsAndDrawers\FPESimpleDoor.cs" />
     <Compile Include="Assets\FiloCables\Scripts\Utils.cs" />
@@ -103,7 +101,6 @@
     <Compile Include="Assets\FirstPersonExplorationKit\FPEPlayerController\Utility\FPECurveControlledBob.cs" />
     <Compile Include="Assets\Obi\Samples\Cloth\SampleResources\Scripts\StretchToColors.cs" />
     <Compile Include="Assets\FiloCables\Scripts\CableJoint.cs" />
-    <Compile Include="Assets\EFPController\Scripts\AudioManager.cs" />
     <Compile Include="Assets\XDPaint\Demo\Scripts\Demo.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\DoorsAndDrawers\FPEDoor.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\Utility\FPESimpleSoundBank.cs" />
@@ -114,7 +111,6 @@
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\SavingAndLoading\FPEGenericSaveableGameObject.cs" />
     <Compile Include="Assets\工程文件夹\测试用例\第一人称测试（1）\inputMaster.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPEHUDData.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Player\CameraBobAnims.cs" />
     <Compile Include="Assets\Obi\Samples\Cloth\SampleResources\Scripts\AutoCannon.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\CollectableTypes\FPENoteEntry.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ColorRandomizer.cs" />
@@ -151,11 +147,9 @@
     <Compile Include="Assets\FirstPersonExplorationKit\FPEPlayerController\Utility\FPELerpControlledBob.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ActorSpawner.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ExtrapolationCamera.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Extras\Switcher.cs" />
     <Compile Include="Assets\AraTrail\HelperScripts\ElectricalArc.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\Utility\FPEMinMaxRangeAttribute.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPESimpleMenu.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Extras\Teleport.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\DemoScripts\DemoFanMachine.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ObjectDragger.cs" />
     <Compile Include="Assets\FiloCables\Scripts\Bodies\ConvexHull2D.cs" />
@@ -165,7 +159,6 @@
     <Compile Include="Assets\Obi\Samples\Fluid\SampleResources\Scripts\EmitOnKeyPress.cs" />
     <Compile Include="Assets\工程文件夹\Code\CameraSwitch.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\FPEInteractableInventoryItemScript.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Extras\Ladder.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPEHUD.cs" />
     <Compile Include="Assets\AraTrail\SampleScenes\Scripts\WallPlayerController.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\DemoScripts\DemoForcePlayerLookAt.cs" />
@@ -185,14 +178,11 @@
     <Compile Include="Assets\AraTrail\TrailSection.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPEGameMenu.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\FPEInteractablePickupScript.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Player\SmoothLook.cs" />
     <Compile Include="Assets\VirtualSnapshot\Scripts\DemoScripts\DemoLevelScript.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Player\PlayerFootsteps.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\CharacterController\ObiCharacter.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\DemoScripts\DemoSwitchActivationScript.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\FirstPersonLauncher.cs" />
     <Compile Include="Assets\Obi\Samples\Cloth\SampleResources\Scripts\WaterTrigger.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Player\CameraRootAnimations.cs" />
     <Compile Include="Assets\Obi\Samples\Fluid\SampleResources\Scripts\ViscositySurfTensionToUserData.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\SnakeController.cs" />
     <Compile Include="Assets\Tessera\Sample\SlidingGenerator.cs" />
@@ -200,9 +190,7 @@
     <Compile Include="Assets\工程文件夹\AAAScenes_THERE\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\FPEPlayerController\FPECharacters\FPEFirstPerson\Scripts\FPEMouseLook.cs" />
     <Compile Include="Assets\Obi\Samples\Cloth\SampleResources\Scripts\Mine.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Player\PlayerActivator.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\FPEInventoryManagerScript.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Extras\InteractReceiver.cs" />
     <Compile Include="Assets\AraTrail\SampleScenes\Scripts\ObjectDragger.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\Utility\FPETagAndLayerHelper.cs" />
     <Compile Include="Assets\FiloCables\Scripts\CableRenderer.cs" />
@@ -229,15 +217,12 @@
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\DemoScripts\DemoSecuritySystem.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\FPEInventoryConsumer.cs" />
     <Compile Include="Assets\VirtualSnapshot\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotorScript.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Utils\GameUtils.cs" />
     <Compile Include="Assets\Obi\Samples\Fluid\SampleResources\Scripts\ObiFluidPropertyColorizer.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Player\CameraControl.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\CollisionEventHandler.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\GrapplingHook.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\DemoScripts\DemoToiletSeatScript.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPEMenuTab.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\WrapRopeGameController.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\工程文件夹\测试用例\第一人称测试（1）\PlayerInputManager.cs" />
     <Compile Include="Assets\XDPaint\Demo\Scripts\UI\LayersUIController.cs" />
     <Compile Include="Assets\XDPaint\Demo\Scripts\UI\UISliderDownHelper.cs" />
@@ -246,10 +231,8 @@
     <Compile Include="Assets\工程文件夹\Code\GaleryController.cs" />
     <Compile Include="Assets\FiloCables\SampleScenes\Scripts\PlatformController.cs" />
     <Compile Include="Assets\AraTrail\SampleScenes\Scripts\WobblePath.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Player\InputManagerNew.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\FPEPassiveAudioDiary.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPEMainMenu.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Player\InputManager.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\DoorsAndDrawers\FPEAutomaticDoorTrigger.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\FPEPlayer.cs" />
     <Compile Include="Assets\Obi\Samples\Fluid\SampleResources\Scripts\FluidJetController.cs" />
@@ -260,11 +243,8 @@
     <Compile Include="Assets\URPTimeOfDay\Scripts\TimeDisplay.cs" />
     <Compile Include="Assets\AraTrail\HelperScripts\TireTrack.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\Utility\FPEEventTrigger.cs" />
-    <Compile Include="Assets\EFPController\Scripts\GameInit.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Player\PlayerCameraBob.cs" />
     <Compile Include="Assets\FiloCables\Scripts\Bodies\CableBody.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\DemoScripts\DemoRadioSimpleScript.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Extras\AddForcePlatform.cs" />
     <Compile Include="Assets\Tessera\Sample\GenerateOnStart.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\DemoScripts\DemoToiletScript.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPEUIHint.cs" />
@@ -286,8 +266,6 @@
     <Compile Include="Assets\Obi\Samples\Fluid\SampleResources\Scripts\Melt.cs" />
     <Compile Include="Assets\Obi\Samples\Cloth\SampleResources\Scripts\ClothTornEvent.cs" />
     <Compile Include="Assets\XDPaint\Demo\Scripts\UI\LayerDragItem.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Extras\MovingPlatform.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Player\InputManagerLegacy.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\FPEEventSystem.cs" />
     <Compile Include="Assets\FiloCables\SampleScenes\Scripts\SpoolController.cs" />
     <Compile Include="Assets\Obi\Samples\Softbody\SampleResources\Scripts\SoftbodyRaycasts.cs" />
@@ -315,12 +293,10 @@
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\CollectableTypes\FPEAudioDiaryEntry.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\FPEPlayerController\Utility\FPEFOVKick.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\SavingAndLoading\FPESaveLoadManager.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Game.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\WrapRopePlayerController.cs" />
     <Compile Include="Assets\FiloCables\Scripts\CableSolver.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\DoorsAndDrawers\FPEDoorAndDrawerHitHelper.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Testing\Scripts\FPEInteractableDebugger.cs" />
-    <Compile Include="Assets\EFPController\Scripts\Player\Player.cs" />
     <Compile Include="Assets\GrabIt\Core\Scripts\GrabIt.cs" />
     <Compile Include="Assets\FiloCables\SampleScenes\Scripts\TensionProbe.cs" />
   </ItemGroup>
