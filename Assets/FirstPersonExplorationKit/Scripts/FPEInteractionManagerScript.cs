@@ -51,7 +51,7 @@ namespace Whilefun.FPEKit
         private GameObject currentInteractableObject = null;
         private GameObject currentHeldObject = null;
         private GameObject currentPutbackObject = null;
-        private GameObject interactionObjectPickupLocation = null;
+        //private GameObject interactionObjectPickupLocation = null;
         private GameObject interactionObjectExamineLocation = null;
         private GameObject interactionObjectTossLocation = null;
         private GameObject interactionInventoryLocation = null;
@@ -181,7 +181,7 @@ namespace Whilefun.FPEKit
                 myHUD = FPEHUD.Instance;
                 if (!myHUD)
                 {
-                    Debug.LogError("FPEInteractionManager:: Cannot find instance of FPEHUD!");
+                    Debug.LogWarning("FPEInteractionManager:: Cannot find instance of FPEHUD!");
                 }
 
                 myHUDData = new FPEHUDData();
@@ -192,7 +192,7 @@ namespace Whilefun.FPEKit
                     Debug.LogError("FPEInteractionManagerScript:: Player could not be found!");
                 }
 
-                interactionObjectPickupLocation = thePlayer.transform.Find("MainCamera/ObjectPickupLocation").gameObject;
+                //interactionObjectPickupLocation = thePlayer.transform.Find("MainCamera/ObjectPickupLocation").gameObject;
                 interactionObjectExamineLocation = thePlayer.transform.Find("MainCamera/ObjectExamineLocation").gameObject;
                 interactionObjectTossLocation = thePlayer.transform.Find("MainCamera/ObjectTossLocation").gameObject;
                 interactionInventoryLocation = thePlayer.transform.Find("MainCamera/ObjectInInventoryPosition").gameObject;
@@ -202,12 +202,12 @@ namespace Whilefun.FPEKit
                 genericSFXPlayer = thePlayer.transform.Find("FPEGenericSFX").gameObject;
 
                 // We don't need the debug meshes at runtime
-                Destroy(interactionObjectPickupLocation.GetComponentInChildren<MeshRenderer>().gameObject);
+                //Destroy(interactionObjectPickupLocation.GetComponentInChildren<MeshRenderer>().gameObject);
                 Destroy(interactionObjectExamineLocation.GetComponentInChildren<MeshRenderer>().gameObject);
                 Destroy(interactionObjectTossLocation.GetComponentInChildren<MeshRenderer>().gameObject);
                 Destroy(interactionInventoryLocation.GetComponentInChildren<MeshRenderer>().gameObject);
 
-                if (!interactionObjectPickupLocation || !interactionObjectExamineLocation || !interactionObjectTossLocation || !interactionInventoryLocation)
+                if (/*!interactionObjectPickupLocation || */ !interactionObjectExamineLocation || !interactionObjectTossLocation || !interactionInventoryLocation)
                 {
                     Debug.LogError("FPEInteractionManagerScript:: Player or its components are missing. Did you change the Player Controller prefab, or forget to tag with 'Player' tag?");
                 }
@@ -778,9 +778,9 @@ namespace Whilefun.FPEKit
                     {
 
                         // Update position of object to be that of holding position
-                        currentHeldObject.transform.position = interactionObjectPickupLocation.transform.position;
+                        //currentHeldObject.transform.position = interactionObjectPickupLocation.transform.position;
                         // Lerp a bit so it feels less rigid and more like holding something in real life
-                        currentHeldObject.transform.rotation = Quaternion.Slerp(currentHeldObject.transform.rotation, interactionObjectPickupLocation.transform.rotation * Quaternion.Euler(lastObjectHeldRotation.eulerAngles + currentHeldObject.GetComponent<FPEInteractablePickupScript>().pickupRotationOffset), 0.2f);
+                        //currentHeldObject.transform.rotation = Quaternion.Slerp(currentHeldObject.transform.rotation, interactionObjectPickupLocation.transform.rotation * Quaternion.Euler(lastObjectHeldRotation.eulerAngles + currentHeldObject.GetComponent<FPEInteractablePickupScript>().pickupRotationOffset), 0.2f);
 
                         updateObjectHighlights();
 
@@ -1328,10 +1328,10 @@ namespace Whilefun.FPEKit
                 c.isTrigger = true;
             }
 
-            go.transform.position = interactionObjectPickupLocation.transform.position;
+            //go.transform.position = interactionObjectPickupLocation.transform.position;
 
             // We put the pickup into the player's hands so that it is very safely and easily not destroyed when we change levels
-            go.transform.parent = interactionObjectPickupLocation.transform;
+            //go.transform.parent = interactionObjectPickupLocation.transform;
 
             currentHeldObject = go;
 
@@ -2456,6 +2456,10 @@ namespace Whilefun.FPEKit
 
             if (drawDebugGizmos)
             {
+                if (!FPEPlayer.Instance)
+                {
+                    return;
+                }
 
                 Vector3 iconPosition = FPEPlayer.Instance.transform.position + Vector3.up * 1.0f;
 
