@@ -89,7 +89,7 @@ namespace TimeOfDayURP
         private GameObject instantiatedSnowPrefab;
         public bool isRainTransitioning = false;
         private bool isSnowTransitioning = false;
-        private int lastQuarterHourInvoked = -1;
+        //private int lastQuarterHourInvoked = -1;
 
         public UnityEvent onMorning;
         public UnityEvent onNoon;

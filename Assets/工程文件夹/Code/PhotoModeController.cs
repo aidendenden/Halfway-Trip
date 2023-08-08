@@ -73,7 +73,7 @@ public class PhotoModeController : MonoBehaviour
     // If the target is captured on screen, but outside this range, it does not count as a target capture.
     [Tooltip("Total distance (percent of screen size) allowed from center of camera viewfinder that still counts as target capture. E.g. 0.5 means target must be in center 50% of screen width and height.")]
     public float cameraTargetDistanceTolerance = 0.5f;
-    private bool cameraTargetCapturedInLastSnapshot=false;
+    //private bool cameraTargetCapturedInLastSnapshot=false;
     private Vector3 cameraTargetScreenPosition=Vector3.zero;
     private float currentZoom;
     private float targetZoom;
@@ -252,7 +252,7 @@ public class PhotoModeController : MonoBehaviour
             
             RaycastHit hitTest;
             Vector3 rayCastDirection = cameraTarget.transform.position - PhotoCamera.transform.position;
-             cameraTargetCapturedInLastSnapshot = false;
+             //cameraTargetCapturedInLastSnapshot = false;
 
             // Do line of sight test first to ensure it's possible to capture target in the snapshot
             if(Physics.Raycast(PhotoCamera.transform.position, rayCastDirection, out hitTest)){
@@ -266,7 +266,7 @@ public class PhotoModeController : MonoBehaviour
                     cameraTargetDelta.y = Mathf.Abs(Screen.height/2 - cameraTargetScreenPosition.y);
 
                     if((cameraTargetDelta.x/Screen.width) <= cameraTargetDistanceTolerance && (cameraTargetDelta.y/Screen.height) <= cameraTargetDistanceTolerance){
-                        cameraTargetCapturedInLastSnapshot = true;
+                        //cameraTargetCapturedInLastSnapshot = true;
                     }
 
                 }

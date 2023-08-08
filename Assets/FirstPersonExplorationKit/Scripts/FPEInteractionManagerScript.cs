@@ -141,7 +141,8 @@ namespace Whilefun.FPEKit
         private eInteractionState currentInteractionState = eInteractionState.FREE;
 
         private bool initialized = false;
-        
+        private Camera camera1;
+
 
         void Awake()
         {
@@ -161,6 +162,7 @@ namespace Whilefun.FPEKit
 
         void Start()
         {
+            camera1 = Camera.main;
             initialize();
         }
 
@@ -255,98 +257,64 @@ namespace Whilefun.FPEKit
 
                 #region CHECK_FOR_INTERACTABLE_OBJECT
 
-                Ray interactionRay = Camera.main.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
-                RaycastHit hitInteractable;
-                Physics.Raycast(interactionRay, out hitInteractable, interactionRange, interactionLayerMask);
-
-                // Check if we're looking at InteractableBase-type object //
-                if (!examiningObject && !dockingInProgress && hitInteractable.transform != null && hitInteractable.transform.gameObject.GetComponent<FPEInteractableBaseScript>())
+                if (camera1 != null)
                 {
+                    Ray interactionRay = camera1.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
+                    RaycastHit hitInteractable;
+                    Physics.Raycast(interactionRay, out hitInteractable, interactionRange, interactionLayerMask);
 
-                    if (hitInteractable.distance < hitInteractable.transform.gameObject.GetComponent<FPEInteractableBaseScript>().getInteractionDistance())
+                    // Check if we're looking at InteractableBase-type object //
+                    if (!examiningObject && !dockingInProgress && hitInteractable.transform != null && hitInteractable.transform.gameObject.GetComponent<FPEInteractableBaseScript>())
                     {
 
-                        if (currentInteractableObject)
-                        {
-                            currentInteractableObject.GetComponent<FPEInteractableBaseScript>().unHighlightObject();
-                            currentInteractableObject = null;
-                        }
-
-                        currentInteractableObject = hitInteractable.transform.gameObject;
-
-                        // This is the one case where we retrieve notes from objects by looking at them
-                        if (currentInteractableObject.GetComponent<FPEInteractableBaseScript>().getInteractionType() == FPEInteractableBaseScript.eInteractionType.STATIC)
-                        {
-                            retrieveNote(currentInteractableObject);
-                            retrievePassiveAudioDiary(currentInteractableObject, false);
-                        }
-                        else
-                        {
-                            // Notes are not retrieved passively, only diaries
-                            retrievePassiveAudioDiary(currentInteractableObject, false);
-                        }
-
-                        if (slowMouseOnInteractableObjectHighlight)
-                        {
-                            setMouseSensitivity(highlightedMouseSensitivity);
-                        }
-
-                        updateObjectHighlights();
-
-                    }
-                    else
-                    {
-
-                        if (currentInteractableObject)
+                        if (hitInteractable.distance < hitInteractable.transform.gameObject.GetComponent<FPEInteractableBaseScript>().getInteractionDistance())
                         {
 
-                            currentInteractableObject.GetComponent<FPEInteractableBaseScript>().unHighlightObject();
-                            currentInteractableObject = null;
-                            // If not in range, you could do some kind of additional "reticle hint" to override reticle state (icon only) to show "hey, there's something over there"?
+                            if (currentInteractableObject)
+                            {
+                                currentInteractableObject.GetComponent<FPEInteractableBaseScript>().unHighlightObject();
+                                currentInteractableObject = null;
+                            }
+
+                            currentInteractableObject = hitInteractable.transform.gameObject;
+
+                            // This is the one case where we retrieve notes from objects by looking at them
+                            if (currentInteractableObject.GetComponent<FPEInteractableBaseScript>().getInteractionType() == FPEInteractableBaseScript.eInteractionType.STATIC)
+                            {
+                                retrieveNote(currentInteractableObject);
+                                retrievePassiveAudioDiary(currentInteractableObject, false);
+                            }
+                            else
+                            {
+                                // Notes are not retrieved passively, only diaries
+                                retrievePassiveAudioDiary(currentInteractableObject, false);
+                            }
+
+                            if (slowMouseOnInteractableObjectHighlight)
+                            {
+                                setMouseSensitivity(highlightedMouseSensitivity);
+                            }
+
                             updateObjectHighlights();
 
                         }
-
-                    }
-
-                }
-                // Check if we're looking at Put Back Location //
-                else
-                {
-
-                    if (currentInteractableObject)
-                    {
-                        currentInteractableObject.GetComponent<FPEInteractableBaseScript>().unHighlightObject();
-                        currentInteractableObject = null;
-                    }
-
-                    // Check for Put Back Location //
-                    Ray rayPutBack = Camera.main.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
-                    RaycastHit hitPutBack2;
-                    Physics.Raycast(rayPutBack, out hitPutBack2, interactionRange, putbackLayerMask);
-
-                    // Only allow Put Back if we're holding an object and not currently examining it
-                    if (!examiningObject && hitPutBack2.transform != null && hitPutBack2.transform.gameObject.GetComponent<FPEPutBackScript>() && currentHeldObject != null)
-                    {
-
-                        if (hitPutBack2.transform.gameObject.GetComponent<FPEPutBackScript>().putBackMatchesGameObject(currentHeldObject) && (hitPutBack2.distance < hitPutBack2.transform.gameObject.GetComponent<FPEPutBackScript>().getInteractionDistance()))
-                        {
-                            currentPutbackObject = hitPutBack2.transform.gameObject;
-                        }
                         else
                         {
-                            currentPutbackObject = null;
-                        }
 
-                        if (slowMouseOnInteractableObjectHighlight)
-                        {
-                            setMouseSensitivity(highlightedMouseSensitivity);
-                        }
+                            if (currentInteractableObject)
+                            {
 
-                        updateObjectHighlights();
+                                currentInteractableObject.GetComponent<FPEInteractableBaseScript>().unHighlightObject();
+                                currentInteractableObject = null;
+                                // If not in range, you could do some kind of additional "reticle hint" to override reticle state (icon only) to show "hey, there's something over there"?
+                                updateObjectHighlights();
+
+                            }
+
+                        }
 
                     }
-                    // I guess we're looking at NOTHING //
+                    // Check if we're looking at Put Back Location //
                     else
                     {
 
@@ -356,18 +324,56 @@ namespace Whilefun.FPEKit
                             currentInteractableObject = null;
                         }
 
-                        currentPutbackObject = null;
+                        // Check for Put Back Location //
+                        Ray rayPutBack = Camera.main.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
+                        RaycastHit hitPutBack2;
+                        Physics.Raycast(rayPutBack, out hitPutBack2, interactionRange, putbackLayerMask);
 
-                        updateObjectHighlights();
-
-                        if (!cameraZoomedIn)
+                        // Only allow Put Back if we're holding an object and not currently examining it
+                        if (!examiningObject && hitPutBack2.transform != null && hitPutBack2.transform.gameObject.GetComponent<FPEPutBackScript>() && currentHeldObject != null)
                         {
-                            restorePreviousMouseSensitivity(true);
+
+                            if (hitPutBack2.transform.gameObject.GetComponent<FPEPutBackScript>().putBackMatchesGameObject(currentHeldObject) && (hitPutBack2.distance < hitPutBack2.transform.gameObject.GetComponent<FPEPutBackScript>().getInteractionDistance()))
+                            {
+                                currentPutbackObject = hitPutBack2.transform.gameObject;
+                            }
+                            else
+                            {
+                                currentPutbackObject = null;
+                            }
+
+                            if (slowMouseOnInteractableObjectHighlight)
+                            {
+                                setMouseSensitivity(highlightedMouseSensitivity);
+                            }
+
+                            updateObjectHighlights();
+
+                        }
+                        // I guess we're looking at NOTHING //
+                        else
+                        {
+
+                            if (currentInteractableObject)
+                            {
+                                currentInteractableObject.GetComponent<FPEInteractableBaseScript>().unHighlightObject();
+                                currentInteractableObject = null;
+                            }
+
+                            currentPutbackObject = null;
+
+                            updateObjectHighlights();
+
+                            if (!cameraZoomedIn)
+                            {
+                                restorePreviousMouseSensitivity(true);
+                            }
+
                         }
 
                     }
-
                 }
+
                 #endregion
 
                 #region HANDLE_INTERACTIONS
