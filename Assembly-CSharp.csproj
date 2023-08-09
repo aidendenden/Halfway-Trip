@@ -120,6 +120,7 @@
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPEInventoryActionsPanel.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\FPEInteractableStaticScript.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ObiActorTeleport.cs" />
+    <Compile Include="Assets\工程文件夹\Code\CameraCurr.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\DemoScripts\DemoArcadeMachine.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\AddRandomVelocity.cs" />
     <Compile Include="Assets\FiloCables\Scripts\CableSection.cs" />
