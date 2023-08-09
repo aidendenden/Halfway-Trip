@@ -7,8 +7,8 @@ using Obi;
 public class FluidColorizer : MonoBehaviour
 {
     public Color color;
-	public float tintSpeed = 5;
-	public ObiCollider collider;
+	//public float tintSpeed = 5;
+	public new ObiCollider collider;
 
     void Awake()
     {

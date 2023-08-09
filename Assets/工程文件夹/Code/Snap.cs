@@ -45,7 +45,7 @@ namespace 工程文件夹.Code
 
         bool isRendering;
         float curtTime = 0f;
-        float lastTime = 0f;
+        //float lastTime = 0f;
         private Vector3 targetPos;
         public Camera _camera;
 
