@@ -23,8 +23,24 @@ public class OffAndOn : MonoBehaviour
         // 设置立方体的材质颜色
         cubeRenderer.material.color = randomColor;
         cube.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-        cube.AddComponent<Rigidbody>();
+        
         var position = playerObject.transform.position;
-        cube.transform.position = new Vector3(position.x+0.5f,position.y+0.3f,position.z);
+
+        Vector3 originalPosition = position;
+
+        // 前方方向
+        Vector3 forwardDirection = playerObject.transform.forward;
+
+        // 距离
+        float distance = 1f;
+
+        // 计算正前方位置
+        Vector3 positionInFront = originalPosition + forwardDirection * distance;
+        
+        cube.transform.position = new Vector3(positionInFront.x,positionInFront.y+0.3f,positionInFront.z);
+        cube.tag = "Detectable";
+        int layerIndex = LayerMask.NameToLayer("DetectableLayer");
+        cube.layer = layerIndex;
+        cube.AddComponent<Rigidbody>();
     }
 }
