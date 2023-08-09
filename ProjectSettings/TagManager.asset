@@ -8,6 +8,7 @@ TagManager:
   - VirtualSnapshot
   - InputManager
   - Detectable
+  - ImageSee
   layers:
   - Default
   - TransparentFX
