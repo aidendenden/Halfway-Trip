@@ -90,7 +90,6 @@
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\DoorsAndDrawers\FPESimpleDoor.cs" />
     <Compile Include="Assets\FiloCables\Scripts\Utils.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\FPEInteractableAudioDiaryScript.cs" />
-    <Compile Include="Assets\工程文件夹\AAAScenes_THERE\sp\SunManager.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\SpiralCurve.cs" />
     <Compile Include="Assets\AraTrail\SampleScenes\Scripts\CarController.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\RopeTensionColorizer.cs" />
@@ -133,7 +132,6 @@
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\FPSDisplay.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\DoorsAndDrawers\FPESlidingDoor.cs" />
     <Compile Include="Assets\Obi\Samples\Fluid\SampleResources\Scripts\SolidifyOnContact.cs" />
-    <Compile Include="Assets\工程文件夹\Scenes\Jiaoben\ApplyForce.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\DoorsAndDrawers\FPEDrawerContentsGrabber.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\CraneController.cs" />
     <Compile Include="Assets\Obi\Samples\Cloth\SampleResources\Scripts\CannonBall.cs" />
@@ -170,6 +168,7 @@
     <Compile Include="Assets\工程文件夹\Code\Snap.cs" />
     <Compile Include="Assets\Obi\Samples\Fluid\SampleResources\Scripts\OverlapTest.cs" />
     <Compile Include="Assets\FiloCables\Scripts\Bodies\CableShape.cs" />
+    <Compile Include="Assets\工程文件夹\AAAScenes_THERE\Scripts\SunManager.cs" />
     <Compile Include="Assets\工程文件夹\测试用例\第一人称测试（1）\PlayerMovement.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Testing\Scripts\FPEInputTester.cs" />
     <Compile Include="Assets\VirtualSnapshot\Scripts\DemoScripts\DemoLevelWarpScript.cs" />
@@ -291,6 +290,7 @@
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\FPEInteractableActivateScript.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\DemoScripts\DemoSoundOnExamineObjectScript.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\CursorController.cs" />
+    <Compile Include="Assets\工程文件夹\Code\ApplyForce.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPEDefaultHUD.cs" />
     <Compile Include="Assets\Obi\Samples\Fluid\SampleResources\Scripts\BucketController.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\CollectableTypes\FPEAudioDiaryEntry.cs" />
@@ -315,7 +315,6 @@
     <None Include="Assets\Tessera\Sample\GrassPaths\Models\CREDITS.txt" />
     <None Include="Assets\Obi\Resources\ObiMaterials\FluidThickness.shader" />
     <None Include="Assets\StylizedWater2\Shaders\Libraries\Features.hlsl" />
-    <None Include="Assets\工程文件夹\测试用例\Fonts\Titillium_Web\OFL.txt" />
     <None Include="Assets\Obi\Resources\ObiMaterials\UnityStandardCoreForwardBackfaces.cginc" />
     <None Include="Assets\XDPaint\Shaders\Grayscale.shader" />
     <None Include="Assets\Obi\Resources\ObiMaterials\URP\FluidShaderURP.shader" />
@@ -335,6 +334,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\FirstPersonExplorationKit\Documentation\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\工程文件夹\3500常用字.txt" />
     <None Include="Assets\StylizedWater2\Shaders\Libraries\Fog.hlsl" />
     <None Include="Assets\Obi\Resources\ObiMaterials\DistanceFieldSlice.shader" />
     <None Include="Assets\工程文件夹\测试用例\赛璐璐Shade测试用！\SimpleURPToonLitOutlineExample.shader" />
@@ -354,6 +354,7 @@
     <None Include="Assets\Obi\Resources\ObiMaterials\StandardVertexColors.shader" />
     <None Include="Assets\Feel\readme.txt" />
     <None Include="Assets\Stylized Grass Shader\Shaders\ShadowPass.hlsl" />
+    <None Include="Assets\TextMesh Pro\Glyph Report.txt" />
     <None Include="Assets\工程文件夹\测试用例\赛璐璐Shade测试用！\NiloZOffset.hlsl" />
     <None Include="Assets\Obi\Resources\ObiMaterials\SimpleParticleShader.shader" />
     <None Include="Assets\Feel\license.txt" />
@@ -377,6 +378,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\FirstPersonExplorationKit\Documentation\VersionHistory.txt" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Common.hlsl" />
+    <None Include="Assets\工程文件夹\7000常用字优化版.txt" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Wind.hlsl" />
     <None Include="Assets\Stylized Grass Shader\Prefabs\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
@@ -398,7 +400,7 @@
     <None Include="Assets\Obi\Plugins\x86\libOni.dll" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Bending\Common.hlsl" />
     <None Include="Assets\Tessera\Sample\Dungeon\Models\CREDITS.txt" />
-    <None Include="Assets\工程文件夹\测试用例\BlurBehind.shader" />
+    <None Include="Assets\工程文件夹\Materials\BlurBehind.shader" />
     <None Include="Assets\FiloCables\CHANGELOG.txt" />
     <None Include="Assets\Obi\CHANGELOG.txt" />
     <None Include="Assets\Obi\Resources\ObiMaterials\FluidColorsBlend.shader" />
