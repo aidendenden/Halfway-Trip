@@ -13,6 +13,8 @@ public class CameraSwitch : MonoBehaviour
 
     private void Start()
     {
+	    XiangCe.SetActive(false);
+	    
 		//固定光标
 		Cursor.lockState = CursorLockMode.Locked;
 		// 隐藏光标
@@ -61,11 +63,7 @@ public class CameraSwitch : MonoBehaviour
                 else
                 {
 					ChangeToChangJing();
-
-
-				}
-
-
+                }
 
 			}
 		}

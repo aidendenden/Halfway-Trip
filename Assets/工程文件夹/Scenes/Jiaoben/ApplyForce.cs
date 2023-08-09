@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ApplyForce : MonoBehaviour
 {
-    public float force = 10f; // 定义力的大小
+    public float force = 10f; // 瀹氫箟鍔涚殑澶у皬
     public bool isup = true;
 
     private Rigidbody rb;
@@ -19,11 +19,11 @@ public class ApplyForce : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)&&isup)
         {
-            rb.AddForce(ts.up * force, ForceMode.Impulse); // 在按下空格键时给物体施加向上的力
+            rb.AddForce(ts.up * force, ForceMode.Impulse); // 鍦ㄦ寜涓嬬┖鏍奸敭鏃剁粰鐗╀綋鏂藉姞鍚戜笂鐨勫姏
         }
         if (Input.GetKeyDown(KeyCode.Space) && isup==false)
         {
-            rb.AddForce(-ts.up * force, ForceMode.Impulse); // 在按下空格键时给物体施加向上的力
+            rb.AddForce(-ts.up * force, ForceMode.Impulse); // 鍦ㄦ寜涓嬬┖鏍奸敭鏃剁粰鐗╀綋鏂藉姞鍚戜笂鐨勫姏
         }
     }
 }

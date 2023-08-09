@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using System.IO;
+using Random = UnityEngine.Random;
 
 public class GenerateGameObjects : MonoBehaviour
 {
@@ -7,7 +9,7 @@ public class GenerateGameObjects : MonoBehaviour
 	public GameObject prefab; // 相片预制体
 
 	string folderPath; // 文件夹路径
-
+	
 
 	private void OnEnable()
 	{
