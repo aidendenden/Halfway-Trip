@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using System.IO;
 using Whilefun.FPEKit;
+using 工程文件夹.Code;
 
 
 //
@@ -12,36 +13,47 @@ using Whilefun.FPEKit;
 // Copyright 2016 While Fun Games
 // http://whilefun.com
 //
-public class VirtualSnapshotScript : MonoBehaviour {
-
+public class VirtualSnapshotScript : MonoBehaviour
+{
     [Tooltip("The Camera from which the snapshots will be taken (e.g. FPS Controller's Main Camera")]
     public Camera snapshotCamera;
+
     [Tooltip("The actual snapshot image size you want to capture.")]
     public int snapshotWidth = 1280;
+
     public int snapshotHeight = 720;
+
     [Tooltip("Toggle Zoom Capability On and Off. Recommended that you do not change this at runtime.")]
     public bool zoomEnabled = true;
+
     [Tooltip("Min/Max zoom levels for the camera's Field of View")]
     public float maxZoom = 90.0f;
+
     public float minZoom = 10.0f;
+
     [Tooltip("Toggle camera flash On/Off")]
     public bool cameraFlashEnabled = true;
+
     [Tooltip("The 2 sprites for camera flash indicator icon (for on and off)")]
     public Sprite[] flashIndicatorIconSprites;
+
     [Tooltip("GUI Colors for battery/flash icons and texts")]
-    public Color CameraUITextColor = new Color(0.59f,1.0f,0.0f);
-    public Color NoMoreExposuresTextColor = new Color(1.0f,0.0f,0.0f);
-    public Color BatteryIconColorFilled = new Color(0.59f,1.0f,0.0f);
-    public Color BatteryIconColorLow = new Color(1.0f,0.94f,0.0f);
-    public Color BatteryIconColorEmpty = new Color(1.0f,0.0f,0.0f);
+    public Color CameraUITextColor = new Color(0.59f, 1.0f, 0.0f);
+
+    public Color NoMoreExposuresTextColor = new Color(1.0f, 0.0f, 0.0f);
+    public Color BatteryIconColorFilled = new Color(0.59f, 1.0f, 0.0f);
+    public Color BatteryIconColorLow = new Color(1.0f, 0.94f, 0.0f);
+    public Color BatteryIconColorEmpty = new Color(1.0f, 0.0f, 0.0f);
 
     [Tooltip("The 5 sprites for battery level")]
     public Sprite[] batteryLevelSprites;
+
     private int batteryLevel = 5;
     private RectTransform batteryLevelIcon;
 
     [Tooltip("Toggle UI elements On/Off. When Off, corresponding UI elements are deleted on scene start.")]
     public bool showBatteryIndicator = true;
+
     public bool showFlashIndicator = true;
     public bool showShutterSpeed = true;
     public bool showAperture = true;
@@ -58,25 +70,32 @@ public class VirtualSnapshotScript : MonoBehaviour {
     private RectTransform ExposuresRemainingText;
     private RectTransform lightMeter;
     private RectTransform shutter;
+
     private bool takingSnapshot = false;
+
     // Note: Minimum shutter can't be a true simulation as a duration less than 1 frame is not visible :)
     private float shutterDurationInSeconds = 0.2f;
     private float shutterTimeRemaining = 0.0f;
 
     [Tooltip("If you want to simulate a memory card or film roll, set this to True")]
     public bool limitExposureCount = false;
+
     [Tooltip("If limitExposureCount is true, this is how many snapshots can be taken")]
     public int snapshotLimit = 27;
+
     // Always default to 1, don't change this
     private int exposuresRemaining = 1;
-    
+
     // This prevents I/O bit-bashing, gives time to let the photo be written to file
-    [Tooltip("Minimum delay (in seconds) between snapshots. Recommend about a quarter second or greater. If you find your platform hardware misses some photos when taken in quick succession, increase this value.")]
+    [Tooltip(
+        "Minimum delay (in seconds) between snapshots. Recommend about a quarter second or greater. If you find your platform hardware misses some photos when taken in quick succession, increase this value.")]
     public float minimumSnapshotInterval = 0.25f;
+
     private float snapshotCountdown = 0.0f;
 
     [Tooltip("The sounds the camera makes during operation")]
     public AudioClip[] shutterSounds;
+
     public AudioClip flashTurnOn;
     public AudioClip flashTurnOff;
     public AudioClip cameraOn;
@@ -103,414 +122,500 @@ public class VirtualSnapshotScript : MonoBehaviour {
     private string snapshotDirectory = "";
     private string fileExtension = ".png";
 
-    public bool needDetectableFunction=true;
+    public bool needDetectableFunction = true;
     public LayerMask DetectableTargetLayer = default;
-    
+
     // Target detection stuff
     // [Tooltip("Object to track in the scene (optional)")]
     // public GameObject cameraTarget;
     // // If the target is captured on screen, but outside this range, it does not count as a target capture.
     // [Tooltip("Total distance (percent of screen size) allowed from center of camera viewfinder that still counts as target capture. E.g. 0.5 means target must be in center 50% of screen width and height.")]
-    // public float cameraTargetDistanceTolerance = 0.5f;
-    // private Vector3 cameraTargetScreenPosition = Vector3.zero;
-    
-    private bool cameraTargetCapturedInLastSnapshot = false;
+     public float cameraTargetDistanceTolerance = 0.5f;
+     private Vector3 cameraTargetScreenPosition = Vector3.zero;
+     
 
     private GameObject inputManager = null;
 
-    void Awake(){
-
+    void Awake()
+    {
         startZoom = snapshotCamera.fieldOfView;
         currentZoom = startZoom;
         targetZoom = startZoom;
         previousZoom = startZoom;
 
         RectTransform[] rtc = gameObject.GetComponentsInChildren<RectTransform>();
-        foreach(RectTransform rt in rtc) {
-
-            if(rt.transform.name == "Shutter"){
+        foreach (RectTransform rt in rtc)
+        {
+            if (rt.transform.name == "Shutter")
+            {
                 shutter = rt;
-            }else if(rt.transform.name == "SnapshotUICanvas"){
+            }
+            else if (rt.transform.name == "SnapshotUICanvas")
+            {
                 mainCameraCanvas = rt;
-            }else if(rt.transform.name == "TransitionImage"){
+            }
+            else if (rt.transform.name == "TransitionImage")
+            {
                 cameraTransitionImage = rt;
-            }else if(rt.transform.name == "BatteryLevel"){
+            }
+            else if (rt.transform.name == "BatteryLevel")
+            {
                 batteryLevelIcon = rt;
-            }else if(rt.transform.name == "Aperture"){
+            }
+            else if (rt.transform.name == "Aperture")
+            {
                 apertureText = rt;
-            }else if(rt.transform.name == "ShutterSpeed"){
+            }
+            else if (rt.transform.name == "ShutterSpeed")
+            {
                 shutterSpeedText = rt;
-            }else if(rt.transform.name == "ISOLabel"){
+            }
+            else if (rt.transform.name == "ISOLabel")
+            {
                 ISOLabelText = rt;
-            }else if(rt.transform.name == "ISOValue"){
+            }
+            else if (rt.transform.name == "ISOValue")
+            {
                 ISOValueText = rt;
-            }else if(rt.transform.name == "FlashIndicator"){
+            }
+            else if (rt.transform.name == "FlashIndicator")
+            {
                 flashIndicatorIcon = rt;
-            }else if(rt.transform.name == "LightMeter"){
+            }
+            else if (rt.transform.name == "LightMeter")
+            {
                 lightMeter = rt;
-            }else if(rt.transform.name == "ExposureLabel"){
+            }
+            else if (rt.transform.name == "ExposureLabel")
+            {
                 ExposuresLabelText = rt;
-            }else if(rt.transform.name == "ExposuresRemaining"){
+            }
+            else if (rt.transform.name == "ExposuresRemaining")
+            {
                 ExposuresRemainingText = rt;
             }
-
         }
 
         // We check for presence to ensure prefab isn't broken
-        if(showBatteryIndicator && !batteryLevelIcon){
+        if (showBatteryIndicator && !batteryLevelIcon)
+        {
             Debug.LogError("VirtualSnapshotScript:: Battery Level UI Image is missing");
         }
-        if(showFlashIndicator && !flashIndicatorIcon){
+
+        if (showFlashIndicator && !flashIndicatorIcon)
+        {
             Debug.LogError("VirtualSnapshotScript:: Flash Indicator UI Image is missing");
         }
-        if(showShutterSpeed && !shutterSpeedText){
+
+        if (showShutterSpeed && !shutterSpeedText)
+        {
             Debug.LogError("VirtualSnapshotScript:: Shutter Speed UI Text is missing");
         }
-        if(showAperture && !apertureText){
+
+        if (showAperture && !apertureText)
+        {
             Debug.LogError("VirtualSnapshotScript:: Aperture UI Text is missing");
         }
-        if(showLightMeter && !lightMeter){
+
+        if (showLightMeter && !lightMeter)
+        {
             Debug.LogError("VirtualSnapshotScript:: Light Meter UI Image is missing");
         }
-        if(showISO && (!ISOLabelText || !ISOValueText)){
+
+        if (showISO && (!ISOLabelText || !ISOValueText))
+        {
             Debug.LogError("VirtualSnapshotScript:: ISO Label and/or Value UI Text is missing");
         }
-        if(showExposures && (!ExposuresLabelText || !ExposuresRemainingText)){
+
+        if (showExposures && (!ExposuresLabelText || !ExposuresRemainingText))
+        {
             Debug.LogError("VirtualSnapshotScript:: Exposures Label and/or Exposures Remaining UI Text is missing");
         }
-        if(!shutter || !mainCameraCanvas || !cameraTransitionImage){
-            Debug.LogError("VirtualSnapshotScript:: Missing one or more Camera UI components. You may have broken the prefab.");
+
+        if (!shutter || !mainCameraCanvas || !cameraTransitionImage)
+        {
+            Debug.LogError(
+                "VirtualSnapshotScript:: Missing one or more Camera UI components. You may have broken the prefab.");
         }
 
         // Depending on your target platform, you may want to use Application.persistentDataPath instead
         snapshotDirectory = Application.dataPath + "/snapshots/";
 
         // Ensure the snapshot directory exists
-        try{
-            if(!Directory.Exists(snapshotDirectory)){
+        try
+        {
+            if (!Directory.Exists(snapshotDirectory))
+            {
                 Directory.CreateDirectory(snapshotDirectory);
             }
-        }catch(IOException e){
-            Debug.LogError("VirtualSnapshotScript:: There was a problem creating the snapshots directory! ("+ e.Message +")");
+        }
+        catch (IOException e)
+        {
+            Debug.LogError("VirtualSnapshotScript:: There was a problem creating the snapshots directory! (" +
+                           e.Message + ")");
         }
 
         cameraFlash = GameObject.Find("CameraFlashAndSounds");
-        if(!cameraFlash){
+        if (!cameraFlash)
+        {
             Debug.LogError("VirtualSnapshotScript:: There was a problem finding the Camera Flash");
         }
 
         inputManager = GameObject.FindGameObjectWithTag("InputManager");
-        if (!inputManager){
+        if (!inputManager)
+        {
             Debug.LogError("VirtualSnapshotScript:: No object in scene tagged as 'InputManager'");
         }
 
         getStartSensitivity();
 
-        if(limitExposureCount){
+        if (limitExposureCount)
+        {
             exposuresRemaining = snapshotLimit;
         }
-
     }
 
-	void Start(){
-
+    void Start()
+    {
         // Ensure UI colors are applied, or disabled
-        if(showAperture){
+        if (showAperture)
+        {
             apertureText.GetComponent<Text>().color = CameraUITextColor;
-        }else{
+        }
+        else
+        {
             apertureText.GetComponent<Text>().enabled = false;
         }
-        if(showShutterSpeed){
+
+        if (showShutterSpeed)
+        {
             shutterSpeedText.GetComponent<Text>().color = CameraUITextColor;
-        }else{
+        }
+        else
+        {
             shutterSpeedText.GetComponent<Text>().enabled = false;
         }
-        if(showISO){
+
+        if (showISO)
+        {
             ISOLabelText.GetComponent<Text>().color = CameraUITextColor;
             ISOValueText.GetComponent<Text>().color = CameraUITextColor;
-        }else{
+        }
+        else
+        {
             ISOLabelText.GetComponent<Text>().enabled = false;
             ISOValueText.GetComponent<Text>().enabled = false;
         }
-        if(showExposures){
+
+        if (showExposures)
+        {
             ExposuresLabelText.GetComponent<Text>().color = CameraUITextColor;
             ExposuresRemainingText.GetComponent<Text>().color = CameraUITextColor;
-            if(limitExposureCount){
-                ExposuresRemainingText.GetComponent<Text>().text = ""+exposuresRemaining;
+            if (limitExposureCount)
+            {
+                ExposuresRemainingText.GetComponent<Text>().text = "" + exposuresRemaining;
             }
-        }else{
+        }
+        else
+        {
             ExposuresLabelText.GetComponent<Text>().enabled = false;
             ExposuresRemainingText.GetComponent<Text>().enabled = false;
         }
-        if(showBatteryIndicator){
+
+        if (showBatteryIndicator)
+        {
             batteryLevelIcon.GetComponent<Image>().color = BatteryIconColorFilled;
             setBatteryLevel(batteryLevel);
-        }else{
+        }
+        else
+        {
             batteryLevelIcon.GetComponent<Image>().enabled = false;
         }
-        if(showFlashIndicator){
+
+        if (showFlashIndicator)
+        {
             flashIndicatorIcon.GetComponent<Image>().color = BatteryIconColorFilled;
-            if(cameraFlashEnabled){
+            if (cameraFlashEnabled)
+            {
                 flashIndicatorIcon.GetComponent<Image>().overrideSprite = flashIndicatorIconSprites[0];
-            }else{
+            }
+            else
+            {
                 flashIndicatorIcon.GetComponent<Image>().overrideSprite = flashIndicatorIconSprites[1];
             }
-        }else{
+        }
+        else
+        {
             flashIndicatorIcon.GetComponent<Image>().enabled = false;
         }
-        if(showLightMeter){
+
+        if (showLightMeter)
+        {
             lightMeter.GetComponent<Image>().color = CameraUITextColor;
-        }else{
+        }
+        else
+        {
             lightMeter.GetComponent<Image>().enabled = false;
         }
 
         // Start with both canvases disabled
         mainCameraCanvas.GetComponent<Canvas>().enabled = false;
         cameraTransitionImage.transform.parent.GetComponent<Canvas>().enabled = false;
+    }
 
-	}
-	
-	// Update is called once per frame
-	void Update(){
-
+    // Update is called once per frame
+    void Update()
+    {
         // Toggle camera up/down
-        if(Input.GetKeyDown(KeyCode.F)){
-
-            if(cameraUp){
-
-                if(!movingCameraDown){
-
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (cameraUp)
+            {
+                if (!movingCameraDown)
+                {
                     movingCameraDown = true;
                     cameraTransitionImage.transform.parent.GetComponent<Canvas>().enabled = true;
                     cameraTransitionImage.GetComponent<CanvasRenderer>().SetAlpha(0.0f);
 
                     resetMouseLookSensitivity();
-                    if(zoomEnabled){
+                    if (zoomEnabled)
+                    {
                         previousZoom = currentZoom;
                         targetZoom = startZoom;
                     }
 
                     cameraFlash.GetComponent<AudioSource>().clip = cameraOff;
                     cameraFlash.GetComponent<AudioSource>().Play();
-
                 }
-
-            }else{
-
-                if(!movingCameraUp){
-                    
+            }
+            else
+            {
+                if (!movingCameraUp)
+                {
                     movingCameraUp = true;
                     cameraTransitionImage.transform.parent.GetComponent<Canvas>().enabled = true;
                     cameraTransitionImage.GetComponent<CanvasRenderer>().SetAlpha(0.0f);
-                    if(zoomEnabled){
+                    if (zoomEnabled)
+                    {
                         targetZoom = previousZoom;
                     }
 
                     cameraFlash.GetComponent<Light>().enabled = false;
                     cameraFlash.GetComponent<AudioSource>().clip = cameraOn;
                     cameraFlash.GetComponent<AudioSource>().Play();
-
                 }
-
             }
-
         }
 
         // Handle camera up/down transitions
-        if(movingCameraUp){
+        if (movingCameraUp)
+        {
+            cameraTransitionImage.GetComponent<CanvasRenderer>()
+                .SetAlpha(cameraTransitionImage.GetComponent<CanvasRenderer>().GetAlpha() + 0.1f);
 
-            cameraTransitionImage.GetComponent<CanvasRenderer>().SetAlpha(cameraTransitionImage.GetComponent<CanvasRenderer>().GetAlpha() + 0.1f);
-
-            if(cameraTransitionImage.GetComponent<CanvasRenderer>().GetAlpha() >= 1.0f){
-
+            if (cameraTransitionImage.GetComponent<CanvasRenderer>().GetAlpha() >= 1.0f)
+            {
                 cameraUp = true;
                 movingCameraUp = false;
                 cameraTransitionImage.transform.parent.GetComponent<Canvas>().enabled = false;
                 mainCameraCanvas.GetComponent<Canvas>().enabled = true;
-
             }
+        }
+        else if (movingCameraDown)
+        {
+            cameraTransitionImage.GetComponent<CanvasRenderer>()
+                .SetAlpha(cameraTransitionImage.GetComponent<CanvasRenderer>().GetAlpha() + 0.1f);
 
-        }else if(movingCameraDown){
-
-            cameraTransitionImage.GetComponent<CanvasRenderer>().SetAlpha(cameraTransitionImage.GetComponent<CanvasRenderer>().GetAlpha() + 0.1f);
-
-            if(cameraTransitionImage.GetComponent<CanvasRenderer>().GetAlpha() >= 1.0f){
-
+            if (cameraTransitionImage.GetComponent<CanvasRenderer>().GetAlpha() >= 1.0f)
+            {
                 cameraUp = false;
                 movingCameraDown = false;
                 cameraTransitionImage.transform.parent.GetComponent<Canvas>().enabled = false;
                 mainCameraCanvas.GetComponent<Canvas>().enabled = false;
-
             }
-
         }
 
         // Only allow zoom, taking pictures, etc. when camera is up (and not otherwise transitioning)
-        if(cameraUp && !movingCameraUp && !movingCameraDown){
-
-            if(snapshotCountdown > 0.0f){
+        if (cameraUp && !movingCameraUp && !movingCameraDown)
+        {
+            if (snapshotCountdown > 0.0f)
+            {
                 snapshotCountdown -= Time.deltaTime;
             }
 
             // Only allowed to take a snapshot if not already in progress, and enough time has elapsed since last snapshot, and if we have exposures left
-            if(Input.GetMouseButtonDown(0)&& !takingSnapshot && (snapshotCountdown <= 0.0f))
+            if (Input.GetMouseButtonDown(0) && !takingSnapshot && (snapshotCountdown <= 0.0f))
             {
+                if (exposuresRemaining > 0)
+                {
 
-                if(exposuresRemaining > 0){
-
-                    cameraTargetCapturedInLastSnapshot = false;
-
-                    if(limitExposureCount){
+                    if (limitExposureCount)
+                    {
                         exposuresRemaining -= 1;
                     }
 
-                    if(cameraFlashEnabled){
+                    if (cameraFlashEnabled)
+                    {
                         cameraFlash.GetComponent<Light>().enabled = true;
                     }
 
-                    cameraFlash.GetComponent<AudioSource>().clip = shutterSounds[Random.Range(0,shutterSounds.Length)];
+                    cameraFlash.GetComponent<AudioSource>().clip = shutterSounds[Random.Range(0, shutterSounds.Length)];
                     cameraFlash.GetComponent<AudioSource>().Play();
 
                     snapshotCountdown = minimumSnapshotInterval;
                     takingSnapshot = true;
                     shutterTimeRemaining = shutterDurationInSeconds;
                     StartCoroutine(takePhoto());
-
-                }else{
-
+                }
+                else
+                {
                     cameraFlash.GetComponent<AudioSource>().clip = shutterNoExposuresLeft;
                     cameraFlash.GetComponent<AudioSource>().Play();
-
                 }
-
             }
 
             // Toggle Camera Flash On/Off
-            if(Input.GetKeyDown(KeyCode.G) && !takingSnapshot && snapshotCountdown <= 0.0f){
-
+            if (Input.GetKeyDown(KeyCode.G) && !takingSnapshot && snapshotCountdown <= 0.0f)
+            {
                 cameraFlashEnabled = !cameraFlashEnabled;
 
-                if(cameraFlashEnabled){
+                if (cameraFlashEnabled)
+                {
                     flashIndicatorIcon.GetComponent<Image>().overrideSprite = flashIndicatorIconSprites[0];
                     cameraFlash.GetComponent<AudioSource>().clip = flashTurnOn;
                     cameraFlash.GetComponent<AudioSource>().Play();
-                }else{
+                }
+                else
+                {
                     flashIndicatorIcon.GetComponent<Image>().overrideSprite = flashIndicatorIconSprites[1];
                     cameraFlash.GetComponent<AudioSource>().clip = flashTurnOff;
                     cameraFlash.GetComponent<AudioSource>().Play();
                 }
-
             }
-            
-            // Handle Zoom
-            if(zoomEnabled){
 
+            // Handle Zoom
+            if (zoomEnabled)
+            {
                 // For keys held down
-                if(Input.GetKey(KeyCode.Equals)){
-                    targetZoom = Mathf.Max(targetZoom - 60.0f*Time.deltaTime, minZoom);
+                if (Input.GetKey(KeyCode.Equals))
+                {
+                    targetZoom = Mathf.Max(targetZoom - 60.0f * Time.deltaTime, minZoom);
                 }
-                if(Input.GetKey(KeyCode.Minus)){
-                    targetZoom = Mathf.Min(targetZoom + 60.0f*Time.deltaTime, maxZoom);
+
+                if (Input.GetKey(KeyCode.Minus))
+                {
+                    targetZoom = Mathf.Min(targetZoom + 60.0f * Time.deltaTime, maxZoom);
                 }
 
                 // For mouse wheel
-                if(Input.mouseScrollDelta.y > 0){
-                    targetZoom = Mathf.Max(targetZoom - 500.0f*Time.deltaTime, minZoom);
-                }
-                if(Input.mouseScrollDelta.y < 0){
-                    targetZoom = Mathf.Min(targetZoom + 500.0f*Time.deltaTime, maxZoom);
+                if (Input.mouseScrollDelta.y > 0)
+                {
+                    targetZoom = Mathf.Max(targetZoom - 500.0f * Time.deltaTime, minZoom);
                 }
 
-                currentZoom = Mathf.Lerp(currentZoom, targetZoom,0.5f);
+                if (Input.mouseScrollDelta.y < 0)
+                {
+                    targetZoom = Mathf.Min(targetZoom + 500.0f * Time.deltaTime, maxZoom);
+                }
+
+                currentZoom = Mathf.Lerp(currentZoom, targetZoom, 0.5f);
 
                 // If zoom changed, adjust sensitivity
-                if(currentZoom != snapshotCamera.fieldOfView){
-
-                    if(!cameraFlash.GetComponent<AudioSource>().isPlaying) {
+                if (currentZoom != snapshotCamera.fieldOfView)
+                {
+                    if (!cameraFlash.GetComponent<AudioSource>().isPlaying)
+                    {
                         cameraFlash.GetComponent<AudioSource>().clip = cameraZoomLoop;
                         cameraFlash.GetComponent<AudioSource>().Play();
                     }
 
                     adjustMouseLookSensitivity();
-
-                }else{
-
-                    if(cameraFlash.GetComponent<AudioSource>().isPlaying && cameraFlash.GetComponent<AudioSource>().clip == cameraZoomLoop) {
+                }
+                else
+                {
+                    if (cameraFlash.GetComponent<AudioSource>().isPlaying &&
+                        cameraFlash.GetComponent<AudioSource>().clip == cameraZoomLoop)
+                    {
                         cameraFlash.GetComponent<AudioSource>().Stop();
                     }
-
                 }
 
                 snapshotCamera.fieldOfView = currentZoom;
-
             }
 
             // This simulates shutter visuals
-            if(takingSnapshot){
-
+            if (takingSnapshot)
+            {
                 shutterTimeRemaining -= Time.deltaTime;
 
-                if(shutterTimeRemaining <= 0.0f){
+                if (shutterTimeRemaining <= 0.0f)
+                {
                     shutter.GetComponent<Image>().enabled = false;
                     takingSnapshot = false;
                     cameraFlash.GetComponent<Light>().enabled = false;
-                }else{
+                }
+                else
+                {
                     shutter.GetComponent<Image>().enabled = true;
                 }
-
             }
-
-        }else{
-
+        }
+        else
+        {
             // We also adjust here to cover smooth zoom changes during camera up/down transitions
-            if(zoomEnabled){
-                currentZoom = Mathf.Lerp(currentZoom, targetZoom,0.5f);
-                if(currentZoom != snapshotCamera.fieldOfView) {
+            if (zoomEnabled)
+            {
+                currentZoom = Mathf.Lerp(currentZoom, targetZoom, 0.5f);
+                if (currentZoom != snapshotCamera.fieldOfView)
+                {
                     adjustMouseLookSensitivity();
                 }
+
                 snapshotCamera.fieldOfView = currentZoom;
             }
-
         }
-
-	}
+    }
 
     // Depending on your implementation, you may want to adjust sensitivity a different way
     // Alternatively, if you desire accurate simulation, don't adjust sensitivity at all. When 
     // operating a camera at a long focal length, it is hard to move it in small amounts 
     // accurately. An additional alternative would be to add some kind of wobble or sway
     // when zoomed in.
-    private void adjustMouseLookSensitivity(){
+    private void adjustMouseLookSensitivity()
+    {
         Vector2 adjustedSensitivity = Vector2.zero;
-        adjustedSensitivity.x = 1.0f + ((currentZoom/maxZoom) * 4.0f);
-        adjustedSensitivity.y = 1.0f + ((currentZoom/maxZoom) * 4.0f);
+        adjustedSensitivity.x = 1.0f + ((currentZoom / maxZoom) * 4.0f);
+        adjustedSensitivity.y = 1.0f + ((currentZoom / maxZoom) * 4.0f);
         //thePlayer.GetComponent<MouseLookScript>().setMouseSensitivity(adjustedSensitivity.x, adjustedSensitivity.y);
         inputManager.GetComponent<FPEInputManager>().LookSensitivity = adjustedSensitivity;
     }
 
     // Just reset to starting sensitivity, for use when player puts camera down
-    private void resetMouseLookSensitivity(){
+    private void resetMouseLookSensitivity()
+    {
         //thePlayer.GetComponent<MouseLookScript>().setMouseSensitivity(startSensitivity.x, startSensitivity.y);
         inputManager.GetComponent<FPEInputManager>().LookSensitivity = startSensitivity;
     }
 
     // Get look sensitivity when game starts, to save for restoring it later
-    private void getStartSensitivity(){
+    private void getStartSensitivity()
+    {
         // startSensitivity.x = thePlayer.GetComponent<MouseLookScript>().getMouseSensitivity().x;
         // startSensitivity.y = thePlayer.GetComponent<MouseLookScript>().getMouseSensitivity().y;
-        startSensitivity= inputManager.GetComponent<FPEInputManager>().LookSensitivity;
+        startSensitivity = inputManager.GetComponent<FPEInputManager>().LookSensitivity;
     }
 
     // Very simple function to make a unique filename
     // You can also number these more simply if you want to number the files from film roll, etc.
     // Note: this does not include file extension
-    private string getNextPhotoFilename(){
+    private string getNextPhotoFilename()
+    {
         return "snapshot" + System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
     }
 
     // This is the function that actually captures the photo, and writes it to file
-    IEnumerator takePhoto(){
-
+    IEnumerator takePhoto()
+    {
         yield return new WaitForEndOfFrame();
 
         // Get RenderTexture data from camera
@@ -525,165 +630,98 @@ public class VirtualSnapshotScript : MonoBehaviour {
         snapshotCamera.targetTexture = null;
         RenderTexture.active = null;
         Destroy(rt);
-        
+
         // This assumes PNG encoding. Replace this with whichever encoding you want (and update the file extension from .png)
         byte[] bytes = screenShot.EncodeToPNG();
         string snapshotFilename = snapshotDirectory + getNextPhotoFilename() + fileExtension;
 
         // Saving the photo may not always work (e.g. if on mobile, user removes their SD card)
-        try{
+        try
+        {
             System.IO.File.WriteAllBytes(snapshotFilename, bytes);
-        }catch(IOException e){
+        }
+        catch (IOException e)
+        {
             Debug.Log("VirtualSnapshotScript:: Failed to save snapshot '" + snapshotFilename + "' (" + e.Message + ")");
         }
 
         if (needDetectableFunction)
         {
-            Detectable();
+            //Detectable(TODO, cameraTargetDistanceTolerance, out cameraTargetScreenPosition);
         }
-        
-        #region old检测
 
-        // Target Capture stuff
-        //      if(cameraTarget){
-        //          
-        //          RaycastHit hitTest;
-        // Vector3 rayCastDirection = cameraTarget.transform.position - snapshotCamera.transform.position;
-        //          cameraTargetCapturedInLastSnapshot = false;
-        //
-        //          // Do line of sight test first to ensure it's possible to capture target in the snapshot
-        //          if(Physics.Raycast(snapshotCamera.transform.position, rayCastDirection, out hitTest)){
-        //
-        //              // If we can see it, check that it's within the viewfinder according to specified percentage
-        //              if(hitTest.collider.gameObject == cameraTarget){
-        //
-        //                  cameraTargetScreenPosition = snapshotCamera.WorldToScreenPoint(cameraTarget.transform.position);
-        //                  Vector2 cameraTargetDelta = Vector2.zero;
-        //                  cameraTargetDelta.x = Mathf.Abs(Screen.width/2 - cameraTargetScreenPosition.x);
-        //                  cameraTargetDelta.y = Mathf.Abs(Screen.height/2 - cameraTargetScreenPosition.y);
-        //
-        //                  if((cameraTargetDelta.x/Screen.width) <= cameraTargetDistanceTolerance && (cameraTargetDelta.y/Screen.height) <= cameraTargetDistanceTolerance){
-        //                      cameraTargetCapturedInLastSnapshot = true;
-        //                  }
-        //
-        //              }
-        //
-        // }
-        //
-        //      }
-
-        #endregion
-        
-        if(limitExposureCount){
-            ExposuresRemainingText.GetComponent<Text>().text = ""+exposuresRemaining;
+        if (limitExposureCount)
+        {
+            ExposuresRemainingText.GetComponent<Text>().text = "" + exposuresRemaining;
             // If that was the last exposure, make the UI text red for easier readability
-            if(exposuresRemaining == 0){
+            if (exposuresRemaining == 0)
+            {
                 ExposuresRemainingText.GetComponent<Text>().color = NoMoreExposuresTextColor;
             }
         }
-
     }
 
-    private void Detectable()
+    private void Detectable(GameObject cameraTarget,float cameraTargetDistanceTolerance, out Vector3 cameraTargetScreenPosition)
     {
-        #region 优雅方法
-        
-        //IsInScreen(targetPos);
+        // Target Capture stuff
+        if (cameraTarget)
+        {
+            RaycastHit hitTest;
+            Vector3 rayCastDirection = cameraTarget.transform.position - snapshotCamera.transform.position;
 
-        #endregion
+            // Do line of sight test first to ensure it's possible to capture target in the snapshot
+            if (Physics.Raycast(snapshotCamera.transform.position, rayCastDirection, out hitTest))
+            {
+                // If we can see it, check that it's within the viewfinder according to specified percentage
+                if (hitTest.collider.gameObject == cameraTarget)
+                {
+                    cameraTargetScreenPosition = snapshotCamera.WorldToScreenPoint(cameraTarget.transform.position);
+                    Vector2 cameraTargetDelta = Vector2.zero;
+                    cameraTargetDelta.x = Mathf.Abs(Screen.width / 2 - cameraTargetScreenPosition.x);
+                    cameraTargetDelta.y = Mathf.Abs(Screen.height / 2 - cameraTargetScreenPosition.y);
 
-        #region 粗暴方法
-
-        // Collider[] colliders = Physics.OverlapSphere(snapshotCamera.transform.position, snapshotCamera.farClipPlane, DetectableTargetLayer);
-        //
-        // for (int i = 0; i < colliders.Length; i++)
-        // {
-        //     Collider collider = colliders[i];
-        //     GameObject visibleObject = collider.gameObject;
-        //     Vector3 viewportPos = snapshotCamera.WorldToViewportPoint(visibleObject.transform.position);
-        //
-        //     bool isVisible = (viewportPos.x > 0 && viewportPos.x < 1 && viewportPos.y > 0 && viewportPos.y < 1 &&
-        //                       viewportPos.z > 0);
-        //     if (isVisible)
-        //     {
-        //         Debug.Log("物体进入屏幕范围：" + visibleObject.name);
-        //         // 在此处执行您想要的操作
-        //     }
-        //
-        // }
-
-        // Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
-        // RaycastHit hit;
-        // if ( Physics.Raycast(ray, out hit, DetectableTargetLayer))
-        // {
-        //     GameObject hitObject = hit.collider.gameObject;
-        //     Debug.Log("检测到物体：" + hitObject.name);
-        // }
-
-        #endregion
-
+                    if ((cameraTargetDelta.x / Screen.width) <= cameraTargetDistanceTolerance &&
+                        (cameraTargetDelta.y / Screen.height) <= cameraTargetDistanceTolerance)
+                    {
+                        Transform _transform = null;
+                        _transform.position = cameraTargetScreenPosition;
+                        GameEventManager.Instance.Triggered("to touch",_transform);
+                        return;
+                    }
+                }
+            }
+        }
+        cameraTargetScreenPosition = default;
     }
+
 
     // Update Battery level, and icon Sprite/color (if shown)
-    public void setBatteryLevel(int newLevel){
-        
+    public void setBatteryLevel(int newLevel)
+    {
         batteryLevel = newLevel;
 
-        if(showBatteryIndicator){
-
-            if(batteryLevel >= 3){
+        if (showBatteryIndicator)
+        {
+            if (batteryLevel >= 3)
+            {
                 batteryLevelIcon.GetComponent<Image>().color = BatteryIconColorFilled;
-            }else if(batteryLevel >= 2){
+            }
+            else if (batteryLevel >= 2)
+            {
                 batteryLevelIcon.GetComponent<Image>().color = BatteryIconColorLow;
-            }else{
+            }
+            else
+            {
                 batteryLevelIcon.GetComponent<Image>().color = BatteryIconColorEmpty;
             }
 
-            batteryLevelIcon.GetComponent<Image>().overrideSprite = batteryLevelSprites[batteryLevel-1];
-
+            batteryLevelIcon.GetComponent<Image>().overrideSprite = batteryLevelSprites[batteryLevel - 1];
         }
-
     }
 
-    
-    private bool IsInScreen(Vector3 targetPos)
+    public int getBatteryLevel()
     {
-        Vector3 viewPos = Camera.main.WorldToViewportPoint(targetPos);
-        Vector3 dir = (Camera.main.transform.position - viewPos).normalized;
-        float dot = Vector3.Dot(Camera.main.transform.forward, dir);
-        return dot > 0 && viewPos.x > 0 && viewPos.x < 1 && viewPos.y > 0 && viewPos.y < 1;
-    }
-    
-    public bool IsVisible(Bounds bounds, Camera camera)
-    {
-        // 得到摄像机的六个面 
-
-        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(camera);
-
-        // 判断边框bound是否在六个面内
-
-        //需要给游戏对象添加Collider
-        return GeometryUtility.TestPlanesAABB(planes, bounds);
-    }
-    
-    //物体出现在屏幕  
-    void OnBecameVisible()
-    {
-        Debug.Log(this.name.ToString() + "这个物体出现在屏幕里面了");
-    }
-
-    //物体离开屏幕  
-    void OnBecameInvisible()
-    {
-        Debug.Log(this.name.ToString() + "这个物体离开屏幕里面了");
-    }
-    
-    public int getBatteryLevel(){
         return batteryLevel;
     }
-
-    public bool capturedTargetInLastSnapshot(){
-        return cameraTargetCapturedInLastSnapshot;
-    }
-
+    
 }

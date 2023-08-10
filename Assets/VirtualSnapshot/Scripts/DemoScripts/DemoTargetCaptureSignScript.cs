@@ -41,15 +41,15 @@ public class DemoTargetCaptureSignScript : MonoBehaviour {
 
             timeLeft -= Time.deltaTime;
 
-            if(timeLeft < 0.0f){
-                if(virtualSnapshotObject.GetComponent<VirtualSnapshotScript>().capturedTargetInLastSnapshot()){
-                    yesLight.GetComponent<Renderer>().material = yesLightOn;
-                    noLight.GetComponent<Renderer>().material = noLightOff;
-                }else{
-                    yesLight.GetComponent<Renderer>().material = yesLightOff;
-                    noLight.GetComponent<Renderer>().material = noLightOn;
-                }
-            }
+            // if(timeLeft < 0.0f){
+            //     if(virtualSnapshotObject.GetComponent<VirtualSnapshotScript>().capturedTargetInLastSnapshot()){
+            //         yesLight.GetComponent<Renderer>().material = yesLightOn;
+            //         noLight.GetComponent<Renderer>().material = noLightOff;
+            //     }else{
+            //         yesLight.GetComponent<Renderer>().material = yesLightOff;
+            //         noLight.GetComponent<Renderer>().material = noLightOn;
+            //     }
+            // }
 
         }
 

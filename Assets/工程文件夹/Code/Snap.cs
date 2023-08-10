@@ -104,7 +104,67 @@ namespace 工程文件夹.Code
         }
 
 
+        public bool IsVisible(Bounds bounds, Camera camera)
+        {
+            // 得到摄像机的六个面 
+
+            Plane[] planes = GeometryUtility.CalculateFrustumPlanes(camera);
+
+            // 判断边框bound是否在六个面内
+
+            //需要给游戏对象添加Collider
+            return GeometryUtility.TestPlanesAABB(planes, bounds);
+        }
+    
+        private void Detectable()
+        {
+            #region 优雅方法
         
+            //IsInScreen(targetPos);
+
+            #endregion
+
+            #region 粗暴方法
+
+            // Collider[] colliders = Physics.OverlapSphere(snapshotCamera.transform.position, snapshotCamera.farClipPlane, DetectableTargetLayer);
+            //
+            // for (int i = 0; i < colliders.Length; i++)
+            // {
+            //     Collider collider = colliders[i];
+            //     GameObject visibleObject = collider.gameObject;
+            //     Vector3 viewportPos = snapshotCamera.WorldToViewportPoint(visibleObject.transform.position);
+            //
+            //     bool isVisible = (viewportPos.x > 0 && viewportPos.x < 1 && viewportPos.y > 0 && viewportPos.y < 1 &&
+            //                       viewportPos.z > 0);
+            //     if (isVisible)
+            //     {
+            //         Debug.Log("物体进入屏幕范围：" + visibleObject.name);
+            //         // 在此处执行您想要的操作
+            //     }
+            //
+            // }
+
+            // Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+            // RaycastHit hit;
+            // if ( Physics.Raycast(ray, out hit, DetectableTargetLayer))
+            // {
+            //     GameObject hitObject = hit.collider.gameObject;
+            //     Debug.Log("检测到物体：" + hitObject.name);
+            // }
+
+            #endregion
+
+        }
+
+
+        bool IsInScreen(Vector3 targetPos)
+        {
+            Vector3 viewPos = Camera.main.WorldToViewportPoint(targetPos);
+            Vector3 dir = (Camera.main.transform.position - viewPos).normalized;
+            float dot = Vector3.Dot(Camera.main.transform.forward, dir);
+            return dot > 0 && viewPos.x > 0 && viewPos.x < 1 && viewPos.y > 0 && viewPos.y < 1;
+        }
+
 
 
         
