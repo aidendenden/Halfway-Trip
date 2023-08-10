@@ -62,6 +62,7 @@
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPETextButton.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ColorFromPhase.cs" />
     <Compile Include="Assets\工程文件夹\AAAScenes_THERE\Scripts\FollowCursor.cs" />
+    <Compile Include="Assets\工程文件夹\Code\GameEventManager.cs" />
     <Compile Include="Assets\AraTrail\SampleScenes\Scripts\Rotation.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\Wrappable.cs" />
     <Compile Include="Assets\Obi\Samples\Cloth\SampleResources\Scripts\BoatFinishLine.cs" />
@@ -304,6 +305,7 @@
     <Compile Include="Assets\FiloCables\SampleScenes\Scripts\TensionProbe.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\StylizedWater2\Shaders\Underwater\UnderwaterEffects.hlsl" />
     <None Include="Assets\Obi\Samples\Fluid\SampleResources\Materials\StandardPerInstanceColor.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Tessera\Lib\Sylves.xml" />
@@ -313,6 +315,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\StylizedWater2\Shaders\Libraries\Lighting.hlsl" />
     <None Include="Assets\Tessera\Sample\GrassPaths\Models\CREDITS.txt" />
+    <None Include="Assets\StylizedWater2\Shaders\Underwater\SphereMappedDistortion.shader" />
     <None Include="Assets\Obi\Resources\ObiMaterials\FluidThickness.shader" />
     <None Include="Assets\StylizedWater2\Shaders\Libraries\Features.hlsl" />
     <None Include="Assets\Obi\Resources\ObiMaterials\UnityStandardCoreForwardBackfaces.cginc" />
@@ -326,12 +329,14 @@
     <None Include="Assets\Tessera\Lib\DeBroglie.dll" />
     <None Include="Assets\Obi\Plugins\x86_64\libOni.dll" />
     <None Include="Assets\Obi\Resources\ObiMaterials\ObiLightingBuiltIn.cginc" />
+    <None Include="Assets\StylizedWater2\Shaders\Underwater\UnderwaterFog.hlsl" />
     <None Include="Assets\StylizedWater2\Shaders\Libraries\ForwardPass.hlsl" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Libraries\Bending.hlsl" />
     <None Include="Assets\Stylized Grass Shader\Shaders\Bending\GrassBendMesh.shader" />
     <None Include="Assets\StylizedWater2\Shaders\Libraries\Tesselation.hlsl" />
     <None Include="Assets\StylizedWater2\Shaders\Libraries\Common.hlsl" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\StylizedWater2\Shaders\Underwater\UnderwaterLighting.hlsl" />
     <None Include="Assets\FirstPersonExplorationKit\Documentation\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\工程文件夹\3500常用字.txt" />
@@ -385,6 +390,7 @@
     <None Include="Assets\StylizedWater2\Shaders\Libraries\Vertex.hlsl" />
     <None Include="Assets\AraTrail\SampleScenes\Materials\TireTracks.shader" />
     <None Include="Assets\Obi\CHANGELOG_fluid.txt" />
+    <None Include="Assets\StylizedWater2\Shaders\Underwater\UnderwaterMask.hlsl" />
     <None Include="Assets\Obi\Resources\ObiMaterials\NormalReconstruction.shader" />
     <None Include="Assets\Obi\Resources\ObiMaterials\ScreenSpaceCurvatureFlow.shader" />
     <None Include="Assets\XDPaint\Shaders\BrushBlur.shader" />
@@ -402,6 +408,7 @@
     <None Include="Assets\Tessera\Sample\Dungeon\Models\CREDITS.txt" />
     <None Include="Assets\工程文件夹\Materials\BlurBehind.shader" />
     <None Include="Assets\FiloCables\CHANGELOG.txt" />
+    <None Include="Assets\StylizedWater2\Shaders\Underwater\UnderwaterShading.hlsl" />
     <None Include="Assets\Obi\CHANGELOG.txt" />
     <None Include="Assets\Obi\Resources\ObiMaterials\FluidColorsBlend.shader" />
     <None Include="Assets\FirstPersonExplorationKit\Shaders\ModifiedPB.shader" />

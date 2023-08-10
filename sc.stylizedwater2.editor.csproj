@@ -62,6 +62,7 @@
     <Compile Include="Assets\StylizedWater2\Editor\HelpWindow.cs" />
     <Compile Include="Assets\StylizedWater2\Editor\MaterialUI.cs" />
     <Compile Include="Assets\StylizedWater2\Editor\StylizedWaterEditor.cs" />
+    <Compile Include="Assets\StylizedWater2\Editor\Underwater\UnderwaterRendererInspector.cs" />
     <Compile Include="Assets\StylizedWater2\Editor\WaterGridInspector.cs" />
     <Compile Include="Assets\StylizedWater2\Editor\WaterMeshImporter.cs" />
     <Compile Include="Assets\StylizedWater2\Editor\FloatingTransformInspector.cs" />
