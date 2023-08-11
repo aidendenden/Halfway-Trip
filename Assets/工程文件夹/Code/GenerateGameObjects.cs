@@ -3,23 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using Random = UnityEngine.Random;
+using 工程文件夹.Code;
 
 public class GenerateGameObjects : MonoBehaviour
 {
+	public GameObject XiangCe;//相册预制体;
 
-	public GameObject prefab; // 相片预制体
+	public GameObject XiangPian; // 相片预制体
+	public GameObject WuPin; // 物体预制体
+
+	public int QubeNumber = 0;
 
 	string folderPath; // 文件夹路径
+
 
 	public List<Vector3> photoPosition=new List<Vector3>();
 
 	private void OnEnable()
 	{
 		ReadSnapshots();
+		SpawnCube();
+		GameEventManager.Instance.Triggered("Open", transform);
 	}
 	private void OnDisable()
 	{
 		DeleteChildren(transform);
+		GameEventManager.Instance.Triggered("End", transform);
 	}
 
 	void ReadSnapshots()
@@ -48,9 +57,9 @@ public class GenerateGameObjects : MonoBehaviour
 			}
 
 			// 根据文件名生成游戏物体
-			GameObject obj = Instantiate(prefab, gameObject.transform.position + pr, Quaternion.identity);
+			GameObject obj = Instantiate(XiangPian, gameObject.transform.position + pr, Quaternion.identity);
 			obj.name = fileName; // 设置游戏物体的名称为文件名
-			obj.transform.parent = gameObject.transform;
+			obj.transform.parent = XiangCe.transform;
 			// 可以根据需要对生成的游戏物体进行进一步操作，例如设置位置、旋转、缩放等
 			// obj.transform.position = ...
 			// obj.transform.rotation = ...
@@ -60,6 +69,17 @@ public class GenerateGameObjects : MonoBehaviour
 		}
 	}
 
+	void SpawnCube()
+    {
+		for (int i =0;i<QubeNumber;i++) {
+			Vector3 pr = new Vector3(Random.Range(-8, 8), Random.Range(-4, 4), Random.Range(-5, 5));
+			GameObject obj = Instantiate(WuPin, gameObject.transform.position + pr, Quaternion.identity);
+			obj.transform.parent = XiangCe.transform;
+		}
+		
+
+
+	}
 
 
 

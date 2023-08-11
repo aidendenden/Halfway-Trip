@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: -1146534295500401905}
   - component: {fileID: 2165926671830533655}
   - component: {fileID: 8155649888589808371}
-  - component: {fileID: 5517826220905091394}
   - component: {fileID: 1114972420713748033}
   - component: {fileID: 7503453469781114044}
   m_Layer: 14
-  m_Name: "\u76F8\u7247"
+  m_Name: "\u7EAF\u65B9\u5757"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,7 +52,31 @@ MonoBehaviour:
   - eventID: 4
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 2165926671830533655}
+          m_TargetAssemblyTypeName: OffAndOn, Assembly-CSharp
+          m_MethodName: ActiveOff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2165926671830533655}
+          m_TargetAssemblyTypeName: OffAndOn, Assembly-CSharp
+          m_MethodName: SpawnPureCubeObjectToPlayer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &2165926671830533655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,18 +118,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &5517826220905091394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3958250040987832962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d877290ffce275d4ab59620ce02943ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1114972420713748033
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -148,15 +159,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 3b368ef0cf9bb4f77a7b8042b76b1a89, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.12, y: 1.28}
+  m_Size: {x: 10.14, y: 5.67}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!65 &7503453469781114044
@@ -178,5 +189,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6, y: 3, z: 1}
-  m_Center: {x: 3.2, y: 2, z: 0}
+  m_Size: {x: 3.2085571, y: 3.19369, z: 1}
+  m_Center: {x: -0.046295166, y: -0.02518189, z: 0}

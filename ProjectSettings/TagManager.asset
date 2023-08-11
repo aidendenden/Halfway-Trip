@@ -9,6 +9,7 @@ TagManager:
   - InputManager
   - Detectable
   - ImageSee
+  - MangerManger
   layers:
   - Default
   - TransparentFX

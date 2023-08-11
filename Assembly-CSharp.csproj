@@ -96,6 +96,7 @@
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\RopeTensionColorizer.cs" />
     <Compile Include="Assets\AraTrail\ElasticArray.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\WorldSpaceGravity.cs" />
+    <Compile Include="Assets\工程文件夹\Code\MangerManger.cs" />
     <Compile Include="Assets\VirtualSnapshot\Standard Assets\Character Controllers\Sources\Scripts\FPSInputControllerScript.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\FPEPlayerController\FPECharacters\FPEFirstPerson\Scripts\FPEFirstPersonController.cs" />
     <Compile Include="Assets\URPTimeOfDay\Scripts\FootstepManager.cs" />
@@ -172,6 +173,7 @@
     <Compile Include="Assets\工程文件夹\AAAScenes_THERE\Scripts\SunManager.cs" />
     <Compile Include="Assets\工程文件夹\测试用例\第一人称测试（1）\PlayerMovement.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Testing\Scripts\FPEInputTester.cs" />
+    <Compile Include="Assets\工程文件夹\Code\ForBlock.cs" />
     <Compile Include="Assets\VirtualSnapshot\Scripts\DemoScripts\DemoLevelWarpScript.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\FPECore.cs" />
     <Compile Include="Assets\工程文件夹\测试用例\第一人称测试（1）\PlayerCameraLook.cs" />

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class OffAndOn : MonoBehaviour
 {
-   public void ActiveOn()
+    public GameObject[] ObjectS;
+
+    public void ActiveOn()
     {
         gameObject.SetActive(true);
         Debug.Log("ON!");
@@ -13,6 +15,11 @@ public class OffAndOn : MonoBehaviour
     {
         gameObject.SetActive(false);
         Debug.Log("OFF!");
+        
+    }
+
+    public void SpawnCube()
+    {
         GameObject playerObject = GameObject.FindWithTag("Player");
         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         Renderer cubeRenderer = cube.GetComponent<Renderer>();
@@ -23,7 +30,7 @@ public class OffAndOn : MonoBehaviour
         // 设置立方体的材质颜色
         cubeRenderer.material.color = randomColor;
         cube.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-        
+
         var position = playerObject.transform.position;
 
         Vector3 originalPosition = position;
@@ -36,11 +43,23 @@ public class OffAndOn : MonoBehaviour
 
         // 计算正前方位置
         Vector3 positionInFront = originalPosition + forwardDirection * distance;
-        
-        cube.transform.position = new Vector3(positionInFront.x,positionInFront.y+0.3f,positionInFront.z);
+
+        cube.transform.position = new Vector3(positionInFront.x, positionInFront.y + 0.3f, positionInFront.z);
         cube.tag = "Detectable";
         int layerIndex = LayerMask.NameToLayer("DetectableLayer");
         cube.layer = layerIndex;
         cube.AddComponent<Rigidbody>();
+    }
+
+    public void SpawnPureCubeObjectToPlayer()
+    {
+        GameObject playerObject = GameObject.FindWithTag("Player");
+        Vector3 pr = new Vector3(Random.Range(-3, 3), Random.Range(10, 15), Random.Range(-3, 3));
+        GameObject obj = Instantiate(ObjectS[0], playerObject.transform.position + pr, Quaternion.identity);
+        ForBlock _forBlock = obj.GetComponent<ForBlock>();
+        _forBlock.isCanMove = false;
+        
+
+
     }
 }
