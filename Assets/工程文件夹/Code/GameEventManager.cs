@@ -43,17 +43,17 @@ namespace 工程文件夹.Code
 // 以下是监听交互的方法
 // void OnEnable()
 // {
-//     PlayerManager.OnTrigger += HandleTrigger;
+//    GameEventManager.OnTrigger += HandleTrigger;
 // }
 //
 // void OnDisable()
 // {
-//     PlayerManager.OnTrigger -= HandleTrigger;
+//      GameEventManager.OnTrigger -= HandleTrigger;
 // }
 //
-// void HandleTrigger(string message,EGameObj gameObj)
+// void HandleTrigger(string message,Transform _transform)
 // {
-//     Debug.Log("Trigger event received:222222222222 " + message,StuffEnum);
+//     Debug.Log("Trigger event received: " + message,_transform);
 // }
 #endregion
 
