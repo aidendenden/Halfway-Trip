@@ -9,6 +9,7 @@ public class GenerateGameObjects : MonoBehaviour
 {
 	public GameObject XiangCe;//相册预制体;
 
+
 	public GameObject XiangPian; // 相片预制体
 	public GameObject WuPin; // 物体预制体
 
@@ -18,11 +19,13 @@ public class GenerateGameObjects : MonoBehaviour
 
 
 	public List<Vector3> photoPosition=new List<Vector3>();
+	public List<Vector3> itemPosition = new List<Vector3>();
 
 	private void OnEnable()
 	{
-		ReadSnapshots();
-		SpawnCube();
+         ReadSnapshots(); 
+		 SpawnCube(); 
+		
 		GameEventManager.Instance.Triggered("Open", transform);
 	}
 	private void OnDisable()
@@ -72,9 +75,24 @@ public class GenerateGameObjects : MonoBehaviour
 	void SpawnCube()
     {
 		for (int i =0;i<QubeNumber;i++) {
-			Vector3 pr = new Vector3(Random.Range(-8, 8), Random.Range(-4, 4), Random.Range(-5, 5));
+
+			Vector3 pr = new Vector3();
+			if (itemPosition.Count - 1 < i)
+			{
+				pr = new Vector3(Random.Range(-8, 8), Random.Range(-4, 4), Random.Range(-5, 5));
+			}
+			else
+			{
+				pr = itemPosition[i];
+			}
+			
 			GameObject obj = Instantiate(WuPin, gameObject.transform.position + pr, Quaternion.identity);
 			obj.transform.parent = XiangCe.transform;
+
+
+			
+
+
 		}
 		
 
