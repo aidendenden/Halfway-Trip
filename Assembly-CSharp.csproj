@@ -150,6 +150,7 @@
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ActorSpawner.cs" />
     <Compile Include="Assets\Obi\Samples\Common\SampleResources\Scripts\ExtrapolationCamera.cs" />
     <Compile Include="Assets\AraTrail\HelperScripts\ElectricalArc.cs" />
+    <Compile Include="Assets\工程文件夹\Code\SwitchItems.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\Utility\FPEMinMaxRangeAttribute.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPESimpleMenu.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\DemoScripts\DemoFanMachine.cs" />
@@ -236,6 +237,7 @@
     <Compile Include="Assets\工程文件夹\Code\GaleryController.cs" />
     <Compile Include="Assets\FiloCables\SampleScenes\Scripts\PlatformController.cs" />
     <Compile Include="Assets\AraTrail\SampleScenes\Scripts\WobblePath.cs" />
+    <Compile Include="Assets\工程文件夹\Code\ForItem.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\FPEPassiveAudioDiary.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\UI\FPEMainMenu.cs" />
     <Compile Include="Assets\FirstPersonExplorationKit\Scripts\InteractableTypes\DoorsAndDrawers\FPEAutomaticDoorTrigger.cs" />

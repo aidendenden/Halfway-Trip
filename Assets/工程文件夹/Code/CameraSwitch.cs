@@ -29,16 +29,10 @@ public class CameraSwitch : MonoBehaviour
 
     void Update()
 	{
-		int i = 0;
-		for (i = 0; i < cameras.Length; i++)
-		{
-			if (Input.GetKeyUp(shotcuts[i]))
-				SwitchCamera(i);
-			    
-		}
+		
 	}
 
-	void SwitchCamera(int index)
+	public void SwitchCamera(int index)
 	{
 		int i = 0;
 		for (i = 0; i < cameras.Length; i++)

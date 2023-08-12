@@ -61,6 +61,8 @@ public class VirtualSnapshotScript : MonoBehaviour
     public bool showISO = true;
     public bool showExposures = true;
 
+    public MangerManger mangerManger;
+
     private RectTransform flashIndicatorIcon;
     private RectTransform apertureText;
     private RectTransform shutterSpeedText;
@@ -138,6 +140,7 @@ public class VirtualSnapshotScript : MonoBehaviour
 
     void Awake()
     {
+        
         startZoom = snapshotCamera.fieldOfView;
         currentZoom = startZoom;
         targetZoom = startZoom;
@@ -367,7 +370,7 @@ public class VirtualSnapshotScript : MonoBehaviour
     void Update()
     {
         // Toggle camera up/down
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetMouseButton(1)&&mangerManger.ItemMode==2&&mangerManger.CameraMode==0)
         {
             if (cameraUp)
             {
@@ -724,4 +727,7 @@ public class VirtualSnapshotScript : MonoBehaviour
         return batteryLevel;
     }
     
+
+    
+
 }

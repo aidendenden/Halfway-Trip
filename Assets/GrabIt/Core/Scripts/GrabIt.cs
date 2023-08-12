@@ -15,6 +15,8 @@ public class GrabObjectProperties{
 
 public class GrabIt : MonoBehaviour {
 
+		public MangerManger mangerManger;
+
 	[Header("Input")]
 	[SerializeField] KeyCode m_rotatePitchPosKey = KeyCode.I;
 	[SerializeField] KeyCode m_rotatePitchNegKey = KeyCode.K;
@@ -179,19 +181,23 @@ public class GrabIt : MonoBehaviour {
 
 	void Grab()
 	{
-		Vector3 hitPointPos = m_hitPointObject.transform.position;
-		Vector3 dif = m_targetPos - hitPointPos;
+			if (mangerManger.ItemMode == 1)
+			{
+				Vector3 hitPointPos = m_hitPointObject.transform.position;
+				Vector3 dif = m_targetPos - hitPointPos;
 
-		if(m_isHingeJoint)
-			m_targetRB.AddForceAtPosition( m_grabSpeed  * dif * 100 , hitPointPos , ForceMode.Force);
-		else
-			m_targetRB.velocity = m_grabSpeed * dif;		
+				if (m_isHingeJoint)
+					m_targetRB.AddForceAtPosition(m_grabSpeed * dif * 100, hitPointPos, ForceMode.Force);
+				else
+					m_targetRB.velocity = m_grabSpeed * dif;
 
-		
-		if(m_lineRenderer != null){
-			m_lineRenderer.enabled = true;
-			m_lineRenderer.SetPositions( new Vector3[]{ m_targetPos , hitPointPos });
-		}
+
+				if (m_lineRenderer != null)
+				{
+					m_lineRenderer.enabled = true;
+					m_lineRenderer.SetPositions(new Vector3[] { m_targetPos, hitPointPos });
+				}
+			}
 	}
 
 	void Rotate()
