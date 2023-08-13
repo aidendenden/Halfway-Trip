@@ -9,3 +9,4 @@ UserSettings
 Assembly-CSharp-Editor.csproj
 Halfway-Trip.sln
 Assembly-CSharp.csproj
+*.csproj
