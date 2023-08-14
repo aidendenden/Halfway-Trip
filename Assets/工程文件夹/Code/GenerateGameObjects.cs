@@ -30,8 +30,8 @@ public class GenerateGameObjects : MonoBehaviour
 	}
 	private void OnDisable()
 	{
-		DeleteChildren(transform);
 		GameEventManager.Instance.Triggered("End", transform);
+		DeleteChildren(transform);
 	}
 
 	void ReadSnapshots()

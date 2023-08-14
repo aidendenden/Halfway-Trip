@@ -10,6 +10,7 @@ TagManager:
   - Detectable
   - ImageSee
   - MangerManger
+  - PhotoInspect
   layers:
   - Default
   - TransparentFX
