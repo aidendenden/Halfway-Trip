@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PhotoInspection : MonoBehaviour
@@ -10,7 +11,8 @@ public class PhotoInspection : MonoBehaviour
     public GameObject currentHeldObject = null;
     public Transform interactionObjectExamineLocation;
     public SpriteRenderer photo;
-
+    public TextMeshPro textMesh;
+    
     // Start is called before the first frame update
     void Start()
     {

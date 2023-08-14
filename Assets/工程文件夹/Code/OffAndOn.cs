@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using TMPro;
 using UnityEngine;
 
 public class OffAndOn : MonoBehaviour
@@ -59,7 +61,41 @@ public class OffAndOn : MonoBehaviour
         ForBlock _forBlock = obj.GetComponent<ForBlock>();
         _forBlock.isCanMove = false;
         
+    }
 
-
+    public void InspectionPhoto()
+    {
+        GameObject PhotoInspectionObject = GameObject.FindWithTag("PhotoInspect");
+        PhotoInspectionObject.SetActive(true);
+        SpriteRenderer showPhoto = PhotoInspectionObject.GetComponent<PhotoInspection>().photo;
+        SpriteRenderer photo = this.transform.gameObject.GetComponent<SpriteRenderer>();
+        TextMeshPro textMesh =  PhotoInspectionObject.GetComponent<PhotoInspection>().textMesh;
+        
+        showPhoto.sprite = photo.sprite;
+        textMesh.text = photo.name;
+        
+        
+        // string imagePath = Application.dataPath + "/snapshots/" + objectName + ".png";
+        //
+        // Texture2D Tex2D;
+        // byte[] FileData;
+        //
+        // FileData = File.ReadAllBytes(imagePath);
+        // Tex2D = new Texture2D(1920, 1080);
+        // Tex2D.LoadImage(FileData);
+        // Texture2D SpriteTexture = Tex2D;
+        //
+        // Sprite NewSprite = Sprite.Create(SpriteTexture, new Rect(0, 0, SpriteTexture.width, SpriteTexture.height), new Vector2(0, 0), 200);
+        //
+        //
+        // if (NewSprite != null)
+        // {
+        //     photo.sprite = NewSprite;
+        // }
+        // else
+        // {
+        //     Debug.LogWarning("No sprite found for object: " + objectName);
+        // }
+        
     }
 }
