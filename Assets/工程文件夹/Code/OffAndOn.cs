@@ -66,6 +66,12 @@ public class OffAndOn : MonoBehaviour
     public void InspectionPhoto()
     {
         GameObject PhotoInspectionObject = GameObject.FindWithTag("PhotoInspect");
+
+        if (!PhotoInspectionObject)
+        {
+            return;
+        }
+        
         PhotoInspectionObject.SetActive(true);
         SpriteRenderer showPhoto = PhotoInspectionObject.GetComponent<PhotoInspection>().photo;
         SpriteRenderer photo = this.transform.gameObject.GetComponent<SpriteRenderer>();
