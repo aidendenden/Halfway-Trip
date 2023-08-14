@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using 工程文件夹.Code;
 
 public class PhotoInspection : MonoBehaviour
 {
@@ -10,12 +11,26 @@ public class PhotoInspection : MonoBehaviour
     public float examineRotationSpeed = 300.0f;
     public GameObject currentHeldObject = null;
     public Transform interactionObjectExamineLocation;
-    public SpriteRenderer photo;
+
+    public GameObject needAwake;
+    public SpriteRenderer showPhoto;
     public TextMeshPro textMesh;
     
     // Start is called before the first frame update
     void Start()
     {
+        GameEventManager.OnTrigger += delegate(string message, Transform transform1)
+        {
+            if (message.Equals("checkPhoto"))
+            {
+                needAwake.SetActive(true);
+                SpriteRenderer _photo = transform1.GetComponent<SpriteRenderer>();
+               
+                showPhoto.sprite = _photo.sprite;
+                textMesh.text = transform1.name;
+            }
+        };
+
     }
 
     // Update is called once per frame
