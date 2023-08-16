@@ -25,8 +25,10 @@ public class PhotoInspection : MonoBehaviour
             {
                 needAwake.SetActive(true);
                 SpriteRenderer _photo = transform1.GetComponent<SpriteRenderer>();
-               
-                showPhoto.sprite = _photo.sprite;
+                if (_photo.sprite)
+                {
+                    showPhoto.sprite = _photo.sprite;
+                }
                 textMesh.text = transform1.name;
             }
         };
@@ -39,6 +41,11 @@ public class PhotoInspection : MonoBehaviour
         if (Input.GetMouseButton(0) && examiningObject)
         {
             Inspection();
+        }
+
+        if (Input.GetMouseButton(1))
+        {
+            needAwake.SetActive(false);
         }
     }
 
