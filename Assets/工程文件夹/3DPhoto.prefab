@@ -74,6 +74,9 @@ MonoBehaviour:
   examineRotationSpeed: 300
   currentHeldObject: {fileID: 141878}
   interactionObjectExamineLocation: {fileID: 441878}
+  needAwake: {fileID: 0}
+  showPhoto: {fileID: 0}
+  textMesh: {fileID: 0}
 --- !u!1 &141880
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,8 +357,8 @@ Transform:
   m_GameObject: {fileID: 6578488004604711681}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0004, y: 0.016, z: 0.0013}
-  m_LocalScale: {x: 0.025, y: 0.025, z: 1}
+  m_LocalPosition: {x: -0.15914, y: -0.07233, z: 0.00332}
+  m_LocalScale: {x: 0.049595732, y: 0.04919131, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 441878}
@@ -401,7 +404,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a82e542b5d427a14e86ad4ae97883a0c, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -409,6 +412,6 @@ SpriteRenderer:
   m_Size: {x: 12.8, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
