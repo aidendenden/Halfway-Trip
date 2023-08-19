@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1591701, g: 0.2450358, b: 0.5647299, a: 1}
+  m_IndirectSpecularColor: {r: 0.16076161, g: 0.24662772, b: 0.5663212, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4275,7 +4275,7 @@ MonoBehaviour:
   waterLevelPadding: 0
   waterMaterial: {fileID: 2100000, guid: 21d5d3b63a3f53f4bb29e5de315cd701, type: 2}
   dynamicMaterial: 1
-  settings: {fileID: 0}
+  settings: {fileID: 2038654085}
   useVolumeBlending: 0
   startDistance: 0
   fogDensity: 0.8
@@ -9708,7 +9708,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 85c5e2ac3844cbf4c80dce9ab1e220a5, type: 2}
+      objectReference: {fileID: 2100000, guid: 2ea7d9f5e915fc7418b400fd6ea89553, type: 2}
     - target: {fileID: 8998635533897661896, guid: 379a3cfcdceb14b47a695f80caf5cba4,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -14842,6 +14842,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2027321745}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2038654085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: defe3efb56c1bc943a6bfb504a00dc77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  startDistance:
+    m_OverrideState: 0
+    m_Value: 0
+  fogDensity:
+    m_OverrideState: 0
+    m_Value: 20
+  heightFogDepth:
+    m_OverrideState: 0
+    m_Value: 25
+  heightFogDensity:
+    m_OverrideState: 0
+    m_Value: 1
+  heightFogBrightness:
+    m_OverrideState: 0
+    m_Value: 0.6
+  fogBrightness:
+    m_OverrideState: 0
+    m_Value: 1
+  subsurfaceStrength:
+    m_OverrideState: 0
+    m_Value: 1
+  causticsStrength:
+    m_OverrideState: 0
+    m_Value: 1
+  distortionStrength:
+    m_OverrideState: 0
+    m_Value: 0.25
+  distortionFrequency:
+    m_OverrideState: 0
+    m_Value: 0.75
+  distortionSpeed:
+    m_OverrideState: 0
+    m_Value: 0.5
 --- !u!1 &2092358594
 GameObject:
   m_ObjectHideFlags: 0
