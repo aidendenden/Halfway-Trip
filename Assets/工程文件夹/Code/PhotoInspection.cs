@@ -24,12 +24,14 @@ public class PhotoInspection : MonoBehaviour
             if (message.Equals("checkPhoto"))
             {
                 needAwake.SetActive(true);
+                
+                textMesh.text = transform1.name;
                 SpriteRenderer _photo = transform1.GetComponent<SpriteRenderer>();
-                if (_photo.sprite)
+                if (showPhoto.sprite)
                 {
                     showPhoto.sprite = _photo.sprite;
                 }
-                textMesh.text = transform1.name;
+
             }
         };
 

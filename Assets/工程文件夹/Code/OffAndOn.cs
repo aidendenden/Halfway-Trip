@@ -16,7 +16,7 @@ public class OffAndOn : MonoBehaviour
     }
     public void ActiveOff()
     {
-        gameObject.SetActive(false);
+        
         Debug.Log("OFF!");
         
     }
@@ -61,7 +61,7 @@ public class OffAndOn : MonoBehaviour
         GameObject obj = Instantiate(ObjectS[0], playerObject.transform.position + pr, Quaternion.identity);
         ForBlock _forBlock = obj.GetComponent<ForBlock>();
         _forBlock.isCanMove = false;
-        
+        gameObject.SetActive(false);
     }
 
     public void InspectionPhoto()

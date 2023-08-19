@@ -15,7 +15,7 @@ public class ForXiangPian : MonoBehaviour
     {
         string objectName = gameObject.name;
         string imagePath = Application.dataPath + "/snapshots/" + objectName + ".png";
-        Debug.Log(imagePath);
+        // Debug.Log(imagePath);
 
         Texture2D Tex2D;
         byte[] FileData;
